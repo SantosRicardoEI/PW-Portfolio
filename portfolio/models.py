@@ -1,3 +1,6 @@
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
+from django.core.exceptions import ValidationError
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
@@ -257,8 +260,91 @@ class Formacao(models.Model):
     def clean(self):
         super().clean()
         if self.data_fim and self.data_fim < self.data_inicio:
-            from django.core.exceptions import ValidationError
-
             raise ValidationError(
                 {"data_fim": "A data de fim não pode ser anterior à data de início."}
             )
+
+
+class MakingOf(models.Model):
+    class Fase(models.TextChoices):
+        MODELO = "modelo", "Modelação"
+        IMPLEMENTACAO = "implementacao", "Implementação"
+        TESTE = "teste", "Testes"
+        REVISAO = "revisao", "Revisão"
+
+    titulo = models.CharField(max_length=150)
+    data = models.DateField(auto_now_add=True)
+    fase = models.CharField(max_length=20, choices=Fase.choices)
+    descricao = models.TextField(verbose_name="trabalho realizado")
+    decisoes = models.TextField(verbose_name="decisões e justificações")
+    erros = models.TextField(blank=True)
+    correcoes = models.TextField(blank=True, verbose_name="correções")
+    uso_ia = models.TextField(
+        blank=True,
+        verbose_name="utilização de IA",
+        help_text="Descrever como a IA contribuiu, ou não, para esta etapa.",
+    )
+    content_type = models.ForeignKey(
+        ContentType,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        limit_choices_to={"app_label": "portfolio"},
+        verbose_name="tipo de entidade documentada",
+    )
+    object_id = models.PositiveBigIntegerField(
+        blank=True,
+        null=True,
+        verbose_name="ID da entidade documentada",
+    )
+    entidade_documentada = GenericForeignKey("content_type", "object_id")
+
+    class Meta:
+        ordering = ["-data", "-id"]
+        verbose_name = "entrada do Making Of"
+        verbose_name_plural = "entradas do Making Of"
+
+    def __str__(self):
+        return f"{self.data}: {self.titulo}"
+
+    def clean(self):
+        super().clean()
+        if bool(self.content_type_id) != bool(self.object_id):
+            raise ValidationError(
+                "O tipo e o ID da entidade documentada devem ser preenchidos em conjunto."
+            )
+        if self.content_type_id and self.content_type.app_label != "portfolio":
+            raise ValidationError(
+                {"content_type": "Só podem ser documentadas entidades do portfólio."}
+            )
+        if self.content_type_id and self.object_id:
+            model_class = self.content_type.model_class()
+            if model_class is None or not model_class.objects.filter(pk=self.object_id).exists():
+                raise ValidationError(
+                    {"object_id": "Não existe uma entidade com este ID."}
+                )
+
+
+class EvidenciaMakingOf(models.Model):
+    entrada = models.ForeignKey(
+        MakingOf,
+        on_delete=models.CASCADE,
+        related_name="evidencias",
+    )
+    imagem = models.ImageField(upload_to="makingof/")
+    legenda = models.CharField(max_length=200)
+    ordem = models.PositiveSmallIntegerField(default=1)
+
+    class Meta:
+        ordering = ["entrada", "ordem"]
+        verbose_name = "evidência do Making Of"
+        verbose_name_plural = "evidências do Making Of"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["entrada", "ordem"],
+                name="ordem_evidencia_unica_por_entrada",
+            )
+        ]
+
+    def __str__(self):
+        return f"{self.entrada.titulo} — evidência {self.ordem}"
