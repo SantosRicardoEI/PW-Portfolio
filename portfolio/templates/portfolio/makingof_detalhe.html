@@ -1,0 +1,54 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{{ entrada.titulo }}</h2>
+<section>
+    <article>
+        <header>
+            <h3>{{ entrada.data }} | {{ entrada.get_fase_display }}</h3>
+        </header>
+        <section>
+            <h4>Trabalho realizado</h4>
+            <ul><li>{{ entrada.descricao }}</li></ul>
+        </section>
+        <section>
+            <h4>Decisões e justificações</h4>
+            <ul><li>{{ entrada.decisoes }}</li></ul>
+        </section>
+        {% if entrada.erros %}
+        <section>
+            <h4>Erros</h4>
+            <ul><li>{{ entrada.erros }}</li></ul>
+        </section>
+        {% endif %}
+        {% if entrada.correcoes %}
+        <section>
+            <h4>Correções</h4>
+            <ul><li>{{ entrada.correcoes }}</li></ul>
+        </section>
+        {% endif %}
+        {% if entrada.uso_ia %}
+        <section>
+            <h4>Utilização de IA</h4>
+            <ul><li>{{ entrada.uso_ia }}</li></ul>
+        </section>
+        {% endif %}
+        {% if entrada.evidencias.all %}
+        <section>
+            <h4>Evidências</h4>
+            <ul>
+                {% for ev in entrada.evidencias.all %}
+                <li>
+                    <img src="{{ ev.imagem.url }}" alt="{{ ev.legenda }}" style="max-width:400px">
+                    <p>{{ ev.legenda }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+        <footer>
+            <a href="{% url 'sobre' %}">Voltar</a>
+        </footer>
+    </article>
+</section>
+{% endblock %}

@@ -9,10 +9,7 @@
         <section>
             <h4>Diagrama</h4>
             <ul>
-                <li>
-                    <!-- Substitui o src pelo caminho da tua foto do diagrama -->
-                    <em>Insere aqui a foto do diagrama de arquitetura (papel e lápis).</em>
-                </li>
+                <li><img src="/media/sobre/mvt_arch.png" alt="Diagrama de Arquitetura MVT" style="max-width:100%"></li>
             </ul>
             <h4>Componentes</h4>
             <ul>
@@ -29,7 +26,7 @@
         <section>
             <h4>Diagrama Entidade-Relação</h4>
             <ul>
-                <li><em>Insere aqui a foto do diagrama ER (papel e lápis).</em></li>
+                <li><img src="/media/sobre/DER_v3.png" alt="Diagrama Entidade-Relação" style="max-width:100%"></li>
             </ul>
             <h4>Principais entidades</h4>
             <ul>
@@ -47,18 +44,22 @@
     <article>
         <header><h3>Tecnologias Utilizadas</h3></header>
         <section>
-            {% for tipo in tipos %}
-            <h4>{{ tipo.nome }}</h4>
+            <h4>Usadas nesta aplicação</h4>
             <ul>
-                {% for tec in tipo.tecnologias.all %}
-                <li><strong>{{ tec.nome }}</strong>{% if tec.descricao %} — {{ tec.descricao }}{% endif %}</li>
-                {% empty %}
-                <li>Sem tecnologias registadas neste tipo.</li>
-                {% endfor %}
+                {% if projeto %}
+                    {% for tec in projeto.tecnologias.all %}
+                    <li>
+                        <strong>{{ tec.nome }}</strong>
+                        {% if tec.tipo %}<em>({{ tec.tipo }})</em>{% endif %}
+                        {% if tec.descricao %} — {{ tec.descricao }}{% endif %}
+                    </li>
+                    {% empty %}
+                    <li>Sem tecnologias associadas ao projeto.</li>
+                    {% endfor %}
+                {% else %}
+                    <li>Projeto "Portfolio de Programação Web" não encontrado.</li>
+                {% endif %}
             </ul>
-            {% empty %}
-            <ul><li>Adiciona tipos de tecnologia no admin para os ver aqui.</li></ul>
-            {% endfor %}
         </section>
     </article>
 
@@ -67,7 +68,7 @@
         <section>
             <h4>Mapa</h4>
             <ul>
-                <li><em>Insere aqui a foto do mapa de navegação (papel e lápis).</em></li>
+                <li><img src="/media/sobre/nav.png" alt="Mapa de Navegação" style="max-width:100%"></li>
             </ul>
         </section>
     </article>
@@ -114,7 +115,9 @@
             <ul>
                 {% for entrada in makingof %}
                 <li>
-                    <strong>{{ entrada.data }} — {{ entrada.titulo }}</strong>
+                    <a href="{% url 'makingof_detalhe' entrada.id %}">
+                        {{ entrada.data }} — {{ entrada.titulo }}
+                    </a>
                     ({{ entrada.get_fase_display }})
                 </li>
                 {% empty %}

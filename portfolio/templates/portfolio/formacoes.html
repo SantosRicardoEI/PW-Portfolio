@@ -8,6 +8,10 @@
     <article>
         <header>
             <h3>{{ formacao.titulo }}</h3>
+            <div class="acoes">
+                <a href="{% url 'formacao_editar' formacao.id %}">Editar</a>
+                <a href="{% url 'formacao_apagar' formacao.id %}">Apagar</a>
+            </div>
             <p>{{ formacao.instituicao }} | {{ formacao.get_tipo_display }}</p>
         </header>
         <section>
@@ -16,10 +20,6 @@
                 <li>{{ formacao.data_inicio }} — {% if formacao.em_curso %}Em curso{% else %}{{ formacao.data_fim }}{% endif %}</li>
             </ul>
         </section>
-        <footer>
-            <a href="{% url 'formacao_editar' formacao.id %}">Editar</a>
-            <a href="{% url 'formacao_apagar' formacao.id %}">Apagar</a>
-        </footer>
     </article>
     {% endfor %}
 </section>

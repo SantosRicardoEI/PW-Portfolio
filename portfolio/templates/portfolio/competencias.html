@@ -8,16 +8,16 @@
     <article>
         <header>
             <h3>{{ comp.nome }}</h3>
+            <div class="acoes">
+                <a href="{% url 'competencia_editar' comp.id %}">Editar</a>
+                <a href="{% url 'competencia_apagar' comp.id %}">Apagar</a>
+            </div>
             <p>{{ comp.get_categoria_display }} | {{ comp.get_nivel_display }}</p>
         </header>
         <section>
             <h4>Descrição</h4>
             <ul><li>{{ comp.descricao }}</li></ul>
         </section>
-        <footer>
-            <a href="{% url 'competencia_editar' comp.id %}">Editar</a>
-            <a href="{% url 'competencia_apagar' comp.id %}">Apagar</a>
-        </footer>
     </article>
     {% endfor %}
 </section>

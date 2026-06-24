@@ -56,12 +56,18 @@ article > section h4 {
 article > section ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
 
 article > section ul li {
-    background: #111;
-    color: white;
+    background: #f3f4f6;
+    color: #1a1a1a;
     font-size: 12px;
     padding: 4px 10px;
     border-radius: 999px;
 }
+
+article > section ul li a {
+    color: #2563eb;
+    text-decoration: none;
+}
+article > section ul li a:hover { text-decoration: underline; }
 
 footer {
     text-align: center;

@@ -41,9 +41,28 @@ section > article {
     border: 1px solid #e5e5e5;
 }
 
-article > header h3 { font-size: 17px; font-weight: 600; }
-article > header img { width: 48px; height: 48px; object-fit: contain; margin: 8px 0; }
-article > header p { font-size: 13px; color: #666; }
+article > header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+article > header h3 { font-size: 17px; font-weight: 600; flex: 1; }
+article > header img { width: 48px; height: 48px; object-fit: contain; }
+article > header p { font-size: 13px; color: #666; width: 100%; }
+
+/* botões de ação inline no header */
+article > header .acoes { display: flex; gap: 6px; }
+article > header .acoes a {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+article > header .acoes a:last-child {
+    color: #dc2626;
+    border-color: #fca5a5;
+    background: #fff5f5;
+}
 
 article > section h4 {
     font-size: 11px;
@@ -53,15 +72,22 @@ article > section h4 {
     margin: 12px 0 8px;
 }
 
-article > section ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+article > section ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 
 article > section ul li {
-    background: #111;
-    color: white;
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 999px;
+    font-size: 13px;
+    color: #1a1a1a;
+    padding: 5px 10px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    line-height: 1.5;
 }
+
+article > section ul li a {
+    color: #2563eb;
+    text-decoration: none;
+}
+article > section ul li a:hover { text-decoration: underline; }
 
 footer {
     text-align: center;
@@ -71,32 +97,17 @@ footer {
     margin-top: 40px;
 }
 
-/* BOTÕES E LINKS DE AÇÃO */
-article > footer {
-    margin-top: 12px;
-    display: flex;
-    gap: 8px;
-    text-align: left;
-}
-
-article > footer a, main > a {
+/* BOTÃO CRIAR */
+main > a {
     display: inline-block;
+    margin-bottom: 16px;
     padding: 6px 14px;
     border-radius: 8px;
     font-size: 13px;
     font-weight: 500;
     text-decoration: none;
-    background: #111;
-    color: white;
-}
-
-article > footer a:last-child {
-    background: #dc2626;
-}
-
-main > a {
-    margin-bottom: 16px;
     background: #2563eb;
+    color: white;
 }
 
 /* FORMULÁRIOS */

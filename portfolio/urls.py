@@ -32,4 +32,5 @@ urlpatterns = [
 
     # Sobre
     path('sobre/', views.sobre_view, name='sobre'),
+    path('makingof/<int:id>/', views.makingof_detalhe, name='makingof_detalhe'),
 ]

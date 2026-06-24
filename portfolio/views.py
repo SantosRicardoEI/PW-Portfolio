@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Licenciatura, UnidadeCurricular, Tecnologia, Projeto, TFC, Competencia, Formacao, TipoTecnologia, MakingOf
+from .models import Licenciatura, UnidadeCurricular, Tecnologia, Projeto, TFC, Competencia, Formacao, MakingOf
 from .forms import ProjetoForm, TecnologiaForm, CompetenciaForm, FormacaoForm
 
 
@@ -146,7 +146,12 @@ def formacoes_view(request):
     return render(request, 'portfolio/formacoes.html', {'formacoes': formacoes})
 
 
+def makingof_detalhe(request, id):
+    entrada = get_object_or_404(MakingOf, id=id)
+    return render(request, 'portfolio/makingof_detalhe.html', {'entrada': entrada})
+
+
 def sobre_view(request):
-    tipos = TipoTecnologia.objects.prefetch_related('tecnologias').all()
+    projeto_portfolio = Projeto.objects.prefetch_related('tecnologias__tipo').filter(titulo='Portfolio de Programação Web').first()
     makingof = MakingOf.objects.all()
-    return render(request, 'portfolio/sobre.html', {'tipos': tipos, 'makingof': makingof})
+    return render(request, 'portfolio/sobre.html', {'projeto': projeto_portfolio, 'makingof': makingof})

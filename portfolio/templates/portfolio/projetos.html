@@ -8,6 +8,10 @@
     <article>
         <header>
             <h3>{{ projeto.titulo }}</h3>
+            <div class="acoes">
+                <a href="{% url 'projeto_editar' projeto.id %}">Editar</a>
+                <a href="{% url 'projeto_apagar' projeto.id %}">Apagar</a>
+            </div>
             <p>{{ projeto.data }}</p>
         </header>
         <section>
@@ -20,10 +24,6 @@
                 {% endfor %}
             </ul>
         </section>
-        <footer>
-            <a href="{% url 'projeto_editar' projeto.id %}">Editar</a>
-            <a href="{% url 'projeto_apagar' projeto.id %}">Apagar</a>
-        </footer>
     </article>
     {% endfor %}
 </section>
