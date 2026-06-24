@@ -13,6 +13,7 @@ from .models import (
     Projeto,
     Tecnologia,
     TFC,
+    TipoTecnologia,
     UnidadeCurricular,
 )
 
@@ -81,9 +82,15 @@ class UnidadeCurricularAdmin(admin.ModelAdmin):
     ordering = ("licenciatura", "ano", "semestre", "nome")
 
 
+@admin.register(TipoTecnologia)
+class TipoTecnologiaAdmin(admin.ModelAdmin):
+    list_display = ("nome",)
+    search_fields = ("nome",)
+
+
 @admin.register(Tecnologia)
 class TecnologiaAdmin(admin.ModelAdmin):
-    list_display = ("nome", "categoria", "nivel", "interesse", "website")
+    list_display = ("nome", "tipo", "categoria", "nivel", "interesse", "website")
     list_filter = ("categoria", "nivel", "interesse")
     search_fields = ("nome", "descricao")
     ordering = ("nome",)

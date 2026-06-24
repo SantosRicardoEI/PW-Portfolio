@@ -1,0 +1,15 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Confirmar eliminação</h2>
+<section>
+    <article>
+        <p>Tens a certeza que queres apagar <strong>{{ objeto }}</strong>?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Apagar</button>
+            <a href="{% url cancelar_url %}">Cancelar</a>
+        </form>
+    </article>
+</section>
+{% endblock %}

@@ -70,3 +70,57 @@ footer {
     color: #999;
     margin-top: 40px;
 }
+
+/* BOTÕES E LINKS DE AÇÃO */
+article > footer {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    text-align: left;
+}
+
+article > footer a, main > a {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #111;
+    color: white;
+}
+
+article > footer a:last-child {
+    background: #dc2626;
+}
+
+main > a {
+    margin-bottom: 16px;
+    background: #2563eb;
+}
+
+/* FORMULÁRIOS */
+form p { margin-bottom: 12px; }
+form label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+form button[type="submit"] {
+    background: #111;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+form a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}

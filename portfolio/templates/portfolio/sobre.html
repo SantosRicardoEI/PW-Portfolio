@@ -1,0 +1,127 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Sobre esta Aplicação</h2>
+
+<section>
+    <article>
+        <header><h3>Arquitetura MVT</h3></header>
+        <section>
+            <h4>Diagrama</h4>
+            <ul>
+                <li>
+                    <!-- Substitui o src pelo caminho da tua foto do diagrama -->
+                    <em>Insere aqui a foto do diagrama de arquitetura (papel e lápis).</em>
+                </li>
+            </ul>
+            <h4>Componentes</h4>
+            <ul>
+                <li><strong>Model</strong> — define as entidades e a estrutura da base de dados (models.py).</li>
+                <li><strong>View</strong> — recebe os pedidos HTTP, consulta os modelos e retorna respostas (views.py).</li>
+                <li><strong>Template</strong> — ficheiros HTML que renderizam os dados enviados pelas views.</li>
+                <li><strong>URLs</strong> — mapeiam os caminhos HTTP para as funções view (urls.py).</li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Modelação</h3></header>
+        <section>
+            <h4>Diagrama Entidade-Relação</h4>
+            <ul>
+                <li><em>Insere aqui a foto do diagrama ER (papel e lápis).</em></li>
+            </ul>
+            <h4>Principais entidades</h4>
+            <ul>
+                <li>Licenciatura → tem várias UnidadesCurriculares e Docentes</li>
+                <li>Projeto → associado a UCs e Tecnologias</li>
+                <li>TFC → tem Alunos, Orientadores, Áreas e Tecnologias</li>
+                <li>Tecnologia → tem um TipoTecnologia</li>
+                <li>Competência → ligada a Projetos e Tecnologias</li>
+                <li>Formação → ligada a Competências</li>
+                <li>MakingOf → documenta o processo de desenvolvimento</li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Tecnologias Utilizadas</h3></header>
+        <section>
+            {% for tipo in tipos %}
+            <h4>{{ tipo.nome }}</h4>
+            <ul>
+                {% for tec in tipo.tecnologias.all %}
+                <li><strong>{{ tec.nome }}</strong>{% if tec.descricao %} — {{ tec.descricao }}{% endif %}</li>
+                {% empty %}
+                <li>Sem tecnologias registadas neste tipo.</li>
+                {% endfor %}
+            </ul>
+            {% empty %}
+            <ul><li>Adiciona tipos de tecnologia no admin para os ver aqui.</li></ul>
+            {% endfor %}
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Estrutura de Navegação</h3></header>
+        <section>
+            <h4>Mapa</h4>
+            <ul>
+                <li><em>Insere aqui a foto do mapa de navegação (papel e lápis).</em></li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Repositório GitHub</h3></header>
+        <section>
+            <h4>Link</h4>
+            <ul>
+                <li><a href="https://github.com/SantosRicardoEI/PW-Ficha6" target="_blank">github.com/SantosRicardoEI/PW-Ficha6</a></li>
+            </ul>
+            <h4>Vantagens do Git</h4>
+            <ul>
+                <li>Controlo de versões — permite reverter alterações e acompanhar a evolução do projeto.</li>
+                <li>Colaboração — facilita o trabalho em equipa com branches e pull requests.</li>
+                <li>GitHub — aloja o repositório e serve de portfólio público do projeto.</li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Vídeo-tutorial</h3></header>
+        <section>
+            <h4>Como criar uma página com formulário em Django</h4>
+            <ul>
+                <li>
+                    <!-- Substitui o src pelo URL do teu vídeo no YouTube -->
+                    <em>Insere aqui o URL do teu vídeo no YouTube (iframe).</em>
+                    <!-- Exemplo:
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/VIDEO_ID"
+                        allowfullscreen>
+                    </iframe>
+                    -->
+                </li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <header><h3>Making-Of</h3></header>
+        <section>
+            <h4>Entradas</h4>
+            <ul>
+                {% for entrada in makingof %}
+                <li>
+                    <strong>{{ entrada.data }} — {{ entrada.titulo }}</strong>
+                    ({{ entrada.get_fase_display }})
+                </li>
+                {% empty %}
+                <li>Sem entradas no Making-Of.</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+</section>
+{% endblock %}

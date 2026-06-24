@@ -145,6 +145,18 @@ class UnidadeCurricular(models.Model):
         return f"{self.codigo} — {self.nome}"
 
 
+class TipoTecnologia(models.Model):
+    nome = models.CharField(max_length=50, unique=True)
+
+    class Meta:
+        ordering = ["nome"]
+        verbose_name = "tipo de tecnologia"
+        verbose_name_plural = "tipos de tecnologia"
+
+    def __str__(self):
+        return self.nome
+
+
 class Tecnologia(models.Model):
     class Categoria(models.TextChoices):
         LINGUAGEM = "linguagem", "Linguagem de programação"
@@ -160,6 +172,13 @@ class Tecnologia(models.Model):
         AVANCADO = "avancado", "Avançado"
 
     nome = models.CharField(max_length=100, unique=True)
+    tipo = models.ForeignKey(
+        TipoTecnologia,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='tecnologias',
+    )
     categoria = models.CharField(
         max_length=20,
         choices=Categoria.choices,
