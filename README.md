@@ -1,4 +1,4 @@
-# Portfólio Académico — Ficha 6
+# Portfólio
 
 **Aluno:** Ricardo Santos  
 **Número:** 22409527  
@@ -32,14 +32,3 @@ Aceder ao painel de administração em [http://127.0.0.1:8000/admin/](http://127
 | Password   | `admin` |
 
 ---
-
-## Scripts (opcional)
-
-Para recriar a base de dados de raiz, executar por ordem:
-
-```bash
-python scripts/1_scrape_tfcs.py            # extrai TFCs do site do DEISI
-python scripts/2_descarregar_curso_ucs.py  # descarrega dados de LEI da API da Lusófona
-python scripts/3_carregar_tfcs.py          # carrega TFCs na base de dados
-python scripts/4_carregar_curso_ucs.py     # carrega curso e UCs na base de dados
-```
