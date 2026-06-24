@@ -15,11 +15,17 @@ class Licenciatura(models.Model):
         unique=True,
         help_text="Código usado pela instituição (por exemplo, 260 para LEI).",
     )
-    descricao = models.TextField()
+    descricao = models.TextField(blank=True)
     duracao_semestres = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1)]
+        validators=[MinValueValidator(1)],
+        blank=True,
+        null=True,
     )
-    ects = models.PositiveSmallIntegerField(validators=[MinValueValidator(1)])
+    ects = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(1)],
+        blank=True,
+        null=True,
+    )
     website = models.URLField(blank=True)
     imagem = models.ImageField(upload_to="licenciaturas/", blank=True)
 
@@ -35,9 +41,10 @@ class Licenciatura(models.Model):
 class Docente(models.Model):
     """Entidade adicional que evita repetir docentes em cada UC e TFC."""
 
-    nome = models.CharField(max_length=150)
+    nome = models.CharField(max_length=150, unique=True)
     email = models.EmailField(blank=True)
     pagina_pessoal = models.URLField(
+        blank=True,
         help_text="Ligação para a página pessoal no site da Universidade Lusófona."
     )
     fotografia = models.ImageField(upload_to="docentes/", blank=True)
@@ -111,15 +118,24 @@ class Tecnologia(models.Model):
         AVANCADO = "avancado", "Avançado"
 
     nome = models.CharField(max_length=100, unique=True)
-    categoria = models.CharField(max_length=20, choices=Categoria.choices)
-    descricao = models.TextField()
-    logo = models.ImageField(upload_to="tecnologias/")
-    website = models.URLField(help_text="Website oficial da tecnologia.")
+    categoria = models.CharField(
+        max_length=20,
+        choices=Categoria.choices,
+        blank=True,
+    )
+    descricao = models.TextField(blank=True)
+    logo = models.ImageField(upload_to="tecnologias/", blank=True)
+    website = models.URLField(
+        blank=True,
+        help_text="Website oficial da tecnologia.",
+    )
     interesse = models.PositiveSmallIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
+        blank=True,
+        null=True,
         help_text="Classificação pessoal entre 1 e 5.",
     )
-    nivel = models.CharField(max_length=15, choices=Nivel.choices)
+    nivel = models.CharField(max_length=15, choices=Nivel.choices, blank=True)
 
     class Meta:
         ordering = ["nome"]
@@ -161,22 +177,99 @@ class Projeto(models.Model):
         return self.titulo
 
 
-class TFC(models.Model):
-    """Modelação inicial, a rever quando o JSON de 2025 for analisado."""
+class Aluno(models.Model):
+    nome = models.CharField(max_length=150, blank=True)
+    numero = models.CharField(
+        max_length=20,
+        unique=True,
+        blank=True,
+        null=True,
+        verbose_name="número académico",
+    )
 
+    class Meta:
+        ordering = ["nome", "numero"]
+        verbose_name = "aluno"
+        verbose_name_plural = "alunos"
+
+    def __str__(self):
+        if self.nome and self.numero:
+            return f"{self.nome} ({self.numero})"
+        return self.nome or self.numero or "Aluno sem identificação"
+
+
+class AreaTFC(models.Model):
+    nome = models.CharField(max_length=100, unique=True)
+
+    class Meta:
+        ordering = ["nome"]
+        verbose_name = "área de TFC"
+        verbose_name_plural = "áreas de TFC"
+
+    def __str__(self):
+        return self.nome
+
+
+class PalavraChaveTFC(models.Model):
+    nome = models.CharField(max_length=255, unique=True)
+
+    class Meta:
+        ordering = ["nome"]
+        verbose_name = "palavra-chave de TFC"
+        verbose_name_plural = "palavras-chave de TFC"
+
+    def __str__(self):
+        return self.nome
+
+
+class TFC(models.Model):
+    class Estado(models.TextChoices):
+        EM_CURSO = "em_curso", "Em curso"
+        CONCLUIDO = "concluido", "Concluído"
+
+    estado = models.CharField(
+        max_length=15,
+        choices=Estado.choices,
+        default=Estado.CONCLUIDO,
+    )
     titulo = models.CharField(max_length=200)
     resumo = models.TextField()
     ano = models.PositiveSmallIntegerField(validators=[MinValueValidator(2000)])
-    estudante = models.CharField(max_length=150)
+    email = models.EmailField(blank=True, default="")
+    parceria = models.CharField(max_length=255, blank=True, default="")
+    relatorio_url = models.URLField(
+        max_length=500,
+        blank=True,
+        verbose_name="relatório",
+    )
+    imagem_url = models.URLField(max_length=500, blank=True, verbose_name="imagem")
+    video_url = models.URLField(max_length=500, blank=True, verbose_name="vídeo")
+    alunos = models.ManyToManyField(Aluno, related_name="tfcs", blank=True)
     orientadores = models.ManyToManyField(
         Docente,
         related_name="tfcs_orientados",
         blank=True,
     )
-    area = models.CharField(max_length=100)
-    url = models.URLField(blank=True, verbose_name="ligação externa")
+    licenciaturas = models.ManyToManyField(
+        Licenciatura,
+        related_name="tfcs",
+        blank=True,
+    )
+    areas = models.ManyToManyField(AreaTFC, related_name="tfcs", blank=True)
+    palavras_chave = models.ManyToManyField(
+        PalavraChaveTFC,
+        related_name="tfcs",
+        blank=True,
+    )
+    tecnologias = models.ManyToManyField(
+        Tecnologia,
+        related_name="tfcs",
+        blank=True,
+    )
     interesse = models.PositiveSmallIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
+        blank=True,
+        null=True,
         help_text="Classificação pessoal entre 1 e 5.",
     )
     destaque = models.BooleanField(default=False)
@@ -185,6 +278,12 @@ class TFC(models.Model):
         ordering = ["-ano", "titulo"]
         verbose_name = "TFC"
         verbose_name_plural = "TFCs"
+        constraints = [
+            models.UniqueConstraint(
+                fields=["titulo", "ano", "email"],
+                name="tfc_titulo_ano_email_unicos",
+            )
+        ]
 
     def __str__(self):
         return f"{self.titulo} ({self.ano})"

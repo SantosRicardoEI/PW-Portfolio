@@ -1,12 +1,15 @@
 from django.contrib import admin
 
 from .models import (
+    Aluno,
+    AreaTFC,
     Competencia,
     Docente,
     EvidenciaMakingOf,
     Formacao,
     Licenciatura,
     MakingOf,
+    PalavraChaveTFC,
     Projeto,
     Tecnologia,
     TFC,
@@ -61,12 +64,57 @@ class ProjetoAdmin(admin.ModelAdmin):
     ordering = ("-data", "titulo")
 
 
+@admin.register(Aluno)
+class AlunoAdmin(admin.ModelAdmin):
+    list_display = ("nome", "numero")
+    search_fields = ("nome", "numero")
+    ordering = ("nome", "numero")
+
+
+@admin.register(AreaTFC)
+class AreaTFCAdmin(admin.ModelAdmin):
+    list_display = ("nome",)
+    search_fields = ("nome",)
+    ordering = ("nome",)
+
+
+@admin.register(PalavraChaveTFC)
+class PalavraChaveTFCAdmin(admin.ModelAdmin):
+    list_display = ("nome",)
+    search_fields = ("nome",)
+    ordering = ("nome",)
+
+
 @admin.register(TFC)
 class TFCAdmin(admin.ModelAdmin):
-    list_display = ("titulo", "estudante", "ano", "area", "interesse", "destaque")
-    list_filter = ("ano", "area", "interesse", "destaque")
-    search_fields = ("titulo", "resumo", "estudante", "area")
-    autocomplete_fields = ("orientadores",)
+    list_display = ("titulo", "estado", "ano", "email", "interesse", "destaque")
+    list_filter = (
+        "estado",
+        "ano",
+        "licenciaturas",
+        "areas",
+        "interesse",
+        "destaque",
+    )
+    search_fields = (
+        "titulo",
+        "resumo",
+        "email",
+        "alunos__nome",
+        "alunos__numero",
+        "orientadores__nome",
+        "areas__nome",
+        "palavras_chave__nome",
+        "tecnologias__nome",
+    )
+    autocomplete_fields = (
+        "alunos",
+        "orientadores",
+        "licenciaturas",
+        "areas",
+        "palavras_chave",
+        "tecnologias",
+    )
     ordering = ("-ano", "titulo")
 
 
