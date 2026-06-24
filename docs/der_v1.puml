@@ -1,0 +1,120 @@
+@startuml DER v1 — Versão inicial
+
+skinparam linetype ortho
+skinparam entity {
+  BackgroundColor #FFFDE7
+  BorderColor #F9A825
+  FontSize 13
+}
+skinparam arrow {
+  Color #555555
+}
+
+title DER v1 — Identificação inicial das entidades e relações
+
+entity Licenciatura {
+  * id
+  --
+  nome
+  sigla
+  codigo
+  duracao_semestres
+  ects
+  website
+  imagem
+}
+
+entity UnidadeCurricular {
+  * id
+  --
+  nome
+  codigo
+  ano
+  semestre
+  ects
+  imagem
+  descricao
+}
+
+entity Projeto {
+  * id
+  --
+  titulo
+  descricao
+  conceitos_aplicados
+  data
+  imagem
+  github_url
+  demo_url
+  video_url
+  destaque
+}
+
+entity Tecnologia {
+  * id
+  --
+  nome
+  categoria
+  descricao
+  logo
+  website
+  nivel
+  interesse
+}
+
+entity TFC {
+  * id
+  --
+  titulo
+  resumo
+  ano
+  estado
+  aluno
+  area
+  relatorio_url
+  imagem_url
+  interesse
+  destaque
+}
+
+entity Competencia {
+  * id
+  --
+  nome
+  categoria
+  descricao
+  nivel
+}
+
+entity Formacao {
+  * id
+  --
+  titulo
+  instituicao
+  tipo
+  data_inicio
+  data_fim
+  em_curso
+  descricao
+}
+
+entity MakingOf {
+  * id
+  --
+  titulo
+  data
+  fase
+  descricao
+  decisoes
+  erros
+  correcoes
+}
+
+Licenciatura ||--o{ UnidadeCurricular : "inclui"
+UnidadeCurricular }o--o{ Projeto : "enquadra"
+Projeto }o--o{ Tecnologia : "utiliza"
+Competencia }o--o{ Projeto : "demonstrada em"
+Competencia }o--o{ Tecnologia : "aplica"
+Formacao }o--o{ Competencia : "desenvolve"
+
+@enduml

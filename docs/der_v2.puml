@@ -1,0 +1,195 @@
+@startuml DER v2 — Versão revista
+
+skinparam linetype ortho
+skinparam entity {
+  BackgroundColor #E8F5E9
+  BorderColor #388E3C
+  FontSize 12
+}
+skinparam arrow {
+  Color #555555
+}
+
+title DER v2 — Após normalização: Docente, Aluno, entidades auxiliares de TFC e EvidenciaMakingOf
+
+entity Licenciatura {
+  * id
+  --
+  nome
+  sigla
+  codigo <<unique>>
+  duracao_semestres
+  ects
+  website
+  imagem
+  objetivos
+  competencias
+  saidas_profissionais
+  grau
+  modalidade
+  acreditacao
+}
+
+entity Docente {
+  * id
+  --
+  nome <<unique>>
+  email
+  pagina_pessoal
+  fotografia
+  ativo
+  grau
+  regime
+  codigo_funcionario <<unique>>
+}
+
+entity UnidadeCurricular {
+  * id
+  --
+  nome
+  codigo
+  ano
+  semestre
+  ects
+  imagem
+  programa
+  objetivos
+  avaliacao
+  horas_contacto
+  ano_letivo
+}
+
+entity Projeto {
+  * id
+  --
+  titulo
+  descricao
+  conceitos_aplicados
+  data
+  imagem
+  github_url
+  demo_url
+  video_url
+  destaque
+}
+
+entity Tecnologia {
+  * id
+  --
+  nome <<unique>>
+  categoria
+  descricao
+  logo
+  website
+  nivel
+  interesse
+}
+
+entity Aluno {
+  * id
+  --
+  nome
+  numero <<unique>>
+}
+
+entity AreaTFC {
+  * id
+  --
+  nome <<unique>>
+}
+
+entity PalavraChaveTFC {
+  * id
+  --
+  nome <<unique>>
+}
+
+entity TFC {
+  * id
+  --
+  titulo
+  resumo
+  ano
+  estado
+  email
+  parceria
+  relatorio_url
+  imagem_url
+  video_url
+  interesse
+  destaque
+}
+
+entity Competencia {
+  * id
+  --
+  nome <<unique>>
+  categoria
+  descricao
+  nivel
+}
+
+entity Formacao {
+  * id
+  --
+  titulo
+  instituicao
+  tipo
+  data_inicio
+  data_fim
+  em_curso
+  descricao
+  certificado
+  url
+}
+
+entity MakingOf {
+  * id
+  --
+  titulo
+  data
+  fase
+  descricao
+  decisoes
+  erros
+  correcoes
+  content_type (FK genérica)
+  object_id
+}
+
+entity EvidenciaMakingOf {
+  * id
+  --
+  imagem
+  legenda
+  ordem
+}
+
+' Licenciatura
+Licenciatura ||--o{ UnidadeCurricular : "inclui"
+Licenciatura }o--o{ Docente : "corpo docente"
+Licenciatura }o--o{ TFC : "associada a"
+
+' Docente
+Docente }o--o{ UnidadeCurricular : "leciona"
+Docente }o--o{ TFC : "orienta"
+
+' Projeto
+UnidadeCurricular }o--o{ Projeto : "enquadra"
+Projeto }o--o{ Tecnologia : "utiliza"
+
+' TFC
+TFC }o--o{ Aluno : "realizado por"
+TFC }o--o{ AreaTFC : "classifica"
+TFC }o--o{ PalavraChaveTFC : "indexada por"
+TFC }o--o{ Tecnologia : "usa"
+
+' Competencia
+Competencia }o--o{ Projeto : "demonstrada em"
+Competencia }o--o{ Tecnologia : "aplica"
+Formacao }o--o{ Competencia : "desenvolve"
+
+' MakingOf
+MakingOf ||--o{ EvidenciaMakingOf : "contém"
+
+@enduml

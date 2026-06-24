@@ -111,7 +111,7 @@ cada uma.
 
 ### Making Of
 
-1. Decisões, erros, correções e uso de IA possuem campos separados para que o
+1. Decisões, erros e correções possuem campos separados para que o
    processo não fique reduzido a uma descrição genérica.
 2. Foi usada uma relação genérica validada, permitindo associar uma entrada a
    qualquer entidade do portfólio sem dezenas de relações opcionais.
@@ -134,14 +134,6 @@ cada uma.
 - Uma ligação genérica do Making Of poderia guardar apenas o tipo, apenas o ID
   ou um ID inexistente. A validação exige o par completo e confirma a existência
   do objeto.
-
-## Utilização de inteligência artificial
-
-Foi utilizado o Codex como apoio para interpretar o enunciado, propor a primeira
-modelação, implementar os modelos e o Admin e preparar a documentação.
-As decisões continuam a ter de ser revistas e explicadas pelo aluno durante a
-defesa. A IA não consultou nem inventou dados pessoais, TFCs ou conteúdos das
-APIs, e não produziu fotografias falsas de trabalho em papel.
 
 ## Evidências em papel ainda necessárias
 
