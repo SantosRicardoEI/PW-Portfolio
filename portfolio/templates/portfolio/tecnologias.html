@@ -1,0 +1,21 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Tecnologias</h2>
+<section>
+    {% for tec in tecnologias %}
+    <article>
+        <header>
+            <h3>{{ tec.nome }}</h3>
+            <p>{{ tec.get_categoria_display }} | {{ tec.get_nivel_display }}</p>
+        </header>
+        {% if tec.descricao %}
+        <section>
+            <h4>Descrição</h4>
+            <ul><li>{{ tec.descricao }}</li></ul>
+        </section>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

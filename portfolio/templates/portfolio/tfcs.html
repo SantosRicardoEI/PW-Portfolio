@@ -1,0 +1,35 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>TFCs</h2>
+<section>
+    {% for tfc in tfcs %}
+    <article>
+        <header>
+            <h3>{{ tfc.titulo }}</h3>
+            <p>{{ tfc.ano }} | {{ tfc.get_estado_display }}</p>
+        </header>
+        <section>
+            <h4>Alunos</h4>
+            <ul>
+                {% for aluno in tfc.alunos.all %}
+                <li>{{ aluno }}</li>
+                {% empty %}
+                <li>Sem alunos registados</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h4>Orientadores</h4>
+            <ul>
+                {% for orientador in tfc.orientadores.all %}
+                <li>{{ orientador.nome }}</li>
+                {% empty %}
+                <li>Sem orientadores registados</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

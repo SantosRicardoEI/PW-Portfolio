@@ -1,0 +1,25 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Licenciaturas</h2>
+<section>
+    {% for lic in licenciaturas %}
+    <article>
+        <header>
+            <h3>{{ lic.sigla }} — {{ lic.nome }}</h3>
+            <p>{{ lic.grau }} | {{ lic.duracao_semestres }} semestres | {{ lic.ects }} ECTS</p>
+        </header>
+        <section>
+            <h4>Unidades Curriculares</h4>
+            <ul>
+                {% for uc in lic.unidades_curriculares.all %}
+                <li>{{ uc.nome }}</li>
+                {% empty %}
+                <li>Sem UCs registadas</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}
