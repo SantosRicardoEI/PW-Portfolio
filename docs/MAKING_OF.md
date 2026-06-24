@@ -154,3 +154,26 @@ Antes da submissão, desenhar e fotografar:
 
 Guardar os ficheiros reais em `media/makingof/` seguindo o guia dessa pasta e
 substituir esta secção por referências às fotografias adicionadas.
+
+## Evolução após análise do JSON de TFCs
+
+Ao analisar `data/tfcs.json`, a modelação inicial revelou-se insuficiente: um
+TFC pode possuir vários alunos, orientadores, cursos, áreas, palavras-chave e
+tecnologias. Os campos singulares de estudante e área foram por isso
+substituídos por relações muitos-para-muitos.
+
+Foram criadas as entidades `Aluno`, `AreaTFC` e `PalavraChaveTFC`. As entidades
+`Licenciatura`, `Docente` e `Tecnologia` foram reutilizadas, evitando guardar o
+mesmo nome repetidamente em cada TFC. Os atributos que não existem no JSON,
+como o website de uma tecnologia ou a página pessoal de um docente, passaram a
+poder ficar por completar no Admin em vez de receberem valores inventados.
+
+O email, o estado, a parceria e as ligações externas permanecem no próprio TFC
+porque caracterizam aquela ocorrência concreta. A parceria ficou em texto, uma
+vez que alguns valores do ficheiro agregam várias organizações e não existe uma
+separação suficientemente segura entre elas.
+
+O carregamento foi implementado com o ORM Django e dentro de uma transação. A
+combinação de título, ano e email identifica cada TFC, permitindo repetir o
+script sem criar duplicados. Uma nova execução atualiza os dados objetivos e as
+relações, mas preserva as classificações pessoais de interesse e destaque.
