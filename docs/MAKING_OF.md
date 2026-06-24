@@ -177,3 +177,36 @@ O carregamento foi implementado com o ORM Django e dentro de uma transação. A
 combinação de título, ano e email identifica cada TFC, permitindo repetir o
 script sem criar duplicados. Uma nova execução atualiza os dados objetivos e as
 relações, mas preserva as classificações pessoais de interesse e destaque.
+
+## Evolução após análise das APIs de curso e UCs
+
+As APIs académicas forneceram uma descrição geral de LEI, o plano com 31 UCs e
+o detalhe pedagógico de cada disciplina. A informação portuguesa foi integrada
+na aplicação e as respostas PT e ENG foram guardadas no repositório para manter
+os dados originais e permitir uma eventual utilização bilingue no futuro.
+
+O modelo `Licenciatura` passou a guardar objetivos, competências, saídas
+profissionais, condições de acesso, grau, área científica, modalidade e estado
+de acreditação. Foi também criada uma relação com os docentes apresentados pela
+API como pertencentes ao corpo docente do curso.
+
+O modelo `UnidadeCurricular` foi enriquecido com apresentação, objetivos,
+competências, programa, metodologia, avaliação, bibliografia, natureza, idioma,
+horas de contacto e ano letivo. O semestre passou de um número para as opções
+`S1`, `S2` e `A`, pois o Trabalho Final de Curso é anual. A imagem tornou-se
+opcional porque a API não fornece imagens; estas terão de ser adicionadas
+manualmente no Admin.
+
+A lista de 51 docentes do curso não indica quais lecionam cada UC. Por esse
+motivo, os docentes foram associados a LEI, mas não foram criadas relações
+UC–Docente sem evidência. As páginas pessoais também permanecem por completar,
+uma vez que não são fornecidas por estas APIs.
+
+### Erro encontrado e correção
+
+No primeiro carregamento, as horas de contacto chegaram da API como números de
+ponto flutuante. A representação binária introduziu casas decimais adicionais e
+foi rejeitada pelo `DecimalField`. Como o carregamento decorria numa transação,
+nada ficou parcialmente guardado. A correção consistiu em converter o valor
+para `Decimal` e quantizá-lo explicitamente para uma casa decimal antes de o
+entregar ao ORM.
