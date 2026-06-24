@@ -1,9 +1,14 @@
 .venv/
+venv/
 .claude/
 __pycache__/
 *.py[cod]
 .env
+.env.*
+!.env.example
 .DS_Store
 .coverage
 htmlcov/
-
+db.sqlite3
+dados.json
+staticfiles/

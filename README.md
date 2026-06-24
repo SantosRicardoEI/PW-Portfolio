@@ -12,24 +12,27 @@
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env
+python manage.py migrate
+python manage.py seed_ficha9_demo
+python manage.py createsuperuser
 ```
 
 ---
 
-## Executar
+## Executar localmente
 
-A base de dados (`db.sqlite3`) já está incluída com todos os dados carregados.
+Sem `DATABASE_URL` e credenciais Cloudinary, a aplicação usa automaticamente
+SQLite e a pasta local `media/`.
 
 ```bash
 python manage.py runserver
 ```
 
-Aceder ao painel de administração em [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
-
-| Campo      | Valor   |
-| ---------- | ------- |
-| Utilizador | `admin` |
-| Password   | `admin` |
+Aceder ao painel de administração em
+[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) com o superuser
+criado localmente. Nunca devem ser usadas credenciais de demonstração em
+produção.
 
 ---
 
@@ -50,3 +53,57 @@ python manage.py seed_ficha9_demo
 ```
 
 O comando não substitui passwords de utilizadores já existentes.
+
+---
+
+## Deploy cloud — Ficha 10
+
+A configuração é controlada por variáveis de ambiente. O ficheiro `.env` é
+local e nunca deve ser submetido ao Git; `.env.example` documenta apenas os
+nomes necessários.
+
+### PostgreSQL no Neon
+
+Antes de definir `DATABASE_URL`, exportar os dados do SQLite:
+
+```bash
+python manage.py dumpdata auth.user portfolio escola artigos \
+  --exclude artigos.likeartigo \
+  --natural-foreign --natural-primary --indent 2 \
+  --output dados.json
+```
+
+Depois de inserir no `.env` a connection string pooled do Neon:
+
+```bash
+python manage.py migrate
+python manage.py loaddata dados.json
+python manage.py changepassword admin
+python manage.py seed_ficha9_demo
+```
+
+`dados.json`, tokens mágicos, sessões e likes anónimos não são versionados.
+
+### Media no Cloudinary
+
+Inserir as três credenciais Cloudinary no `.env` e verificar primeiro os 14
+ficheiros atualmente associados aos modelos:
+
+```bash
+python manage.py migrate_media_cloudinary --dry-run
+python manage.py migrate_media_cloudinary
+```
+
+O segundo comando é idempotente: ignora ficheiros que já existam remotamente.
+
+### Static e produção
+
+Os ficheiros CSS e imagens fixas são recolhidos e servidos pelo WhiteNoise:
+
+```bash
+python manage.py collectstatic --noinput
+gunicorn project.wsgi
+```
+
+Em produção devem ser definidos `DEBUG=False`, uma `SECRET_KEY` forte,
+`ALLOWED_HOSTS`, `CSRF_TRUSTED_ORIGINS` e `SECURE_SSL_REDIRECT=True`.

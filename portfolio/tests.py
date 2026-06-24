@@ -1,6 +1,9 @@
 from datetime import date
+from io import StringIO
 
 from django.contrib.auth.models import Group, User
+from django.core.management import call_command
+from django.core.management.base import CommandError
 from django.test import TestCase
 from django.urls import reverse
 
@@ -107,3 +110,14 @@ class PortfolioPermissionsTests(TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertEqual('Novo Projeto' in response.content.decode(), visible)
             self.client.logout()
+
+    def test_raiz_redireciona_para_sobre(self):
+        self.assertRedirects(self.client.get('/'), reverse('sobre'))
+
+    def test_migracao_media_tem_dry_run_e_exige_cloudinary(self):
+        output = StringIO()
+        call_command('migrate_media_cloudinary', '--dry-run', stdout=output)
+        self.assertIn('Resumo:', output.getvalue())
+
+        with self.assertRaises(CommandError):
+            call_command('migrate_media_cloudinary')
