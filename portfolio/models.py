@@ -28,6 +28,19 @@ class Licenciatura(models.Model):
     )
     website = models.URLField(blank=True)
     imagem = models.ImageField(upload_to="licenciaturas/", blank=True)
+    objetivos = models.TextField(blank=True)
+    competencias = models.TextField(blank=True)
+    saidas_profissionais = models.TextField(blank=True)
+    condicoes_acesso = models.TextField(blank=True)
+    grau = models.CharField(max_length=100, blank=True)
+    area_cientifica = models.CharField(max_length=150, blank=True)
+    modalidade = models.CharField(max_length=100, blank=True)
+    acreditacao = models.CharField(max_length=100, blank=True)
+    docentes = models.ManyToManyField(
+        "Docente",
+        related_name="licenciaturas",
+        blank=True,
+    )
 
     class Meta:
         ordering = ["nome"]
@@ -49,6 +62,16 @@ class Docente(models.Model):
     )
     fotografia = models.ImageField(upload_to="docentes/", blank=True)
     ativo = models.BooleanField(default=True)
+    nome_completo = models.CharField(max_length=200, blank=True)
+    grau = models.CharField(max_length=100, blank=True)
+    regime = models.CharField(max_length=100, blank=True)
+    orcid = models.CharField(max_length=30, blank=True)
+    ciencia_vitae = models.CharField(max_length=30, blank=True)
+    codigo_funcionario = models.PositiveIntegerField(
+        blank=True,
+        null=True,
+        unique=True,
+    )
 
     class Meta:
         ordering = ["nome"]
@@ -61,6 +84,11 @@ class Docente(models.Model):
 
 class UnidadeCurricular(models.Model):
     """Unidade curricular pertencente a uma licenciatura."""
+
+    class Semestre(models.TextChoices):
+        PRIMEIRO = "S1", "1.º semestre"
+        SEGUNDO = "S2", "2.º semestre"
+        ANUAL = "A", "Anual"
 
     licenciatura = models.ForeignKey(
         Licenciatura,
@@ -77,16 +105,30 @@ class UnidadeCurricular(models.Model):
     ano = models.PositiveSmallIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(6)]
     )
-    semestre = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(2)]
-    )
+    semestre = models.CharField(max_length=2, choices=Semestre.choices)
     ects = models.DecimalField(
         max_digits=4,
         decimal_places=1,
         validators=[MinValueValidator(0.5)],
     )
-    descricao = models.TextField()
-    imagem = models.ImageField(upload_to="unidades_curriculares/")
+    descricao = models.TextField(blank=True)
+    imagem = models.ImageField(upload_to="unidades_curriculares/", blank=True)
+    ano_letivo = models.CharField(max_length=6, blank=True)
+    apresentacao = models.TextField(blank=True)
+    objetivos = models.TextField(blank=True)
+    competencias = models.TextField(blank=True)
+    programa = models.TextField(blank=True)
+    metodologia = models.TextField(blank=True)
+    avaliacao = models.TextField(blank=True)
+    bibliografia = models.TextField(blank=True)
+    natureza = models.CharField(max_length=100, blank=True)
+    idioma = models.CharField(max_length=100, blank=True)
+    horas_contacto = models.DecimalField(
+        max_digits=6,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
 
     class Meta:
         ordering = ["licenciatura", "ano", "semestre", "nome"]

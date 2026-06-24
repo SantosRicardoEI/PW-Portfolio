@@ -24,24 +24,59 @@ admin.site.index_title = "Gestão de conteúdos"
 
 @admin.register(Licenciatura)
 class LicenciaturaAdmin(admin.ModelAdmin):
-    list_display = ("nome", "sigla", "codigo", "duracao_semestres", "ects")
-    search_fields = ("nome", "sigla", "codigo", "descricao")
+    list_display = (
+        "nome",
+        "sigla",
+        "codigo",
+        "grau",
+        "duracao_semestres",
+        "ects",
+        "modalidade",
+    )
+    list_filter = ("grau", "modalidade", "acreditacao")
+    search_fields = (
+        "nome",
+        "sigla",
+        "codigo",
+        "descricao",
+        "objetivos",
+        "competencias",
+        "saidas_profissionais",
+    )
+    autocomplete_fields = ("docentes",)
     ordering = ("nome",)
 
 
 @admin.register(Docente)
 class DocenteAdmin(admin.ModelAdmin):
-    list_display = ("nome", "email", "ativo", "pagina_pessoal")
-    list_filter = ("ativo",)
-    search_fields = ("nome", "email")
+    list_display = ("nome", "grau", "regime", "email", "ativo", "pagina_pessoal")
+    list_filter = ("grau", "regime", "ativo")
+    search_fields = ("nome", "nome_completo", "email", "orcid", "ciencia_vitae")
     ordering = ("nome",)
 
 
 @admin.register(UnidadeCurricular)
 class UnidadeCurricularAdmin(admin.ModelAdmin):
-    list_display = ("nome", "codigo", "licenciatura", "ano", "semestre", "ects")
-    list_filter = ("licenciatura", "ano", "semestre")
-    search_fields = ("nome", "codigo", "descricao")
+    list_display = (
+        "nome",
+        "codigo",
+        "licenciatura",
+        "ano",
+        "semestre",
+        "ects",
+        "ano_letivo",
+    )
+    list_filter = ("licenciatura", "ano", "semestre", "ano_letivo", "natureza")
+    search_fields = (
+        "nome",
+        "codigo",
+        "descricao",
+        "apresentacao",
+        "objetivos",
+        "competencias",
+        "programa",
+        "bibliografia",
+    )
     autocomplete_fields = ("licenciatura", "docentes")
     ordering = ("licenciatura", "ano", "semestre", "nome")
 
