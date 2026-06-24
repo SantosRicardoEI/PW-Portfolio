@@ -1,0 +1,15 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Criar Conta</h2>
+<section>
+    <article>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Registar</button>
+            <a href="{% url 'login' %}">Já tenho conta</a>
+        </form>
+    </article>
+</section>
+{% endblock %}

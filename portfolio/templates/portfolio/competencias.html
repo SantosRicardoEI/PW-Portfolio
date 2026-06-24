@@ -2,16 +2,20 @@
 
 {% block content %}
 <h2>Competências</h2>
+{% if is_gestor %}
 <a href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+{% endif %}
 <section>
     {% for comp in competencias %}
     <article>
         <header>
             <h3>{{ comp.nome }}</h3>
+            {% if is_gestor %}
             <div class="acoes">
                 <a href="{% url 'competencia_editar' comp.id %}">Editar</a>
                 <a href="{% url 'competencia_apagar' comp.id %}">Apagar</a>
             </div>
+            {% endif %}
             <p>{{ comp.get_categoria_display }} | {{ comp.get_nivel_display }}</p>
         </header>
         <section>

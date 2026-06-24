@@ -19,6 +19,15 @@
             <a href="{% url 'competencias' %}">Competências</a>
             <a href="{% url 'formacoes' %}">Formações</a>
             <a href="{% url 'sobre' %}">Sobre</a>
+            <a href="{% url 'artigos_lista' %}">Artigos</a>
+        </nav>
+        <nav>
+            {% if request.user.is_authenticated %}
+                <span>{{ request.user.username }}</span>
+                <a href="{% url 'logout' %}">Sair</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
         </nav>
     </header>
     <main>

@@ -2,16 +2,20 @@
 
 {% block content %}
 <h2>Tecnologias</h2>
+{% if is_gestor %}
 <a href="{% url 'tecnologia_criar' %}">+ Nova Tecnologia</a>
+{% endif %}
 <section>
     {% for tec in tecnologias %}
     <article>
         <header>
             <h3>{{ tec.nome }}</h3>
+            {% if is_gestor %}
             <div class="acoes">
                 <a href="{% url 'tecnologia_editar' tec.id %}">Editar</a>
                 <a href="{% url 'tecnologia_apagar' tec.id %}">Apagar</a>
             </div>
+            {% endif %}
             {% if tec.categoria or tec.nivel %}
             <p>{% if tec.categoria %}{{ tec.get_categoria_display }}{% endif %}{% if tec.categoria and tec.nivel %} | {% endif %}{% if tec.nivel %}{{ tec.get_nivel_display }}{% endif %}</p>
             {% endif %}

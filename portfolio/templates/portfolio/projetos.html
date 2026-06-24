@@ -2,16 +2,20 @@
 
 {% block content %}
 <h2>Projetos</h2>
+{% if is_gestor %}
 <a href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+{% endif %}
 <section>
     {% for projeto in projetos %}
     <article>
         <header>
             <h3>{{ projeto.titulo }}</h3>
+            {% if is_gestor %}
             <div class="acoes">
                 <a href="{% url 'projeto_editar' projeto.id %}">Editar</a>
                 <a href="{% url 'projeto_apagar' projeto.id %}">Apagar</a>
             </div>
+            {% endif %}
             <p>{{ projeto.data }}</p>
         </header>
         <section>

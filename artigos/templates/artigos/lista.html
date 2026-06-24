@@ -1,0 +1,88 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .artigo { border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; margin-bottom: 20px; background: #fff; }
+    .artigo-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .artigo-autor { font-weight: 600; }
+    .artigo-data { color: #9ca3af; font-size: 13px; }
+    .artigo-acoes { margin-left: auto; display: flex; gap: 6px; }
+    .artigo-acoes a { font-size: 12px; padding: 3px 10px; border-radius: 6px; background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; text-decoration: none; }
+    .artigo-acoes a.apagar { color: #dc2626; border-color: #fca5a5; background: #fff5f5; }
+    .artigo-texto { margin-bottom: 12px; white-space: pre-wrap; }
+    .artigo-foto { max-width: 100%; border-radius: 8px; margin-bottom: 12px; display: block; }
+    .artigo-link a { color: #2563eb; }
+    .artigo-rodape { display: flex; align-items: center; gap: 16px; border-top: 1px solid #f3f4f6; padding-top: 10px; margin-top: 10px; }
+    .btn-like { background: none; border: 1px solid #d1d5db; border-radius: 6px; padding: 4px 12px; cursor: pointer; color: #374151; font-size: 13px; }
+    .btn-like.liked { background: #fef9c3; border-color: #fde047; color: #92400e; }
+    .comentarios { margin-top: 14px; }
+    .comentario { background: #f9fafb; border-radius: 6px; padding: 8px 12px; margin-bottom: 6px; font-size: 14px; }
+    .comentario-autor { font-weight: 600; margin-right: 6px; }
+    .comentario-form { display: flex; gap: 8px; margin-top: 8px; }
+    .comentario-form input[type=text] { flex: 1; border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 10px; font-size: 14px; }
+</style>
+
+<h2>Artigos</h2>
+
+{% if request.user.is_authenticated %}
+    <p><a href="{% url 'artigo_criar' %}">+ Novo artigo</a></p>
+{% endif %}
+
+{% for artigo in artigos %}
+<div class="artigo">
+    <div class="artigo-header">
+        <span class="artigo-autor">{{ artigo.autor.username }}</span>
+        <span class="artigo-data">{{ artigo.criado_em }}</span>
+        {% if request.user == artigo.autor %}
+        <div class="artigo-acoes">
+            <a href="{% url 'artigo_editar' artigo.id %}">Editar</a>
+            <a href="{% url 'artigo_apagar' artigo.id %}" class="apagar">Apagar</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="artigo-texto">{{ artigo.texto }}</div>
+
+    {% if artigo.fotografia %}
+        <img class="artigo-foto" src="{{ artigo.fotografia.url }}" alt="fotografia">
+    {% endif %}
+
+    {% if artigo.link_externo %}
+        <div class="artigo-link"><a href="{{ artigo.link_externo }}" target="_blank">{{ artigo.link_externo }}</a></div>
+    {% endif %}
+
+    <div class="artigo-rodape">
+        {% if request.user.is_authenticated %}
+        <form method="post" action="{% url 'artigo_like' artigo.id %}" style="margin:0">
+            {% csrf_token %}
+            <button type="submit" class="btn-like {% if request.user in artigo.likes.all %}liked{% endif %}">
+                ❤ {{ artigo.likes.count }}
+            </button>
+        </form>
+        {% else %}
+        <span>❤ {{ artigo.likes.count }}</span>
+        {% endif %}
+        <span style="color:#9ca3af;font-size:13px">{{ artigo.comentarios.count }} comentário(s)</span>
+    </div>
+
+    <div class="comentarios">
+        {% for c in artigo.comentarios.all %}
+        <div class="comentario">
+            <span class="comentario-autor">{{ c.autor.username }}</span>{{ c.texto }}
+        </div>
+        {% endfor %}
+
+        {% if request.user.is_authenticated %}
+        <form method="post" action="{% url 'comentario_criar' artigo.id %}" class="comentario-form">
+            {% csrf_token %}
+            <input type="text" name="texto" placeholder="Escreve um comentário...">
+            <button type="submit">Enviar</button>
+        </form>
+        {% endif %}
+    </div>
+</div>
+{% empty %}
+<p>Ainda não há artigos.</p>
+{% endfor %}
+{% endblock %}

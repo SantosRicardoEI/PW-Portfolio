@@ -2,16 +2,20 @@
 
 {% block content %}
 <h2>Formações</h2>
+{% if is_gestor %}
 <a href="{% url 'formacao_criar' %}">+ Nova Formação</a>
+{% endif %}
 <section>
     {% for formacao in formacoes %}
     <article>
         <header>
             <h3>{{ formacao.titulo }}</h3>
+            {% if is_gestor %}
             <div class="acoes">
                 <a href="{% url 'formacao_editar' formacao.id %}">Editar</a>
                 <a href="{% url 'formacao_apagar' formacao.id %}">Apagar</a>
             </div>
+            {% endif %}
             <p>{{ formacao.instituicao }} | {{ formacao.get_tipo_display }}</p>
         </header>
         <section>
