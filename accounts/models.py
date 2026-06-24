@@ -16,4 +16,6 @@ class MagicLinkToken(models.Model):
 
     @classmethod
     def criar(cls, email):
+        email = email.strip().lower()
+        cls.objects.filter(email__iexact=email, usado=False).update(usado=True)
         return cls.objects.create(email=email, token=secrets.token_urlsafe(32))

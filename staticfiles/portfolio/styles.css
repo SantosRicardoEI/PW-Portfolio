@@ -25,6 +25,17 @@ nav a {
 }
 nav a:hover { color: white; }
 
+.logout-form { display: inline; }
+.logout-form button {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #aaa;
+    font: inherit;
+    cursor: pointer;
+}
+.logout-form button:hover { color: white; }
+
 main {
     max-width: 900px;
     margin: 40px auto;

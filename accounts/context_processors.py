@@ -1,6 +1,10 @@
 def is_gestor(request):
-    gestor = (
-        request.user.is_authenticated
-        and request.user.groups.filter(name='gestor-portfolio').exists()
+    authenticated = request.user.is_authenticated
+    superuser = authenticated and request.user.is_superuser
+    gestor = authenticated and (
+        superuser or request.user.groups.filter(name='gestor-portfolio').exists()
     )
-    return {'is_gestor': gestor}
+    autor = authenticated and (
+        superuser or request.user.groups.filter(name='autores').exists()
+    )
+    return {'is_gestor': gestor, 'is_autor': autor}

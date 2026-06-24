@@ -10,8 +10,9 @@
         <form method="post">
             {% csrf_token %}
             <p>
-                <label>Email</label>
-                <input type="email" name="email" required autofocus>
+                {{ form.email.label_tag }}
+                {{ form.email }}
+                {{ form.email.errors }}
             </p>
             <button type="submit">Enviar link</button>
             <a href="{% url 'login' %}">Voltar ao login</a>

@@ -25,7 +25,7 @@
 
 <h2>Artigos</h2>
 
-{% if request.user.is_authenticated %}
+{% if is_autor %}
     <p><a href="{% url 'artigo_criar' %}">+ Novo artigo</a></p>
 {% endif %}
 
@@ -34,11 +34,13 @@
     <div class="artigo-header">
         <span class="artigo-autor">{{ artigo.autor.username }}</span>
         <span class="artigo-data">{{ artigo.criado_em }}</span>
-        {% if request.user == artigo.autor %}
+        {% if is_autor %}
+        {% if request.user == artigo.autor or request.user.is_superuser %}
         <div class="artigo-acoes">
             <a href="{% url 'artigo_editar' artigo.id %}">Editar</a>
             <a href="{% url 'artigo_apagar' artigo.id %}" class="apagar">Apagar</a>
         </div>
+        {% endif %}
         {% endif %}
     </div>
 
@@ -53,16 +55,12 @@
     {% endif %}
 
     <div class="artigo-rodape">
-        {% if request.user.is_authenticated %}
         <form method="post" action="{% url 'artigo_like' artigo.id %}" style="margin:0">
             {% csrf_token %}
-            <button type="submit" class="btn-like {% if request.user in artigo.likes.all %}liked{% endif %}">
-                ❤ {{ artigo.likes.count }}
+            <button type="submit" class="btn-like {% if artigo.gostado_pelo_visitante %}liked{% endif %}">
+                ❤ {{ artigo.total_likes }}
             </button>
         </form>
-        {% else %}
-        <span>❤ {{ artigo.likes.count }}</span>
-        {% endif %}
         <span style="color:#9ca3af;font-size:13px">{{ artigo.comentarios.count }} comentário(s)</span>
     </div>
 
