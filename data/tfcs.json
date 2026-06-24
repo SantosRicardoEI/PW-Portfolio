@@ -1,0 +1,3529 @@
+[
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Aplicação Escolar Flexível e Personalizável",
+    "alunos": [
+      "Tamim Mohamed Ali(21908541)",
+      "Boshra Alalou(21908515)"
+    ],
+    "orientadores": [
+      "Rui Santos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "tamim.b.m.ali@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_G2227_Aplica%C3%A7%C3%A3o_Escolar_Flex%C3%ADvel_e_Personaliz%C3%A1vel_AL9rlAl.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/logo_lye0zRy.png",
+    "video_url": "https://www.youtube.com/embed/qOfUzPJNz2Y?start=28&feature=oembed",
+    "resumo": "Este projeto apresenta o desenvolvimento de uma aplicação escolar multiplataforma, concebida para instituições de ensino portuguesas. A solução, desenvolvida em Flutter 3.38.9 com backend Supabase (PostgreSQL relacional com Row-Level Security) e Firebase Cloud Messaging para notificações push, aborda o problema da fragmentação digital nas escolas — onde pais, professores e alunos navegam entre múltiplas plataformas desconexas (Inovar, Teams, Email) para acompanhar a vida escolar. A aplicação encontra-se deployed em produção e foi validada com testes end-to-end automatizados contra a instância live do Supabase. A aplicação suporta quatro perfis de utilizador (administradores, professores, encarregados de educação e alunos) e implementa 39 módulos funcionais organizados numa arquitetura feature-first com state management baseado em Riverpod: gestão de turmas, trabalhos de casa, sumários, presenças, avaliações (incluindo SpeedGrade), calendário, notícias, apoio privado, galeria multimédia, documentos, comportamento, cafetaria, finanças, cartão de estudante, manuais escolares, mensagens, contactos, perfil e configurações, entre outros. A arquitetura modular permite futura adaptação a múltiplas escolas. Evolução face à 1ª entrega: A migração do backend de Firebase (NoSQL) para Supabase (PostgreSQL relacional com Row-Level Security) foi a alteração arquitetural mais significativa, justificada pela necessidade de integridade relacional nos dados escolares e segurança ao nível da base de dados. O state management migrou de Provider para Riverpod, proporcionando type safety e melhor testabilidade. O projeto conta atualmente com 3.085 casos de teste automatizados (unitários, widget e integração) — 3.072 executados com sucesso (100% de pass rate), 13 condicionalmente ignorados e 0 falhas —, complementados por 240 testes end-to-end Playwright (100%) executados contra a aplicação web deployed, 449 métodos protegidos por error handling centralizado, 260 elementos de acessibilidade Semantics em 113 ecrãs, e conformidade RGPD com consentimento parental e exportação de dados. Palavras-chave: Gestão Escolar, Flutter, Supabase, PostgreSQL, Firebase, Riverpod, Educação Digital, Multiplataforma, RGPD, Testes Automatizados",
+    "palavras_chave": [
+      "Firebase",
+      "Flutter",
+      "Gestão Escolar",
+      "Multiplataforma",
+      "RGPD."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "Segurança Informática",
+      "Tecnologia e Desenvolvimento de Software",
+      "educação."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "APIs Rest",
+      "Android",
+      "Bases de Dados",
+      "CSS",
+      "Dart",
+      "Docker",
+      "Firebase",
+      "Flutter",
+      "Git",
+      "HTML",
+      "JavaScript",
+      "Node.js",
+      "PostGreSQL",
+      "RGPD",
+      "Typescript",
+      "iOS."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Blockchain para Saúde Pública – HEALCOIN",
+    "alunos": [
+      "22304590",
+      "A22301183"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "SmileStep.Foundation",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "nelson10almeida@outlook.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/HealCoin_TFC_Relatorio_Intercalar_2o_Semestre.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2026-04-12_182504.png",
+    "video_url": "https://www.youtube.com/embed/xTEE8QW2OXM?feature=oembed",
+    "resumo": "Este relatório apresenta o projeto HEALCOIN, desenvolvido em parceria com a empresa médica promotora Hotsmile Lda (NIF 515401285) para responder ao subfinanciamento do tratamento do Pé Diabético em Portugal. A solução propõe uma arquitetura técnica híbrida assente em tecnologia blockchain de Camada 2 (Layer 2), fundamental para reduzir custos operacionais e viabilizar economicamente as micro-doações, superando as limitações de escalabilidade das redes base. Para além de garantir a rastreabilidade auditável dos fundos, o sistema inova ao introduzir um modelo de tokenomics que recompensa a educação e intervenção médica. O documento detalha a engenharia de requisitos e a arquitetura do sistema, validando a viabilidade da aplicação de tecnologias descentralizadas na saúde pública.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Blockchain para confiabilidade",
+      "Doações."
+    ],
+    "areas": [
+      "Management",
+      "Segurança Informática",
+      "Segurança e Controlo",
+      "Tecnologia e Desenvolvimento de Software",
+      "modelação de dados."
+    ],
+    "tecnologias": [
+      "APIs Rest",
+      "Angular",
+      "CSS",
+      "Docker",
+      "HTML",
+      "Node.js",
+      "PostgreSQL",
+      "Postman",
+      "Tailwind CSS",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "BudgetBreak",
+    "alunos": [
+      "Bernardo Jerónimo (A22402766)",
+      "Henrique Marçalo (A22302483)"
+    ],
+    "orientadores": [
+      "Pedro Perdigão"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "bernardoantjeronimo@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/G2212-BudgetBreak.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/landingPage.png",
+    "video_url": "https://www.youtube.com/embed/27k59n8-hTc?feature=oembed",
+    "resumo": "O presente Trabalho Final de Curso descreve uma plataforma de planeamento de viagens, BudgetBreak, que permite aos utilizadores criar automaticamente pacotes de voo e alojamento ajustados ao seu orçamento pré-definido. No contexto atual do turismo digital, marcado por um elevado volume de informação, diversidade de opções e crescente exigência de personalização, os utilizadores enfrentam desafios significativos na organização eficiente das suas viagens, nomeadamente em manter-se dentro do orçamento e potencializar o equilíbrio entre custo e qualidade. A BudgetBreak propõe uma abordagem diferenciadora, invertendo o paradigma tradicional de decisão, permitindo que o orçamento seja o ponto de partida para a seleção de destinos e serviços. A plataforma oferece recomendações personalizadas, recorrendo a um motor de Inteligência Artificial (LLMs) capaz de interpretar as preferências semânticas do utilizador num contexto controlado, gerando sugestões que respeitam rigorosamente os critérios financeiros. Adicionalmente, inclui funcionalidades inovadoras, como o modo “Randomizer”, que sugere destinos inesperados e promove experiências de descoberta enriquecedoras. O projeto evidencia relevância prática e académica, ao preencher uma lacuna existente no mercado de planeamento turístico, combinando eficiência operacional, acessibilidade e experiência de utilização intuitiva. Esta, por um lado, contribui para a democratização do acesso a viagens personalizadas, permitindo escolhas mais conscientes, otimizadas e alinhadas com os interesses do utilizador, com potencial impacto positivo no setor do turismo digital. Em termos de conceção e implementação, a plataforma foi projetada para validar um MVP funcional, centrando-se na integração de dados externos, na lógica de recomendação e na experiência do utilizador, garantindo aplicabilidade em contextos reais. A solução distingue-se das existentes pelo foco no orçamento como ponto de partida, personalização, descoberta e simplicidade de utilização, oferecendo uma proposta inovadora e única no mercado.",
+    "palavras_chave": [
+      "Arquitetura back-end",
+      "Desenvolvimento frontend",
+      "Itinerários Personalizáveis",
+      "Otimização",
+      "Planeamento de Itinerários",
+      "Plataforma inovadora",
+      "Turismo",
+      "Viagem."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Inovação",
+      "Management",
+      "empresarial",
+      "modelação de dados",
+      "turismo."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Docker",
+      "Git",
+      "IA",
+      "JSON",
+      "LLM",
+      "Maven",
+      "Next.js",
+      "PostgreSQL",
+      "Spring Boot (Java)",
+      "Tailwind CSS."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Building a Digital Hub for the CGI Innovation Lab",
+    "alunos": [
+      "Afonso Carrapiço(22301916)",
+      "Duarte Almeida(22303647)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "afonso.carrapico10@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2202_Building_a_Digital_Hub_for_the_CGI_Innovation_Lab.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_lOdzvgH.png",
+    "video_url": "https://www.youtube.com/embed/GYPhsTfH2Oo?feature=oembed",
+    "resumo": "Este Trabalho Final de Curso apresenta o desenvolvimento do Front-End para o Digital Hub do CGI Innovation Lab, uma plataforma digital criada para complementar o espaço físico do laboratório de inovação existente na Universidade Lusófona, em parceria com a CGI. O Digital Hub constitui um ecossistema digital integrado que reúne num único ambiente diversas áreas funcionais relacionadas com a atividade do laboratório. A plataforma inclui um hub de oportunidades, onde são divulgados eventos, formações e projetos disponíveis; uma área de perfis de estudantes, que permite apresentar competências, interesses e disponibilidade; um sistema de candidaturas e correspondência de equipas, que facilita a formação de grupos de trabalho; e espaços virtuais colaborativos, destinados à comunicação e gestão de projetos em curso. Além disso, a solução incorpora um painel administrativo, através do qual é possível monitorizar a participação, o desempenho e o impacto das iniciativas com base em indicadores de desempenho (KPIs), como o número de estudantes envolvidos, projetos ativos ou taxa de participação em eventos. O projeto materializa, assim, a transição do CGI Innovation Lab para um formato híbrido – físico e digital – promovendo uma ligação contínua entre estudantes, docentes e profissionais e fortalecendo o papel da universidade enquanto núcleo de inovação e colaboração interdisciplinar.",
+    "palavras_chave": [
+      "Colaboração",
+      "Inovação",
+      "Plataforma Web",
+      "Transformação Digital."
+    ],
+    "areas": [
+      "Inovação",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Angular",
+      "CSS",
+      "HTML",
+      "Maven",
+      "PostgreSQL",
+      "Spring Boot (Java)",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "CityRoutes",
+    "alunos": [
+      "Tomás Silva(22207322)",
+      "Tiago Machado(A22306644)"
+    ],
+    "orientadores": [
+      "Fernando Angelino",
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "thomazo2004@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/RelatorioTFCSegundaEntrega.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_2026-04-12_230644098.png",
+    "video_url": "https://www.youtube.com/embed/MlqmhXtY2QA?feature=oembed",
+    "resumo": "Este Trabalho Final de Curso consiste no desenvolvimento de uma aplicação móvel orientada à exploração urbana, que disponibiliza rotas locais temáticas e pontos de interesse contextualizados, integrando simultaneamente uma rede social que promove a interação entre utilizadores. A aplicação destina-se tanto a turistas como a residentes que pretendem descobrir ou redescobrir a cidade de forma simples, personalizada e participativa, recorrendo a percursos curtos, filtros temáticos e conteúdos multimédia associados a cada ponto de interesse. O projeto abrange todo o ciclo de desenvolvimento de software, desde a análise do problema e estudo de soluções existentes, passando pela definição de requisitos funcionais e não funcionais, conceção de protótipos de interface e modelação do sistema, até à implementação de um protótipo funcional. A georreferenciação é um elemento central da solução, permitindo localizar o utilizador em tempo real e apresentar rotas e pontos de interesse com base na sua posição geográfica. Paralelamente, é realizado um inquérito de pertinência e viabilidade que permite avaliar o interesse do público-alvo, bem como uma análise de benchmarking que compara a solução proposta com aplicações de referência no domínio do turismo e das rotas colaborativas. Um dos principais focos do trabalho é garantir uma experiência de utilização intuitiva e envolvente, combinando navegação em mapa com funcionalidades sociais como partilha de fotografias, comentários e criação de rotas pelos próprios utilizadores. Com esta proposta, pretende-se não só apoiar a descoberta de novos locais e a valorização do património urbano, mas também fomentar a criação de comunidades em torno da exploração local, contribuindo para uma utilização mais rica e socialmente conectada das cidades.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Redes Sociais",
+      "Turismo."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "turismo."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Firebase",
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Cozy Music Studios: Modo Zero",
+    "alunos": [
+      "Pedro Fonseca"
+    ],
+    "orientadores": [
+      "Pedro Perdigão"
+    ],
+    "parceria": "Cozy Music Studios",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "pedrofonsecacontacto@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Cozy_Music_Studios_Modo_Zero-_TFC_RELAT%C3%93RIO_-_2%C2%BA_Entrega_Intrecalar_-_a22304461.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/modozero.png",
+    "video_url": "https://www.youtube.com/embed/RUxVbECmvRs?feature=oembed",
+    "resumo": "Este Trabalho Final de Curso tem como objetivo o desenvolvimento de uma plataforma web para a empresa Cozy Music Studios, um conjunto de três estúdios de gravação musical com elevada procura, e que atualmente estão a expandir 1 sala de reuniões que pode ser alugada e uma sala de eventos que também pode ser alugada. O projeto de nome Modo Zero, consiste no aluger destas duas salas e a gestão toda das mesmas, mas que atualmente não possuem uma presença digital estruturada. A ausência de um website funcional limita a divulgação das suas instalações, portefólio e serviços, bem como a gestão eficiente das marcações, que até agora é feita de forma pouco organizada através de redes sociais e mensagens diretas. A solução proposta consiste na criação de um website responsivo e intuitivo, que centraliza a informação essencial sobre os dois espaços (fotografias, equipamentos, pessoas associadas e serviços) e disponibiliza um sistema de marcações online com um sistema de gestão de contratos integrado. Este sistema permitirá aos clientes marcarem e alugarem os espaços de forma prática e transparente, ao mesmo tempo que simplifica a gestão interna das marcações para os administradores. O projeto foi pensado como um TFC aplicacional, tendo como principais objetivos: resolver um problema real identificado no setor criativo, aplicar metodologias de engenharia informática na conceção e implementação da solução, e disponibilizar um produto funcional, testado e em condições de ser utilizado em ambiente de produção. Espera-se que a implementação desta plataforma contribua para a profissionalização da presença digital do Modo Zero, otimize os seus processos internos e aumente a satisfação e fidelização dos clientes.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Base de Dados."
+    ],
+    "areas": [
+      "Informatica & Logistica",
+      "Música."
+    ],
+    "tecnologias": [
+      "CSS",
+      "Django",
+      "HTML",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Data Science na Gestão Eficiente de Sistemas de Abastecimento de Água",
+    "alunos": [
+      "João Rocha, 22303390"
+    ],
+    "orientadores": [
+      "Maria Almeida Silva"
+    ],
+    "parceria": "Laboratório Nacional de Engenharia Civil",
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "joaorochinha287@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Trabalho_TFC__Segunda_entrega_Feito_terminado.docx.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/gaant.chart_11_04.png",
+    "video_url": null,
+    "resumo": "O estudo analisa os fatores que influenciam a água não faturada nos sistemas de abastecimento de água, com o foco nas perdas reais que representam a principal componente deste indicador e um desafio relevante para as entidades gestoras. A metodologia inclui processamento e validação dos dados do Relatório Anual dos Serviços de Água e Resíduos de Portugal, análise exploratória para identificação de padrões e relações, avaliação do desempenho global dos sistemas e teste dos métodos propostos para verificar robustez e capacidade preditiva. Os resultados visam aprofundar a compreensão dos determinantes da água não faturada e apoiar a estimativa dos indicadores em entidades com informação incompleta, contribuindo para a identificação de ineficiências estruturais e para a otimização da gestão dos sistemas de abastecimento. Palavras-chave: Água não faturada; Machine learning; Modelos preditivos; Perdas reais",
+    "palavras_chave": [
+      "Machine Learning",
+      "Modelos Preditivos."
+    ],
+    "areas": [
+      "Análise de dados",
+      "Artificial Intelligence",
+      "Ciência de Dados",
+      "Ciência de Dados e Inteligência Artificial",
+      "Fundamentos de Ciência de Dados",
+      "Introdução à Teoria de Grafos e Redes",
+      "Probabilidades e Estatística."
+    ],
+    "tecnologias": [
+      "Google Drive",
+      "Matplotlib",
+      "NumPy",
+      "Pandas",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Deteção Automática de Hipérboles em Radar GPR",
+    "alunos": [
+      "Diogo Jorge"
+    ],
+    "orientadores": [
+      "Houda Harkat",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática",
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "diogofpaj03@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC___Diogo_7.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/1.55.png",
+    "video_url": "https://www.youtube.com/embed/t_oyDv9vfEU?feature=oembed",
+    "resumo": "O presente trabalho propõe um sistema automático de deteção de hipérboles em radargramas GPR, utilizando extração de características através da Transformada de Radon e CSP, seguida de classificação com SVM. A abordagem permite distinguir regiões com e sem alvos relevantes mesmo em dados ruidosos. Os resultados preliminares demonstram a viabilidade do método, evidenciando potencial para automatizar a interpretação de dados GPR.",
+    "palavras_chave": [
+      "Análise de Dados."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Ciência de Dados e Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Digital Hub Backend Implementation for the CGI Innovation Lab",
+    "alunos": [
+      "Rodrigo Dias(A22308758)",
+      "Vlad Prisacaru(A22308793)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rodrigo.dias.portugal@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2210_Digital_Hub_Backend_Implementation_for_the_CGI_Innovation_Lab.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/logo_cgi.png",
+    "video_url": "https://www.youtube.com/embed/Z64wRhsqfl8?feature=oembed",
+    "resumo": "This Final Degree Project describes the development of the Backend for the Digital Hub of the CGI Innovation Lab, a digital platform designed to complement the physical space of the innovation laboratory at Universidade Lusófona, in partnership with CGI. The Digital Hub operates as an integrated digital ecosystem, bringing together various functional areas of the laboratory in a single environment. The platform offers an opportunities hub, where events, training sessions, and projects are shared; a student profiles section, allowing the presentation of skills, interests, and availability; a team application and matchmaking system, which facilitates the formation of workgroups; and collaborative virtual spaces, intended for communication and management of ongoing projects. Additionally, the solution includes an administrative dashboard, which allows monitoring of participation, performance, and the impact of initiatives based on key performance indicators (KPIs), such as the number of students involved, active projects, and other participation metrics. In this way, the project realizes the transformation of the CGI Innovation Lab into a hybrid model — both physical and digital — promoting continuous interaction among students, faculty, and professionals, while strengthening the university’s role as a center for innovation and interdisciplinary collaboration.",
+    "palavras_chave": [
+      "Colaboração",
+      "Gestão de projetos",
+      "Inovação",
+      "Plataforma Web",
+      "Transformação Digital."
+    ],
+    "areas": [
+      "Gestão",
+      "Inovação."
+    ],
+    "tecnologias": [
+      "APIs Rest",
+      "Bases de Dados",
+      "JSON",
+      "Java",
+      "PostgreSQL",
+      "REST",
+      "Spring Boot (Java)",
+      "Web",
+      "XML."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "EcoDoar",
+    "alunos": [
+      "A22208651",
+      "Bruno Henriques"
+    ],
+    "orientadores": [
+      "Luis A. Gomes"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "a22208651@alunos.ulht.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relat%C3%B3rioTFCBrunoHenriquesa22208651_2Entrega.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/EcoDoar.jpg",
+    "video_url": "https://www.youtube.com/embed/cDc6P5KF_SY?feature=oembed",
+    "resumo": "O projeto EcoDoar consiste no desenvolvimento de uma plataforma digital que promove a economia circular através da doação e reutilização de bens essenciais, como alimentos, vestuário, material escolar, brinquedos e mobiliário. A iniciativa nasceu na Escola 2,3 n.º 2 de Elvas, no âmbito do projeto “Nós e os Outros” e do Clube de Ciência Viva, sendo implementada em parceria com a Cruz Vermelha de Elvas e a Get2C. A plataforma tem como principal objetivo combater a pobreza e a exclusão social, facilitando o processo de doação e incentivando a solidariedade entre a comunidade. O sistema permite que doadores e beneficiários interajam de forma segura e transparente, com registo, validação e acompanhamento de pedidos. Além disso, a aplicação inclui um sistema de pontos e recompensas, podcasts educativos e conteúdos de sensibilização ambiental. O TFC consiste no desenvolvimento e implementação desta plataforma web e móvel, com backend em Django, frontend em React e base de dados MySQL, garantindo segurança HTTPS e funcionamento em ambiente de produção. O projeto pretende atingir um produto final completo e operacional, com potencial para ser replicado e escalado para outros municípios, garantindo assim impacto social real e mensurável. Além disso, contribui ativamente para os Objetivos de Desenvolvimento Sustentável (ODS) das Nações Unidas, nomeadamente no combate à pobreza, erradicação da fome, promoção da igualdade e incentivo a padrões de consumo e produção sustentáveis.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Back-End",
+      "Doações",
+      "Docker",
+      "Front-End",
+      "MySQL",
+      "Python",
+      "React",
+      "Sustentabilidade."
+    ],
+    "areas": [
+      "Gestão",
+      "Informatica & Logistica",
+      "Sustentabilidade."
+    ],
+    "tecnologias": [
+      "APIs Rest",
+      "Docker",
+      "Microsoft Visual Studio",
+      "MySQL",
+      "Python",
+      "React."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Geração automática de testes de avaliação usando Large Language Models",
+    "alunos": [
+      "Rodrigo Pereira"
+    ],
+    "orientadores": [
+      "Bruno Cipriano",
+      "Rodrigo Correia"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rodrigo-pereira1999@hotmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_TFC_Rodrigo_Pereira_22301147.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Pagina_Inicial_TFC.png",
+    "video_url": "https://www.youtube.com/embed/f7yWAL-x5FA?feature=oembed",
+    "resumo": "Este trabalho final de curso investiga o uso de Modelos de Linguagem de Grande Escala (LLM) para apoiar docentes na geração de mini testes de programação a partir de exemplos de treino previamente utilizados em unidades curriculares como Fundamentos de Programação, Algoritmia e Estruturas de Dados e Linguagens de Programação II. A criação manual e recorrente destes mini testes é uma tarefa demorada, que exige consistência pedagógica, diversidade de enunciados e alinhamento com mecanismos de avaliação automática. O objetivo principal consiste na conceção e implementação de uma aplicação desktop em Java que permite ao utilizador selecionar uma pasta com exemplos de treino, onde cada exemplo inclui um ficheiro de enunciado, implementações de referência e testes unitários em Java. A aplicação lê e agrega estes artefactos, constrói um pedido em formato JSON e envia-o, via HTTP, para um LLM escolhido pelo utilizador, solicitando a geração de novas versões de exercícios. As respostas do modelo são devolvidas também em formato JSON, contendo novos enunciados, implementações de referência e testes unitários, sendo posteriormente apresentadas ao utilizador. Prevê-se, em fases futuras, a persistência automática destes resultados em disco e a integração com plataformas externas, como repositórios GitHub e recursos multimodais. Neste relatório intercalar descrevem-se o enquadramento, os objetivos, os requisitos, a modelação e a arquitetura da solução, bem como o protótipo atualmente implementado. Na próxima fase, pretende-se aprofundar os testes funcionais e conduzir uma avaliação pedagógica com docentes, analisando a qualidade, variedade e coerência das versões geradas para apoiar o desenvolvimento de materiais de avaliação em programação. Palavras-chave: LLM, Geração automática de testes, ensino de programação, Java, avaliação automática, Geração Procedimental de Conteúdos",
+    "palavras_chave": [
+      "Geração Procedimental de Conteúdos",
+      "JSON",
+      "Java",
+      "LLM."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Geração Procedimental de Conteúdo."
+    ],
+    "tecnologias": [
+      "Java",
+      "LLM."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Gestão da qualidade de implementação de user stories",
+    "alunos": [
+      "André Guimarães (A22204198)",
+      "Afonso Lopes (A22204080)"
+    ],
+    "orientadores": [
+      "José Cascais Brás",
+      "Luis A. Gomes"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "afonso.abrantes.lopes@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_TFC_UST_Back-end_Andre_guimaraes_Afonso_Lopes_ot1rwOr.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/CGI_Group_logo.svg.png",
+    "video_url": null,
+    "resumo": "O projeto \" Gestão da qualidade de implementação de user stories\" é um sistema backend desenvolvido em Python/FastAPI que avalia automaticamente submissões de código de estudantes face a User Stories e Critérios de Aceitação. Integra a API do Groq (modelo LLaMA) como motor de avaliação, devolvendo pontuação, sumário e sugestões de melhoria, e conecta-se ao Azure DevOps/Repos para obter o código diretamente dos repositórios dos alunos. O sistema também avalia a qualidade das próprias User Stories com base em critérios INVEST e formato Given/When/Then, devolvendo um rating (Muito bom / Bom / Satisfatório / Mau). Foi desenvolvido para a CGI Portugal no âmbito do TFC do DEISI, com backend deployed no Render.",
+    "palavras_chave": [
+      "Python."
+    ],
+    "areas": [
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Python",
+      "SQLite."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Gestão da qualidade de implementação de user stories Grupo 2 (a22401473 + a22407143)",
+    "alunos": [
+      "Laércio Santos",
+      "Letizia Nunes"
+    ],
+    "orientadores": [
+      "José Cascais Brás",
+      "Luis A. Gomes"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "laercio.santos@cgi.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/gest%C3%A3o_da_qualidade_de_implementa%C3%A7%C3%A3o_de_User_Stories_-_Letizia_Nunes_La%C3%A9rcio_Santo_J2AEjqD.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/noswb.jpeg",
+    "video_url": "https://www.youtube.com/embed/C5ES5mpUE6Q?feature=oembed",
+    "resumo": "DevLens is a web tool that evaluates the quality of software User Story implementations.",
+    "palavras_chave": [
+      "Agile",
+      "Aplicação Web",
+      "Automação",
+      "Azure",
+      "Base de Dados",
+      "Desenvolvimento Web",
+      "Gestão",
+      "Gestão de Recursos",
+      "Informática",
+      "Integração",
+      "Trabalho Final de Curso (TFC), plataforma, gestão, docentes, discentes."
+    ],
+    "areas": [
+      "Gestão",
+      "Next.js."
+    ],
+    "tecnologias": [
+      "HTML",
+      "JSON",
+      "Next.js",
+      "Postman",
+      "SQL."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "IEquus- Raio-X",
+    "alunos": [
+      "Matilde Rodrigues (22306236)"
+    ],
+    "orientadores": [
+      "Daniel Fernandes",
+      "João Pedro Carvalho"
+    ],
+    "parceria": "Hospital Veterinário de Equinos de Santo Estêvão",
+    "cursos": [
+      "Licenciatura em Computação e Matemática Aplicada"
+    ],
+    "ano": 2026,
+    "email": "matilde.g.f.rodrigues@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2166_I-Equus-Raio-x.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_2026-04-12_194859627.png",
+    "video_url": "https://www.youtube.com/embed/Aga81RoAcM8?feature=oembed",
+    "resumo": "Com os avanços tecnológicos na área da medicina veterinária, emergiu a oportunidade de desenvolver aplicações móveis destinadas a otimizar o processo de monitorização de animais. No seguimento do desenvolvimento da aplicação iEquus num Trabalho Final de Curso anterior, identificou-se a necessidade de integrar uma funcionalidade que, a partir de uma imagem de um membro de um cavalo, fosse capaz de entregar a correspondente imagem radiográfica do mesmo membro, mantendo o mesmo ângulo de captação. O presente trabalho propõe uma pipeline de visão computacional para a classificação de imagens de membros de cavalos, recorrendo ao fine-tuning de modelos de deep learning pré-treinados disponíveis nas bibliotecas PyTorch, timm e Transformers. Foram testadas 15 arquiteturas, e a seleção do modelo mais adequado baseou-se nas métricas de accuracy, precision, recall, F1-score e a matriz de confusão.",
+    "palavras_chave": [
+      "Deep learning",
+      "Hospital Veterinário da Universidade Lusófona,",
+      "Tecnologia."
+    ],
+    "areas": [
+      "Ciência de Dados e Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Deep learning",
+      "PyTorch",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "ImoFix Budget",
+    "alunos": [
+      "Gonçalo Soares(22306242)",
+      "Pedro Marta(22302806)"
+    ],
+    "orientadores": [
+      "Duarte Neves",
+      "Lúcio Studer"
+    ],
+    "parceria": "Autentifuturo Restauros – Unipessoal Lda",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "a22306242@alunos.ulht.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2213_ImoFix_Budget.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2026-04-12_234032.png",
+    "video_url": "https://www.youtube.com/embed/X1wHLr70EsM?feature=oembed",
+    "resumo": "Este relatório descreve o desenvolvimento inicial da ImoFix Budget, uma aplicação web destinada a automatizar e padronizar o processo de elaboração de orçamentos no setor das remodelações. A solução suporta três perfis de utilizador: cliente final, empresa e administrador. Do lado do cliente final, a aplicação disponibiliza um formulário simplificado onde o utilizador seleciona o tipo de projeto (ex.: cozinha, casa de banho, sala, casa inteira, jardim), indica o número de divisões/quartos, escolhe a gama de acabamento (básico, médio, premium) e seleciona funcionalidades extras (iluminação, aquecimento, automação). O cliente não escolhe materiais específicos; apenas define a gama de qualidade e a localização do imóvel para ajuste regional dos custos. Após preencher o formulário, o cliente obtém imediatamente uma estimativa do orçamento, incluindo valores mínimos, médios e máximos, detalhados por categorias. Do lado da empresa – backoffice – a plataforma permite parametrizar o comportamento do formulário (serviços disponíveis, gamas ativadas, extras, regiões de atuação e multiplicadores regionais) e visualizar todos os orçamentos gerados pelos clientes, possibilitando acompanhamento, análise e gestão eficiente dos pedidos. Inicialmente, a solução será usada apenas pela empresa do projeto, mas o modelo conceptual prevê escalabilidade para suportar múltiplas empresas no futuro. O motor de estimativa calcula valores detalhados por categorias (gama de materiais, mão de obra), aplica ajustes por região, permite comparação de níveis de acabamento e recalcula automaticamente ao alterar os dados do projeto. A aplicação inclui ainda histórico de projetos e a capacidade de exportar o orçamento em PDF, garantindo rastreabilidade e facilidade de comunicação. Este relatório apresenta a análise de necessidades, a especificação funcional e a modelação inicial da solução, bem como os passos previstos para a implementação do protótipo, demonstrando como a ImoFix Budget integra usabilidade, automação e gestão eficiente no setor das remodelações. ImoFix Budget, Orçamentos, Remodelações, Cliente final, Empresa, Formulário simplificado, Motor de cálculo, Backoffice, Gestão de pedidos, Estimativa imediata, Exportação PDF",
+    "palavras_chave": [
+      "BackOffice",
+      "Clientes",
+      "Empresas",
+      "Gestão de pedidos",
+      "Imobiliário."
+    ],
+    "areas": [
+      "Imobiliário",
+      "Next.js",
+      "empresarial",
+      "gestão."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Bases de Dados",
+      "ChatGPT/Bart",
+      "Google Drive",
+      "IA",
+      "JSON",
+      "Java",
+      "LLM",
+      "Maven",
+      "Microsoft Visual Studio",
+      "Next.js",
+      "OpenAI",
+      "PostGreSQL",
+      "Postman",
+      "React",
+      "Spring Boot (Java)",
+      "UML",
+      "Windows."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Implementação de sistemas CRM/ERP e o seu impacto na eficiência dos processos de negócio",
+    "alunos": [
+      "Filipe Palma(A22402827)",
+      "Frederico Santos(A22402902)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "filipepalma9@hotmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2161_Implementa%C3%A7%C3%A3o_de_Sistemas_ERP_e_o_seu_Impacto_na_Efici%C3%AAncia_dos_Processo_HZHGHBp.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/image_2026-04-12_205344871.png",
+    "video_url": "https://www.youtube.com/embed/lH5eGfaAi4k?feature=oembed",
+    "resumo": "Com o aumento da digitalização dos processos empresariais, as organizações têm adotado sistemas integrados de gestão, como Customer Relationship Management e Enterprise Resource Planning, com o objetivo de melhorar a eficiência no uso dos dados organizacionais. Estes sistemas permitem centralizar e otimizar a informação, promovendo maior eficiência operacional. Este trabalho visa estudar, configurar e implementar um sistema CRM/ERP adaptado à realidade de uma organização, com foco principal na implementação de um ERP voltado para a automatização de processos internos, tais como onboarding, planeamento de formações, gestão de aniversários e eventos. O projeto inicia-se com uma fase de análise, onde são identificados os fluxos de trabalho existentes e as principais necessidades e ineficiências da organização. Em seguida, os fluxos são representados visualmente utilizando ferramentas de Business Process Management. A implementação inclui a configuração de módulos de gestão de recursos humanos, tarefas e comunicações internas, além da integração de dados entre departamentos, permitindo consolidar informações dispersas e promover uma visão centralizada das operações. Por fim, realiza-se uma análise comparativa entre o cenário anterior e posterior à implementação, destacando os benefícios alcançados, a melhoria no uso da informação e a maior coordenação entre departamentos. O trabalho evidencia, assim, o impacto positivo da adoção de sistemas CRM/ERP na modernização e transformação digital das organizações.",
+    "palavras_chave": [
+      "Automação de processos",
+      "CRM",
+      "Controlo de processos",
+      "ERP",
+      "Eficiência no processo",
+      "Integração",
+      "Recursos Humanos",
+      "Transformação Digital."
+    ],
+    "areas": [
+      "Gestão",
+      "Recursos Humanos",
+      "Segurança e Controlo",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "Git",
+      "Odoo",
+      "PostgreSQL",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Implementação de sistemas CRM/ERP e o seu impacto na eficiência dos processos de negócio",
+    "alunos": [
+      "Tomás Pica(A22302587)",
+      "Rafael Martins(22308006)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "tomasp2424@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2176_implementacao_de_sistemas_crm_entrega_intercalar_2.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_cgi_logo.png",
+    "video_url": "https://www.youtube.com/embed/brRmroy2lVI?feature=oembed",
+    "resumo": "Neste Trabalho Final de Curso (TFC), iremos desenvolver um sistema de Customer Relationship Management (CRM), enquanto documentamos todo o processo, cujo objetivo principal serve para apoiar a gestão de clientes e oportunidades de negócio da CGI. Para esta solução, propomos otimizar o processo comercial, centralizando a informação, automatizando tarefas e facilitando o acompanhamento de todo o ciclo de vendas, desde a identificação de leads até à fase de negociação e fecho de contratos. De forma a implementar este sistema, vamos recorrer à plataforma Odoo e construir a o sistema através de módulos com elevada capacidade de personalização, complementada pelo desenvolvimento de componentes específicos em Python. Com este trabalho, pretendemos demonstrar a importância da utilização de tecnologias open source na modernização de processos empresariais, evidenciando o contributo das soluções de CRM para a melhoria da produtividade e apoio à tomada de decisão nas organizações.",
+    "palavras_chave": [
+      "Agile",
+      "Base de Dados",
+      "CRM",
+      "Odoo",
+      "Python",
+      "Visual Studio",
+      "organizações",
+      "plataforma."
+    ],
+    "areas": [
+      "Informatica & Logistica",
+      "Management",
+      "Tecnologia da Informação",
+      "empresarial",
+      "modelação de dados."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "Git",
+      "Microsoft Visual Studio",
+      "Odoo",
+      "PostGreSQL",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Industrialização e Conformidade nos Projetos de SI",
+    "alunos": [
+      "Alessandra Oliveira (A22309068)",
+      "Jéssica Pires (A22303954)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática",
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "je.trincheiras@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2175_Industrializa%C3%A7%C3%A3o_e_Conformidade_nos_Projetos_de_SI.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2026-04-12_142254.png",
+    "video_url": "https://www.youtube.com/embed/IAHkaJeA8kM?feature=oembed",
+    "resumo": "A INDUS App é uma proposta de plataforma interna para a CGI Portugal, concebida com o objetivo de apoiar a avaliação da maturidade de industrialização dos projetos. Esta avaliação baseia-se no cálculo de um score, construído a partir da implementação de diferentes práticas, ferramentas e aceleradores definidos pela organização. Antes do desenvolvimento desta solução, o processo de cálculo do scoring era realizado manualmente em folhas de Excel, o que tornava a análise mais demorada e sujeita a inconsistências. Nesse contexto, surge a necessidade de automatizar e estruturar este processo. O presente trabalho tem como principal objetivo analisar o modelo de scoring utilizado, anteriormente implementado em Excel, procurando identificar limitações e oportunidades de melhoria. Pretende-se, assim, compreender se os critérios considerados refletem adequadamente o nível de maturidade dos projetos e de que forma influenciam o resultado final. Com base nessa análise, será proposta a implementação de um sistema automatizado, a INDUS App, que incorpora um motor de cálculo responsável por aplicar a seguinte fórmula: (Soma dos Scores Implementados / Soma dos Scores Aplicáveis) × 10 O objetivo final passa por tornar o processo de avaliação mais consistente, claro e eficiente, contribuindo para um melhor apoio à gestão e acompanhamento dos projetos.",
+    "palavras_chave": [
+      "Gestão de Projetos."
+    ],
+    "areas": [
+      "Gestão."
+    ],
+    "tecnologias": [
+      "Microsoft Office SharePoint Server",
+      "PowerBI."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Interface Inteligente para Gestão de Projetos AMS",
+    "alunos": [
+      "Raúl Beijinho(22306554)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI TI Portugal",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "raulbeijinho108@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2158_-_Interface_Inteligente_para_Gest%C3%A3o_de_Projetos_AMS_Front-End.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/login.png",
+    "video_url": "https://www.youtube.com/embed/8gzIvkXRSvY?feature=oembed",
+    "resumo": "O presente Trabalho Final de Curso consiste no desenvolvimento de uma interface inteligente para gestão de serviços AMS (Application Management Services), realizado em colaboração com a CGI Portugal. O objetivo principal é criar uma solução que apoie as equipas de operação na gestão contínua de aplicações, automatizando tarefas críticas, centralizando informação operacional e permitindo decisões mais rápidas e fundamentadas. A solução global está organizada em três áreas: Grupo 1, responsável pelo backend e oper‐ ações; Grupo 2, que desenvolve a interface web e o Backend for Frontend (BFF); e Grupo 3, que implementa o motor de inteligência artificial e sistemas de recomendação. Este trabalho insere‐ se no Grupo 2, cuja responsabilidade é criar uma interface interativa e eficiente, garantindo a comunicação transparente com os serviços do Grupo 1 e os módulos inteligentes do Grupo 3. A interface tem como objetivo proporcionar ao utilizador uma experiência clara e orientada, permitindo executar tarefas fundamentais como triagem de incidentes, preenchimento assistido de formulários, criação de drafts de conhecimento (KB e Runbooks), análise de cobertura e inter‐ ação com um assistente inteligente que apresenta respostas fundamentadas com citações de da‐ dos reais. Inclui também um Intake Wizard adaptativo, baseado na lógica de Next‐Best‐Question (NBQ), que recolhe informação essencial sobre aplicações e perfis de utilização, ajustando dinami‐ camente o fluxo com base nas recomendações do Grupo 3. Do ponto de vista técnico, o frontend é desenvolvido em React, garantindo acessibilidade se‐ gundo as normas WCAG 2.2 AA, responsividade, suporte a internacionalização (EN/PT) e uma navegação otimizada para utilizadores de operações AMS. O BFF atua como camada de abstração, expondo endpoints estáveis, gerindo autenticação e telemetria, e assegurando a ligação transpar‐ ente entre a interface e os sistemas externos. Este relatório apresenta a visão geral da solução, os requisitos funcionais e não funcionais, a arquitetura proposta e os modelos que fundamentam o projeto. Além disso, define o plano de trabalho, as tecnologias selecionadas e os protótipos iniciais da interface, que servirão de base para a implementação do MVP.",
+    "palavras_chave": [
+      "API",
+      "Agile",
+      "Dashboard",
+      "Desenvolvimento Web",
+      "End-to-end",
+      "Endpoints RESTful",
+      "Engenharia Informática",
+      "Framework",
+      "Front-End",
+      "Gestão da Informação",
+      "IA",
+      "Integração",
+      "Interface do Utilizador",
+      "JSON",
+      "Login",
+      "Machine Learning",
+      "Plataforma Web",
+      "Questionário."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "Management",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Next.js",
+      "Node.js",
+      "OAuth",
+      "React.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Web."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Longe, com tudo",
+    "alunos": [
+      "Filipe Lau(22301329)",
+      "Bernardo Pinheiro(2239)"
+    ],
+    "orientadores": [
+      "Fernando Angelino",
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "filipemiguel1234@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2143_LongeComTudo.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/TFCimage.png",
+    "video_url": "https://www.youtube.com/embed/Q6qRmlFFcH0?feature=oembed",
+    "resumo": "O projeto “Longe, com Tudo” consiste no desenvolvimento de uma aplicação móvel destinada a pessoas que vivem em zonas rurais ou isoladas e que apresentam baixa literacia digital. A solução tem como objetivo facilitar o acesso a bens essenciais, permitindo que o utilizador realize compras, consulte produtos, faça pedidos de medicamentos e obtenha apoio de forma simples e intuitiva. A aplicação estrutura-se em três módulos principais, correspondentes aos três perfis de utilizador: Cliente, Entregador e Fornecedor. O módulo de cliente inclui navegação simplificada, exploração de lojas e farmácias, gestão de carrinho, checkout, rastreamento de encomenda, histórico de compras e centro de ajuda. O módulo de entregador cobre a gestão de pedidos disponíveis, navegação GPS para recolha e entrega, confirmação de entregas e histórico de atividade. O módulo de fornecedor abrange a gestão da loja, catálogo de produtos, stock, pedidos recebidos e análise de vendas. Todo o desenho funcional foi orientado para reduzir a complexidade e tornar o uso acessível a públicos vulneráveis, focando-se em ações rápidas, visuais e de baixo esforço cognitivo. Atualmente, o projeto encontra-se numa fase inicial de especificação, onde foram definidos requisitos funcionais e não funcionais, casos de uso, estrutura de dados e componentes principais. Embora ainda não exista implementação, o planeamento prevê o desenvolvimento futuro de um protótipo funcional (MVP) que permita validar a utilidade e a usabilidade da solução junto do público-alvo.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Dart",
+      "Dispositivos Móveis",
+      "Firebase",
+      "Flutter."
+    ],
+    "areas": [
+      "Computação Móvel."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Firebase",
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Melhorar o Drop Project Student Plugin + GPT",
+    "alunos": [
+      "Afonso Castelhano(A22303665)"
+    ],
+    "orientadores": [
+      "Bruno Cipriano",
+      "Rodrigo Correia"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "afonsocastelhano@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/relat%C3%B3rio-entrega2-draft6.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2026-04-12_230049.png",
+    "video_url": null,
+    "resumo": "Este TFC tem como objetivo o desenvolvimento e melhoria de um plugin adicional para o Drop Project, destinado a integrar capacidades de assistência inteligente através de modelos de IA conversacional. O plugin original permitia enviar para o ChatGPT o feedback gerado pelo Drop Project e receber respostas orientadas à correção de código, incluindo a disponibilização de um botão para copiar o código sugerido pela IA. Contudo, devido a alterações nas chaves e mecanismos de autenticação da API da OpenAI, o plugin encontra-se atualmente inoperacional. No âmbito deste trabalho, propõe-se: 1. Restabelecer o funcionamento do plugin, atualizando a comunicação com a API da OpenAI e garantindo o correto envio e receção de mensagens; 2. Implementar um conjunto de melhorias de usabilidade, incluindo a reorganização das configurações do plugin e outras funcionalidades que tornem a interação mais simples e intuitiva; 3. Melhorar a experiência de utilização durante a interação com respostas geradas pelos modelos de IA, incluindo mecanismos mais claros e eficientes para lidar com diferentes tipos de conteúdo apresentados; 4. Expandir o plugin para suportar outros modelos de IA, possibilitando a comunicação com diferentes provedores para além do ChatGPT. Com estas melhorias, o projeto visa tornar o plugin mais flexível, robusto e útil para estudantes e docentes, integrando a assistência por IA de forma mais eficiente no processo de desenvolvimento e correção automática de código.",
+    "palavras_chave": [
+      "Drop Project",
+      "Plugins."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Computação Gráfica",
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Java",
+      "JavaScript",
+      "Kotlin",
+      "XML."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Motor de IA para Avaliação de Continuidade e Gestão da Mudança em projetos Application Management Services (AMS)",
+    "alunos": [
+      "Amir Ajij (A22304529)",
+      "Dhiren Lalitcumar (A22303499)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI Portugal",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "amir.ajij00@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2159_-_Motor_de_IA_para_Avalia%C3%A7%C3%A3o_de_Continuidade_e_Gest%C3%A3o_da_Mudan%C3%A7a_em_proj_Mq1cl75.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/MOTOR-IA.png",
+    "video_url": "https://www.youtube.com/embed/2h9vumX9O74?feature=oembed",
+    "resumo": "Este trabalho visa desenvolver um motor de inteligência artificial para automatizar e padronizar a avaliação de projetos de Application Management Services (AMS) na CGI. A solução consome respostas normalizadas e sinais operacionais, e disponibiliza uma camada de inteligência via API REST para: selecionar a Next‑Best Question (NBQ) de forma determinística, calcular o Continuity Score (0–100) com breakdown e constraints, calcular o Change Risk (0–100) com drivers e guardrails/mitigações, estimar sizing em FTE (P10/P50/P90) com pressupostos e gerar recomendações priorizadas para um plano de ação de 90 dias. Para garantir rastreabilidade, reprodutibilidade e auditabilidade, o motor versiona políticas e inclui policyVersion em todas as respostas, assegurando que os mesmos inputs sob a mesma policyVersion geram outputs idênticos, suportando explicabilidade através de breakdowns e drivers. A implementação é orientada a integração (contratos JSON/OpenAPI), performance e observabilidade, permitindo adoção gradual com supervisão humana no processo de decisão. Palavras-chave: Inteligência Artificial, Next‑Best Question, Continuity Score, Change Risk, Recomendações 90 dias, Determinismo, Versionamento de Políticas, API REST",
+    "palavras_chave": [
+      "API",
+      "Empresas",
+      "Gestão de Projetos",
+      "Inovação",
+      "Inteligência Artificial",
+      "Machine Learning",
+      "Python",
+      "Soluções administrativas e operacionais",
+      "Transformação Digital."
+    ],
+    "areas": [
+      "Inovação",
+      "Inteligência Artificial",
+      "LLM-Based Clustering of Text Documents",
+      "Management."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Django",
+      "Docker",
+      "Git",
+      "HTTP Webservices",
+      "LLM",
+      "Machine Learning",
+      "PostGreSQL",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "NVOZES",
+    "alunos": [
+      "André Cunha"
+    ],
+    "orientadores": [
+      "Lucio studer",
+      "Martim Mourão"
+    ],
+    "parceria": "NVOZES",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "amrcunha1@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2179_NVOZES.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_lp.png",
+    "video_url": "https://www.youtube.com/embed/Umr2ZhVUWro?feature=oembed",
+    "resumo": "O presente Trabalho Final de Curso tem como objetivo o desenvolvimento de uma plataforma digital destinada a conectar jovens empreendedores da Comunidade dos Países de Língua Portuguesa (CPLP) a uma rede de investidores, empresas e instituições interessadas em apoiar iniciativas inovadoras. A solução visa responder à necessidade crescente de criar um espaço digital centralizado que promova a colaboração, a capacitação e o acesso a oportunidades de financiamento no universo lusófono. A plataforma encontra-se atualmente operacional e disponível através do link https://www.nvozes.com. A plataforma permitirá que jovens empreendedores submetam os seus projetos através de perfis detalhados, contendo informações como objetivos, plano de negócio, necessidades de financiamento, área de atuação e impacto esperado. Paralelamente, os investidores poderão criar perfis próprios, indicando áreas de interesse, tipos de apoio disponíveis e localização geográfica, facilitando a criação de correspondências relevantes através de um sistema de matching. O desenvolvimento baseia-se numa abordagem iterativa e centrada no utilizador, integrando funcionalidades como gestão de perfis, submissão estruturada de projetos, validação administrativa, visualização pública de iniciativas e mecanismos automatizados de recomendação. Espera-se que a plataforma contribua para fortalecer a cooperação entre jovens da CPLP, promover o empreendedorismo e criar oportunidades económicas e sociais.",
+    "palavras_chave": [
+      "Empreendedorismo",
+      "Inovação",
+      "Plataforma Web",
+      "Projetos."
+    ],
+    "areas": [
+      "Next.js."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Bases de Dados",
+      "Docker",
+      "Git",
+      "HTML",
+      "JSON",
+      "Next.js",
+      "OAuth",
+      "PostgreSQL",
+      "Postman",
+      "Programação",
+      "REST",
+      "React.js",
+      "SQL",
+      "Tailwind CSS",
+      "UML",
+      "Web",
+      "api."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Otimização e Quantização de SLM para Gestão Documental",
+    "alunos": [
+      "Bernardo Gouveia"
+    ],
+    "orientadores": [
+      "Daniel Silveira"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "bernardoggouveia@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_segunda_entrega_a22204317.zip",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2026-04-12_235230.png",
+    "video_url": "https://www.youtube.com/embed/m_RBaJVjEyI?feature=oembed",
+    "resumo": "A motivação deste projeto surge da necessidade crescente de melhorar a integração entre ferramentas de desenvolvimento e plataformas de comunicação utilizadas em contextos empresariais. Atualmente, muitas equipas dependem simultaneamente do GitLab para gestão de código e do Microsoft Teams para comunicação, mas a falta de integração entre ambos origina processos fragmentados, duplicação de tarefas e perda de eficiência. O problema identificado é a ausência de uma solução sólida que permita sincronizar atividades, tarefas e eventos entre o GitLab e o Microsoft Teams, comprometendo a visibilidade dos projetos e a fluidez de trabalho. A inexistência de mecanismos inteligentes de apoio à decisão ou de análise automática agrava ainda mais esta lacuna, deixando as equipas sem ferramentas que potenciem a automação e a eficiência. A solução proposta é o desenvolvimento do sistema SprintLab, constituído por um middleware e por um plugin para o Microsoft Teams, que permite sincronização bidirecional de issues, tarefas, labels, gráficos e eventos, oferecendo ainda visualizações como quadros Kanban e gráficos de Gantt diretamente no Teams. Além disso, o projeto integra dois novos objetivos fundamentais: Desenvolvimento de um IA Chatbox, que permitirá aos utilizadores interagir com o SprintLab por linguagem natural, facilitando a consulta de informação, a criação de tarefas e a obtenção de recomendações inteligentes. Geração automática de relatórios através de IA, permitindo produzir sumários de sprint, métricas de desempenho, evolução de tarefas e documentação técnica sem intervenção manual, garantindo maior rapidez, precisão e consistência. Com esta solução completa, o SprintLab pretende aumentar a produtividade das equipas, centralizar informação crítica, reduzir erros, promover a automatização de processos e melhorar significativamente a colaboração no contexto de desenvolvimento de software.",
+    "palavras_chave": [
+      "API",
+      "Agile",
+      "Alunos",
+      "Análise de Dados",
+      "Análise de Desempenho",
+      "Análise de negócio",
+      "Análises Inteligentes",
+      "Desenvolvimento backend",
+      "Desenvolvimento de Software",
+      "Gestão de Empresas",
+      "Gestão de Recursos",
+      "Gestão de Sistemas de Informação",
+      "Gestão de conteúdo",
+      "GitLab",
+      "IA",
+      "Informática",
+      "Infraestrutura",
+      "Inovação",
+      "JavaScript",
+      "LLM",
+      "Machine Learning",
+      "Machine Learning em tempo real",
+      "Melhoria da Qualidade de Vida",
+      "Microsoft Teams",
+      "Plugins",
+      "Python",
+      "Recolha de dados.",
+      "Sistemas automatizados",
+      "Sistemas de Gestão Documental",
+      "Sistemas de informação",
+      "Software",
+      "Trabalho",
+      "Trabalho Final de Curso (TFC)",
+      "TypeScript."
+    ],
+    "areas": [
+      "Análise de dados",
+      "Artificial Intelligence",
+      "Ciência de Dados e Inteligência Artificial",
+      "Informatica & Logistica",
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Git",
+      "HTML",
+      "HTTP Webservices",
+      "IA",
+      "JSON",
+      "Java",
+      "JavaScript",
+      "Ollama",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "PieceSwap",
+    "alunos": [
+      "Rodrigo Santos",
+      "Lourenço Luís"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rodrigomacsantos25@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/PieceSwap_Relat%C3%B3rio_Segunda_Entrega.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/h5S7422.png",
+    "video_url": "https://www.youtube.com/embed/_sMsUA-1mTY?feature=oembed",
+    "resumo": "PieceSwap é um marketplace comunitário onde entusiastas de LEGO podem comprar, vender e trocar peças e sets. Com um sistema de economia virtual (SwapCoins), swipe-to-trade, gamificação e chat em tempo real.",
+    "palavras_chave": [
+      "Desenvolvimento frontend",
+      "Front-End",
+      "Node.js",
+      "React",
+      "SQL",
+      "TypeScript."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Inteligência Artificial",
+      "Next.js."
+    ],
+    "tecnologias": [
+      "OAuth",
+      "PostgreSQL",
+      "React",
+      "Tailwind CSS",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Plataforma Digital para Gestão de Clínicas de Medicinas Alternativas",
+    "alunos": [
+      "Vicente Gama",
+      "A22306216"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "vicentepgama9@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Relatorio2.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_2026-04-11_135645221.png",
+    "video_url": "https://www.youtube.com/embed/DlTO1Sx63b8?feature=oembed",
+    "resumo": "Este relatório apresenta o desenvolvimento e a definição dos requisitos para uma plataforma digital de gestão de clínicas de terapêuticas não convencionais, a ser realizada em colaboração com a Escola de Saúde do IPLuso. O projeto tem como objetivo conceber um sistema em ambiente Cloud que permita organizar e melhorar os processos clínicos, incluindo a gestão de consultas, registos clínicos, prescrições de suplementos fitoterapêuticos, vigilância sanitária e integração com software de faturação certificado. Através de análise comparativa de plataformas existentes e de reuniões com profissionais da área, foi possível identificar necessidades específicas das práticas de medicina alternativa e delinear uma solução tecnológica robusta, segura e adaptada à realidade destas clínicas. O relatório apresenta também o levantamento de requisitos, o mapeamento dos processos e as funcionalidades essenciais que deverão orientar o desenvolvimento futuro da plataforma.",
+    "palavras_chave": [
+      "Aplicação Web."
+    ],
+    "areas": [
+      "Gestão",
+      "Management",
+      "Recursos Humanos",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "OpenAI",
+      "React",
+      "SQL",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Pullu",
+    "alunos": [
+      "Pedro Santiago(22303437)"
+    ],
+    "orientadores": [
+      "Rui Santos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "pedrogtsantiago1@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2214_PULLU.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/image_i8fV5t6.png",
+    "video_url": "https://www.youtube.com/embed/DwtoYLIMrko?feature=oembed",
+    "resumo": "No contexto atual do ecommerce, a Shopify afirma-se como a maior e mais utilizada plataforma para criação de lojas online, servindo milhões de lojistas em todo o mundo. Entre os modelos mais populares dentro do ecommerce, o dropshipping destaca-se por permitir que os vendedores comercializem produtos sem manter stock próprio, dependendo de fornecedores externos. A maioria destes produtos não são patenteados nem exclusivos, o que significa que estão legalmente disponíveis em diferentes plataformas, como Temu, AliExpress ou até outras lojas Shopify. Este modelo exige a testagem constante de novos produtos, levando muitos lojistas a importar informações dessas fontes externas. No entanto, transformar estes dados numa listagem completa dentro da Shopify continua a ser um processo manual e demorado: é necessário copiar descrições, traduzir textos, organizar variantes, editar imagens e ajustar vários detalhes técnicos. Esta repetição diária de tarefas cria um estrangulamento operacional que se torna cada vez mais evidente à medida que cresce o número de produtos testados. A Pullu é uma SaaS (Software as a Service) baseada na web desenvolvida para simplificar a criação de listagens de produtos na Shopify. Os utilizadores podem iniciar sessão com email ou conta Google e aceder a uma dashboard intuitiva, onde podem inserir o link de um produto proveniente do AliExpress, Temu ou até de outra loja Shopify. A plataforma recolhe automaticamente todos os dados relevantes do produto, incluindo imagens, variantes e metadados, e permite que os utilizadores editem textos e imagens com recurso a inteligência artificial antes de importar a listagem para a Shopify. Assim, um processo que normalmente demoraria entre 20 a 45 minutos passa a demorar menos de um minuto, aumentando drasticamente a eficiência e libertando tempo para outras tarefas estratégicas no ecommerce. A Pullu é construída com Next.js tanto para front-end como para back-end, utilizando Supabase para gestão de dados e autenticação, e integrando outras APIs como Shopify, Photoroom, ChatGPT e Fal.ai. Esta combinação tecnológica permite automatizar a recolha, edição e otimização de dados e imagens dos produtos, simplificando todo o processo de criação de listagens e aumentando significativamente a eficiência das operações de ecommerce. Palavras-chave: SaaS, comércio eletrónico, dropshipping, importação de produtos, automação com AI, Shopify.",
+    "palavras_chave": [
+      "Automação",
+      "Inteligência Artificial",
+      "Software."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "APIs Rest",
+      "CSS",
+      "Next.js",
+      "PostgreSQL",
+      "Tailwind CSS."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "QAlytics: Manutenção de testes com IA",
+    "alunos": [
+      "Diogo Correia(22207097)",
+      "Ricardo Santos(22207422)"
+    ],
+    "orientadores": [
+      "José Cascais Brás",
+      "Luis A. Gomes"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "diogocorreia561@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2155_QAlytics_Manutencao_de_testes_com_IA_OO7TCzr.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/capa.png",
+    "video_url": "https://www.youtube.com/embed/3kWaheJWEW8?feature=oembed",
+    "resumo": "O desenvolvimento de software moderno depende fortemente de testes automatizados. Contudo, à medida que os projetos escalam, a introdução de novos casos de teste em suites extensas torna-se um desafio complexo, resultando frequentemente em redundân- cias lógicas, contradições com requisitos de negócio e regressões não intencionais. Este projeto propõe o QAlytics: Manutenção de testes com IA, uma ferramenta CLI que utiliza Inteligência Artificial (LLMs) aliada a uma arquitetura de Retrieval-Augmented Generation (RAG) para analisar semanticamente o impacto da inserção de novos testes. A solução atua como um validador preventivo, cruzando a intenção de um novo teste com a base de conhecimento existente (User Stories e Casos de Teste antigos) para aprovar, bloquear ou sugerir refatorização. A ferramenta foca-se na precisão e explicabilidade, garantindo que cada veredicto gerado pela IA é acompanhado de uma justificação clara em linguagem natural. O protótipo a ser desenvolvido (MVP) valida a viabilidade técnica desta abordagem preventiva, demonstrando a capacidade de detetar duplicações semânticas e conflitos com regras de negócio de forma automatizada, mitigando a dívida técnica e otimizando os processos de Garantia de Qualidade (QA).",
+    "palavras_chave": [
+      "Deteção",
+      "Engenharia Informática",
+      "Inteligência Artificial",
+      "Machine Learning",
+      "Python."
+    ],
+    "areas": [
+      "Análise de dados",
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Ollama",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Researcher's Diary",
+    "alunos": [
+      "Guilherme Frantz (A22204098)"
+    ],
+    "orientadores": [
+      "Luis Campos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "guilherme.gfrantz@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/tfc_report_G1cMZXc.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_pantalla_2026-04-11_211645.png",
+    "video_url": "https://www.youtube.com/embed/E5EL9MsZ9a4?feature=oembed",
+    "resumo": "A gestão da produção científica numa instituição de ensino ou investigação é um processo fragmentado e repetitivo. Investigadores perdem tempo significativo a registar e a reformatar os mesmos dados para diferentes agências e relatórios institucionais. Simultaneamente, os responsáveis por departamentos e instituições necessitam de agregar manualmente esses mesmos dados para produzir relatórios organizacionais, sem dispor de ferramentas adequadas para o efeito. Este Trabalho Final de Curso (TFC) propõe o desenvolvimento do Researcher's Diary: uma plataforma web de gestão hierárquica de produção científica, construída com um backend em Python/FastAPI e um frontend em React/Next.js, orquestrada com Docker Compose. O sistema implementa uma hierarquia institucional complementada por um sistema de visibilidade e acesso baseado em funções. Responsáveis de uma instituição ou departamento podem consultar e exportar relatórios agregados com base nos registos partilhados, reduzindo significativamente o esforço administrativo de reporte científico. A inovação do projeto reside na combinação de uma arquitetura API-First com um modelo de dados hierárquico e especializado, que transforma dados individuais dispersos numa fonte única e estruturada, reutilizável para múltiplos formatos de saída.",
+    "palavras_chave": [
+      "API",
+      "Docker",
+      "Next.js",
+      "React."
+    ],
+    "areas": [
+      "Tecnologia da Informação."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Docker",
+      "Next.js",
+      "React.js."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Reshape",
+    "alunos": [
+      "Pedro Cardoso(A22308918)",
+      "Sérgio Rusu(A22308704)"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "a22308918@alunos.ulht.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2193_Reshape.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_Ne2M56L.png",
+    "video_url": "https://www.youtube.com/embed/u32aj-qnLp8?feature=oembed",
+    "resumo": "O presente trabalho final de curso (TFC) consiste no desenvolvimento de uma plataforma digital cloud-native para gestão de recursos e materiais audiovisuais, fundamentais para as atividades dos cursos de Cinema e Comunicação. A iniciativa surge no âmbito do consórcio europeu FilmEU, coordenado pela Universidade Lusófona, com o objetivo primordial de substituir integralmente uma aplicação legacy atualmente em uso, que apresenta limitações de escalabilidade e manutenção. A nova plataforma é orientada para um contexto internacional, desenhada para suportar operações distribuídas que envolvem múltiplas instituições parceiras europeias. A arquitetura tecnológica proposta é inteiramente baseada em ambiente cloud, recorrendo à framework Laravel para o desenvolvimento do backend e ao sistema Keycloak para a gestão centralizada de identidades e controlo de acessos. O projeto foca-se na definição e implementação de uma arquitetura técnica robusta, capaz de assegurar segurança, interoperabilidade, escalabilidade e desempenho. Com uma duração prevista de um ano e meio letivo, o desenvolvimento está estruturado para integrar organicamente o Trabalho Final de Curso (TFC) do 3.º ano, garantindo a continuidade entre a componente académica e as necessidades reais de um projeto de dimensão europeia. O resultado esperado é uma solução modernizada que responda eficazmente aos desafios de gestão de recursos num ambiente académico colaborativo.A plataforma surge no âmbito do consórcio europeu FilmEU, do qual a Universidade Lusófona é instituição integrante e coordenadora, com o objetivo substituir integralmente uma aplicação legacy atualmente em uso.",
+    "palavras_chave": [
+      "Cloud",
+      "Gestão de Sistemas de Informação",
+      "React."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Bases de Dados",
+      "DOM",
+      "Docker",
+      "Git",
+      "JSON",
+      "PHP",
+      "PostgreSQL",
+      "Postman",
+      "Programação",
+      "REST",
+      "React",
+      "SQL",
+      "Tailwind CSS."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "RevaluationIQ",
+    "alunos": [
+      "Rodrigo(22203479)",
+      "Gonçalo(22107998)"
+    ],
+    "orientadores": [
+      "Duarte Neves",
+      "Lucio studer"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rodrigo.silva.vale@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI_RevaluationIQ_aplicacional.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/ImagemRevaluationIQ.png",
+    "video_url": "https://www.youtube.com/embed/lN9o8_5iEGE?feature=oembed",
+    "resumo": "A RevaluationIQ é uma plataforma web inteligente desenvolvida com o objetivo de automatizar, padronizar e acelerar a geração de relatórios técnicos de avaliação imobiliária, cumprindo requisitos regulamentares da CMVM. A solução foi concebida para apoiar avaliadores certificados, consultores imobiliários e empresas de consultoria, oferecendo um sistema integrado capaz de reduzir drasticamente o tempo despendido em tarefas manuais, minimizar erros e aumentar a consistência e qualidade das avaliações produzidas. A arquitetura da RevaluationIQ assenta num modelo modular em três camadas Frontend em Next.js, Backend em Spring Boot e persistência em PostgreSQL garantindo separação clara de responsabilidades, escalabilidade e manutenção facilitada. A interface web, desenvolvida em Next.js com TypeScript e Tailwind CSS, oferece uma experiência moderna, responsiva e orientada à produtividade, permitindo ao utilizador gerir relatórios, carregar documentos, visualizar dados extraídos e configurar todos os elementos essenciais do processo de avaliação. O backend, implementado em Spring Boot 3 e Java 21, incorpora mais de uma centena de endpoints REST e engloba componentes especializados para gestão de relatórios, imóveis, avaliações, documentos, tokens e templates. Integra ainda um pipeline inteligente de extração baseado numa arquitetura assíncrona, suportada por um worker externo em Python (FastAPI), responsável pela execução de OCR (PyTesseract) e extração estruturada de texto de PDFs e imagens. O sistema utiliza uma fila de processamento robusta, garantindo resiliência, isolamento, reprocessamento automático e observabilidade total, preservando apenas metadados e dados estruturados, reforçando boas práticas de segurança e conformidade.O modelo de dados foi cuidadosamente estruturado para refletir o domínio da avaliação imobiliária, integrando entidades como RelatorioAvaliacao, Avaliacao, Imovel, AmostraImovel, Token, Template, Documento e ExtractionJob, assegurando rastreabilidade completa, integridade transacional e flexibilidade através de campos JSONB. A plataforma inclui ainda uma biblioteca de templates e tokens padronizados, permitindo gerar relatórios consistentes, claros e tecnicamente corretos.O fluxo operacional da aplicação cobre todas as etapas críticas: criação de relatóriost, upload de documentos, extração automática, revisão assistida, seleção de métodos de avaliação, integração de comparáveis, importação de homogenizações Excel ou CSV, e finalmente emissão do relatório PDF estruturado, com suporte preparado para arquivo histórico.Combinando automação, inteligência, performance e conformidade regulatória, a RevaluationIQ representa uma solução altamente inovadora no setor da avaliação imobiliária portuguesa. A plataforma tem potencial para transformar significativamente os processos de trabalho atuais, reduzindo mais de 50% do esforço manual, aumentando a fiabilidade dos resultados e proporcionando às entidades avaliadoras uma ferramenta moderna, escalável e preparada para evolução futura.",
+    "palavras_chave": [
+      "Agile",
+      "Docker",
+      "Java",
+      "Next.js",
+      "Python",
+      "SpringBoot",
+      "Testes com Postman",
+      "TypeScript."
+    ],
+    "areas": [
+      "Imobiliário",
+      "Inovação",
+      "Tecnologia e Desenvolvimento de Software",
+      "modelação de dados."
+    ],
+    "tecnologias": [
+      "CSS",
+      "Docker",
+      "HTML",
+      "Java",
+      "Next.js",
+      "Python",
+      "Spring Boot (Java)",
+      "Tailwind CSS",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "SLM Jurídico",
+    "alunos": [
+      "Gonçalo Lourenço Ribeiro (A22106337)"
+    ],
+    "orientadores": [
+      "Daniel Silveira"
+    ],
+    "parceria": "Candeias & Associados",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "gfdribeiro@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Relatorio_VFinal.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Logo.png",
+    "video_url": "https://www.youtube.com/embed/7nzDmWsKDKk?feature=oembed",
+    "resumo": "A integração de Inteligência Artificial (IA) no setor jurídico promete ganhos significativos de eficiência, contudo, a utilização de soluções baseadas na nuvem colide frequente- mente com os rigorosos requisitos de confidencialidade, sigilo profissional e proteção de dados (RGPD). Este projeto, desenvolvido no âmbito do Trabalho Final de Curso, propõe o desenvolvimento de uma solução de ”SLM Jurídico”, focada na automatização da de- fesa de contraordenações rodoviárias através de uma infraestrutura inteiramente local (on-premise). A solução adota uma Arquitetura Orientada a Eventos (Event-Driven Architecture) baseada em microserviços contentorizados, garantindo escalabilidade, tolerância a fal- has e a soberania absoluta dos dados. A pipeline tecnológica utiliza o Apache Kafka como motor de orquestração assíncrona entre serviços desenvolvidos em diferentes lin- guagens (Java, Python, React). O processamento documental integra OCR via Tesseract com uma arquitetura Retrieval-Augmented Generation (RAG), onde o texto é indexado numa base vetorial ChromaDB com recurso ao modelo Nomic-embed e ao Llama 3.2. A extração semântica e a estruturação jurídica são asseguradas pelo modelo Mistral- Nemo. Após validação humana (abordagem human-in-the-loop) através de uma inter- face reativa, o sistema compila a peça processual final utilizando algoritmos de injeção em templates LaTeX. O objetivo principal é demonstrar a viabilidade de um ecossistema de IA descentralizado, seguro e altamente especializado, capaz de eliminar tarefas man- uais repetitivas e acelerar a resposta processual. Palavras-chave: Inteligência Artificial, Arquitetura Orientada a Eventos, Microserviços, RAG Local, Privacidade de Dados, SLM.",
+    "palavras_chave": [
+      "Event",
+      "Inteligência Artificial",
+      "LLM",
+      "Microsserviços",
+      "Privacidade e segurança dos dados."
+    ],
+    "areas": [
+      "Análise de dados",
+      "Artificial Intelligence",
+      "LLM-Based Clustering of Text Documents",
+      "Next.js."
+    ],
+    "tecnologias": [
+      "API Rest",
+      "Bases de Dados",
+      "Deep learning",
+      "Docker",
+      "JSON",
+      "Java",
+      "LLM",
+      "Linux Ubuntu",
+      "Machine Learning",
+      "Next.js",
+      "Ollama",
+      "Python",
+      "REST",
+      "React.js",
+      "Spring Boot (Java)",
+      "XML."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Segmentação Semântica de Incêndios Florestais",
+    "alunos": [
+      "Karim Ali Sadrudin Alibhai"
+    ],
+    "orientadores": [
+      "Houda Harkat",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "karim.alibhai.rcp@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC___Karim.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/a.png",
+    "video_url": "https://www.youtube.com/embed/zV6TVluhmY8?feature=oembed",
+    "resumo": "Este projeto tem como principal objetivo o desenvolvimento de um sistema automático para deteção e segmentação de fogo em imagens reais de incêndios florestais, recorrendo a técnicas de visão computacional e deep learning. A motivação prende-se com a necessidade de melhorar a rapidez e a precisão na identificação de incêndios, contribuindo para apoiar entidades como bombeiros, proteção civil e equipas de vigilância, permitindo uma resposta mais eficiente e atempada. Do ponto de vista técnico, o problema é formulado como uma tarefa de segmentação semântica binária, onde cada pixel da imagem é classificado como pertencente à classe “fogo” ou “background”. No entanto, este problema apresenta um desafio significativo devido ao forte desbalanceamento entre classes, uma vez que o fogo ocupa apenas uma pequena fração da imagem, sendo o background claramente dominante. Para abordar este desafio, foi implementada uma solução baseada em aprendizagem supervisionada, utilizando arquiteturas do tipo encoder-decoder, nomeadamente a ResUNet-A, que permite capturar simultaneamente informação global e detalhes espaciais relevantes. Adicionalmente, foram utilizadas funções de perda adequadas ao desbalanceamento, como a Generalized Dice Loss, e métricas mais robustas, como o F1 Score e o Intersection over Union (IoU), garantindo uma avaliação mais rigorosa do desempenho do modelo. O projeto inclui ainda a análise do impacto de diferentes configurações de treino, como a variação do learning rate, permitindo compreender o comportamento do modelo e identificar a melhor solução para o problema em estudo.",
+    "palavras_chave": [
+      "Análise de Dados",
+      "Arquitetura back-end",
+      "Arquitetura de Sistemas",
+      "Compression, Deep Learning, Edge Computing, Image Segmentation, Pruning, Quantization",
+      "Deep Learning",
+      "Redes Neurais Evolucional."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Ciência de Dados e Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Deep learning."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Servidor MCP para a Integração Fluida entre LLMs e Data Warehouses",
+    "alunos": [
+      "A22303085-Fábio"
+    ],
+    "orientadores": [
+      "João Caldeira"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "a22303085@alunos.ulht.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_a22303085_oOPptju.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/LangFlow_arq.png",
+    "video_url": "https://www.youtube.com/embed/bJ8VfqrNo5A?feature=oembed",
+    "resumo": "MCP Server para uma interligação fluída e segura entre LLM e Data warehouse",
+    "palavras_chave": [
+      "Dados",
+      "Inteligência Artificial",
+      "Python."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Ciência de Dados."
+    ],
+    "tecnologias": [
+      "IA",
+      "PostgreSQL",
+      "Python",
+      "SQL."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Sistema Inteligente de Controlo Ambiental de Espaços",
+    "alunos": [
+      "Tiago Matos"
+    ],
+    "orientadores": [
+      "José Cascais Brás",
+      "Luis A. Gomes"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "tiagomiguelmatos@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2160_Relatorio_Intercalar_2o_Semestre.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Sistema-Inteligente-de-Controlo-Ambiental-de-Espacos.png",
+    "video_url": "https://www.youtube.com/embed/ZuL0oOmUoP8?feature=oembed",
+    "resumo": "O projeto Sistema Inteligente de Controlo Ambiental de Espaços (DEISI2160) consiste no desenvolvimento de um sistema automatizado de monitorização e controlo ambiental para espaços interiores. O sistema ajusta de forma autónoma a iluminação e a climatização com base em leituras contínuas de sensores de temperatura, humidade, luminosidade e presença.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Raspberry Pi",
+      "Rastreio em tempo real."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Python",
+      "SQLite."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "TFC_DEISI2215_Plataforma de onboarding de projetos AMS",
+    "alunos": [
+      "Duarte Cachata(A22302828)",
+      "Bernardo Ferreira(A22307944)"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "duarte.cachata@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2215_Plataforma_de_onboarding_de_projetos_AMS.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Screenshot_2026-04-12_031715.png",
+    "video_url": "https://www.youtube.com/embed/uM68t006n7o?feature=oembed",
+    "resumo": "O presente Trabalho Final de Curso consiste no núcleo back-end de uma plataforma AMS (Application Management Services), que tem como objetivo estruturar e centralizar a gestão operacional de aplicações empresariais. Este componente é responsável por garantir a consistência, normalização e governação dos dados essenciais ao serviço, abrangendo entidades como incidentes, problemas, mudanças, contratos de serviço, ambientes, artigos de conhecimento e informação de discovery. Toda a lógica de negócio é implementada em Java com Spring Boot, que expõe uma API REST robusta e normalizada para suportar integrações com os restantes módulos do sistema. A API comunica com uma base de dados SQL, onde toda a informação é armazenada de forma relacional e auditável. O back-end inclui ainda mecanismos de autenticação e autorização, auditoria, logging estruturado e cálculo de métricas operacionais. Com esta arquitetura modular, o back-end fornece uma base sólida para a evolução futura da plataforma, permitindo a integração com serviços inteligentes, motores analíticos e pipelines de automação, respondendo às necessidades operacionais da CGI e aproximando o protótipo de um ambiente empresarial real.",
+    "palavras_chave": [
+      "Back-End",
+      "Carregamento e armazenamento de dados",
+      "Endpoints RESTful",
+      "SpringBoot",
+      "TI."
+    ],
+    "areas": [
+      "Análise de dados",
+      "Management."
+    ],
+    "tecnologias": [
+      "APIs Rest",
+      "Java",
+      "Maven",
+      "Microsoft Visual Studio",
+      "PostGreSQL",
+      "Spring Boot (Java)."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "The Captain Planet Initiative",
+    "alunos": [
+      "Rui Moreira"
+    ],
+    "orientadores": [
+      "Bruno Cipriano",
+      "Rodrigo Correia"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rui.moreira619@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_Intercalar_2_Rui_Moreira21600035_atdzUc1.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captain_Planet_Thesis_Cover.png",
+    "video_url": "https://www.youtube.com/embed/OTToY88koIw?feature=oembed",
+    "resumo": "O presente trabalho descreve o desenvolvimento da Captain Planet Initiative, uma aplicação móvel educativa orientada para a sensibilização ambiental através de mini-jogos interativos. A solução foi concebida como um hub agregador de experiências jogáveis, integrando atualmente três mini-jogos com temáticas relacionadas com reciclagem, sustentabilidade e literacia ecológica, promovendo aprendizagem ativa e envolvimento contínuo de crianças e jovens. A implementação assenta numa arquitetura modular em monorepo, recorrendo a Flutter para a aplicação principal e a Flame para os componentes de jogo 2D. Esta abordagem permite separar responsabilidades entre o hub, os mini-jogos e a biblioteca partilhada, favorecendo reutilização, extensibilidade e manutenção evolutiva. A persistência de dados é atualmente assegurada localmente, constituindo uma base técnica para futura evolução da solução. A análise comparativa com aplicações existentes evidencia limitações recorrentes ao nível da fragmentação temática, da profundidade pedagógica e da integração de diferentes experiências num único sistema. Neste contexto, a solução proposta distingue-se pela combinação entre estrutura modular, diversidade lúdica e alinhamento com os Objetivos de Desenvolvimento Sustentável. Os resultados alcançados até ao momento confirmam a viabilidade técnica da abordagem e demonstram que a solução já permite validar o conceito central do projeto. A aplicação apresenta-se, assim, como uma base funcional e evolutiva para futuras extensões, nomeadamente ao nível da persistência alargada, da introdução de novos mini-jogos e da eventual integração de componentes remotas.",
+    "palavras_chave": [
+      "Flutter",
+      "Impacto ambiental."
+    ],
+    "areas": [
+      "Computação Gráfica",
+      "Computação Móvel."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Flutter",
+      "Git."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Venom Autonomous Pentest Tool",
+    "alunos": [
+      "Pedro Ramos(A22309710)"
+    ],
+    "orientadores": [
+      "Daniel Silveira"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "pedropepejp@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Relatorio_Intercalar2_2o_Semestre.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/images_KMAH2L4.jpeg",
+    "video_url": "https://www.youtube.com/embed/3WpGtwjR_9c?feature=oembed",
+    "resumo": "A prática de Pentesting é uma componente crítica na validação da postura de segurança das organizações. No entanto, a execução destes testes em ambientes laboratoriais enfrenta, atualmente, um obstáculo significativo: a dependência excessiva da intervenção humana para a tomada de decisão a cada etapa do ataque. Esta abordagem manual resulta em processos ineficientes, difíceis de escalar e carentes de reprodutibilidade científica. Este projeto propõe o desenvolvimento do Venom APT (Autonomous Pentesting Tool), uma ferramenta de orquestração ofensiva desenhada exclusivamente para ambientes laboratoriais autorizados. O sistema visa automatizar o ciclo de vida completo de um teste de intrusão, desde o reconhecimento inicial até à geração de relatórios, eliminando a microgestão humana. A arquitetura do Venom APT baseia-se num motor de decisão autónomo que utiliza planeamento condicional e árvores de ataque para determinar logicamente a melhor ação seguinte, emulando o comportamento de um adversário real de forma consistente. A solução integra rigorosos mecanismos de segurança (guardrails) e rastreabilidade total, assegurando que a automação opera estritamente dentro do perímetro autorizado e em conformidade com princípios éticos. Os objetivos centrais do projeto incluem a redução do tempo de execução do ciclo de ataque entre 50%- 60% e o aumento da densidade de cobertura de táticas e técnicas (TTPs) em 2.5x face aos testes manuais. Estes valores são definidos como parâmetros-alvo realistas para um protótipo que automatiza sobretudo as fases repetitivas do ciclo de ataque, mantendo a análise crítica e a validação final no operador humano; a respetiva justificação detalhada é apresentada no capítulo dedicado aos KPIs de avaliação e à metodologia experimental. O resultado final é um protótipo funcional que demonstra como a automação estruturada pode aumentar a eficiência, a consistência e a auditabilidade dos exercícios de cibersegurança, sem comprometer a segurança do ambiente de teste.",
+    "palavras_chave": [
+      "Automação de testes."
+    ],
+    "areas": [
+      "Cibersegurança."
+    ],
+    "tecnologias": [
+      "Docker",
+      "JSON",
+      "NMAP",
+      "Python",
+      "XML."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "em_curso",
+    "titulo": "Zero Queixa",
+    "alunos": [
+      "Nsimba António Diandonga Tamaku (A22409693)"
+    ],
+    "orientadores": [
+      "Pedro Hugo De Queirós Alves"
+    ],
+    "parceria": "Associação Zero",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "efrahimtks@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_final_-_parte_2.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Zero_Queixa.jpg",
+    "video_url": "https://www.youtube.com/embed/X39oHdsN08U?feature=oembed",
+    "resumo": "O ZeroQueixa é uma aplicação móvel multiplataforma desenvolvida em parceria com a Associação ZERO – Associação Sistema Terrestre Sustentável, destinada ao registo e acompanhamento de queixas relacionadas com mobilidade urbana e proteção ambiental. Este Trabalho Final de Curso representa a continuidade do projeto iniciado no ano letivo 2024/2025, cujo objetivo é transformar o Produto Mínimo Viável (MVP) já funcional numa plataforma madura e pronta para utilização em larga escala. O MVP, composto por uma aplicação móvel (iOS e Android) desenvolvida em Flutter e um sistema de BackOffice web para gestão pela ZERO, encontra-se atualmente em fase de testes piloto desde outubro de 2024. A fase atual de desenvolvimento concentra-se em três objetivos principais: preparar a aplicação para testes de utilizadores mais alargados e subsequente lançamento em produção, melhorar o BackOffice na vertente de processamento e encaminhamento de queixas para as entidades responsáveis, e planear a implementação de uma versão 2.0 com componente social (mapas interativos, feeds públicos, subscrição de queixas). Este trabalho distingue-se por atingir uma fase raramente alcançada em projetos académicos – a preparação para produção efetiva – contribuindo simultaneamente para a missão da ZERO de promover cidadania ativa e sustentabilidade ambiental em Portugal.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Flutter",
+      "Mobilidade",
+      "Monitorização ambiental",
+      "SpringBoot."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "ambiente."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Docker",
+      "Flutter",
+      "Git",
+      "MySQL",
+      "Spring MVC."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Abordagens não supervisionadas para deteção de reviews falsas em plataformas de e-commerce",
+    "alunos": [
+      "Nuno Santinhos"
+    ],
+    "orientadores": [
+      "Sofia Fernandes"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "nunomsantinhos@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_1%C2%BA_entrega.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Detecting-Fake-Reviews.jpg",
+    "video_url": null,
+    "resumo": "O crescimento do e-commerce trouxe um aumento significativo nas avaliações, que desempenham um papel determinante nas decisões de compra dos consumidores. Contudo, o fenómeno das fake reviews compromete a confiança nas plataformas digitais, prejudicando tanto os consumidores como as empresas. Este trabalho propõe a aplicação de técnicas de aprendizagem automatizada, como o algoritmo K-Means, e de modelos avançados baseados em redes neuronais, com o objetivo de identificar padrões associados a avaliações falsas. Recorrendo a um conjunto de dados da Amazon, recolhido entre 1996 e 2023, serão analisadas métricas comportamentais e linguísticas que possibilitam a distinção entre avaliações genuínas e falsas. Este estudo sublinha a relevância de métodos inovadores e integrados para enfrentar os desafios da manipulação de avaliações, promovendo um ambiente de comércio digital mais mais transparente e fiável.",
+    "palavras_chave": [
+      "Avaliação automatizada",
+      "Python."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Ciência de Dados e Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Python",
+      "Sklearn."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "AdvenTour",
+    "alunos": [
+      "Gonçalo Neves",
+      "Lucas Botelho"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "goncaloneves0207@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/AdvenTour.png",
+    "video_url": null,
+    "resumo": "Este trabalho propõe o desenvolvimento da aplicação mobile AdvenTour, focada no turismo de aventura, um segmento que tem registado um crescimento notável nos últimos anos. De acordo com relatórios da Organização Mundial do Turismo, cerca de 40% dos turistas globais procuram experiências autênticas e emocionantes, enquanto o mercado de turismo de aventura cresce a uma taxa anual aproximada de 10%. A AdvenTour visa ser uma plataforma centralizada para que os turistas planeiem e encontrem informações sobre aventuras radicais, oferecendo uma interface simples e intuitiva para explorar e partilhar atividades emocionantes. Adicionalmente, a AdvenTour fomenta uma comunidade global de aventureiros, permitindo avaliações de utilizadores, interação direta entre membros e criação de itinerários personalizáveis. Este TFC concentra-se na conceção e desenvolvimento de funcionalidades que ajudam os utilizadores a navegar por experiências em diferentes países, fornecer feedback e planear itinerários de forma prática e eficiente. Ao centralizar dados, facilitar o planeamento de viagens e conectar aventureiros, a AdvenTour resolve o problema real da dispersão de informações no turismo de aventura, simplificando o processo para viajantes que procuram experiências fora do comum e contribuindo para o crescimento sustentável do setor, promovendo atividades de aventura que respeitem o meio ambiente e as culturas locais. Pode ajudar a reduzir a sobrecarga dos destinos turísticos populares permitindo que as comunidades locais fora dos grandes centros turísticos beneficiem economicamente, promovendo uma distribuição mais equitativa dos lucros gerados pelo turismo de aventura.",
+    "palavras_chave": [
+      "Interação entre membros",
+      "Itinerários Personalizáveis",
+      "Planeamento de Itinerários",
+      "Sustentabilidade",
+      "Turismo Responsável",
+      "Turismo de Aventura."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "Sustentabilidade",
+      "Turismo de Aventura."
+    ],
+    "tecnologias": [
+      ".NET",
+      "C#",
+      "Dart",
+      "Docker",
+      "Entity Framework",
+      "Flutter",
+      "JSON",
+      "REST",
+      "SQL Server."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicativo para gestão de voluntários e auxilio de associações de animais",
+    "alunos": [
+      "Cátia Coelho"
+    ],
+    "orientadores": [
+      "Bruno Cipriano",
+      "Rodrigo Correia"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "catiacrcoelho@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2116_AnimalTinder.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagemAplica%C3%A7%C3%A3o.png",
+    "video_url": null,
+    "resumo": "Este projeto consiste no desenvolvimento de uma aplicação móvel, que posteriormente será convertida para uma plataforma web. A ideia central da aplicação é criar uma plataforma que facilite e incentive o envolvimento das pessoas com os animais das associações de proteção animal, promovendo uma maior interação e visibilidade tanto para os animais quanto para as instituições. A aplicação permitirá que as associações criem perfis onde poderão apresentar informações sobre si mesmas e individualmente sobre os seus animais disponíveis para interação. Os utilizadores, por sua vez, poderão criar um perfil e ter acesso aos animais, com a possibilidade de agendar diretamente atividades, como passeios com cães. Para garantir a segurança e o bem-estar dos animais, será necessário que os utilizadores aceitem e cumpram os termos de responsabilidade apresentados na aplicação, previamente estabelecidos pelas associações. Esta ferramenta visa eliminar barreiras comuns ao voluntariado, como a dificuldade de contacto telefónico ou a necessidade de deslocação sem garantia de disponibilidade. Através da aplicação, as associações receberão notificações de pedidos e comprometer-se-ão a responder dentro de um prazo razoável, mantendo o processo organizado e ágil. Os utilizadores também terão informações claras sobre o estado dos seus pedidos. Além de melhorar a logística e o acesso ao voluntariado, a aplicação promove uma maior socialização dos animais, ajudando-os a interagir com um maior número de pessoas. Este contacto regular com novos rostos pode ser especialmente benéfico para animais que passaram por situações de abandono ou maus-tratos, ajudando-os a recuperar a confiança nos humanos. Por fim, a aplicação coloca sempre o bem-estar dos animais em primeiro lugar, permitindo que cada associação decida o que é melhor para os seus protegidos, respeitando as suas particularidades. O objetivo final é simplificar o processo de envolvimento das pessoas com esta causa e fortalecer a relação entre a comunidade e as associações, contribuindo para o bem-estar dos animais e o aumento das iniciativas de apoio, voluntariado e adoção.",
+    "palavras_chave": [
+      "Animais",
+      "Organizações."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "sociedade."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Firebase",
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação Móvel de Audiolivros Infantis",
+    "alunos": [
+      "Tomás Silva",
+      "Carlota Montalvão"
+    ],
+    "orientadores": [
+      "Lúcio Studer",
+      "Martim Mourão"
+    ],
+    "parceria": "Associação Nacional Glaucoma Pediátrico (ANGP)",
+    "cursos": [
+      "Licenciatura em Engenharia Informática",
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "thomazo2004@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2107_audiolivros_intercalar.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/WhatsApp_Image_2025-03-27_at_18.07.01.jpeg",
+    "video_url": null,
+    "resumo": "Este TFC consiste no desenvolvimento e implementação de uma aplicação móvel destinada a disponibilizar audiolivros infantis, bem como a permitir a gravação de audiolivros ou até mesmo histórias imaginadas pelos pais. A oportunidade de criar esta aplicação surgiu em colaboração com a Associação Nacional de Glaucoma Pediátrico, que visa em apoiar as crianças com esta condição. A aplicação tem como objetivo beneficiar não só estas crianças, como também os seus familiares, oferecendo uma plataforma comunitária onde estes possam gravar audiolivros e partilhá-los numa biblioteca acessível através da mesma aplicação. O projeto abrange todo o ciclo de desenvolvimento de software, desde a conceção inicial até à sua implementação e aos testes finais. Um dos principais focos é garantir uma interface intuitiva e acessível para todos os futuros utilizadores. Com o desenvolvimento desta aplicação, esperamos proporcionar momentos significativos em família, realizados por todos para todos e, acima de tudo, contribuir para a inclusão social e educativa destas crianças.",
+    "palavras_chave": [
+      "Aplicação móvel."
+    ],
+    "areas": [
+      "educação",
+      "saúde",
+      "sociedade."
+    ],
+    "tecnologias": [
+      "Bootstrap",
+      "CSS",
+      "Django",
+      "HTML",
+      "JavaScript",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação de controlo de assiduidade c/ terminal de picagem",
+    "alunos": [
+      "Daniel Martins"
+    ],
+    "orientadores": [
+      "Rodrigo Correia"
+    ],
+    "parceria": "Associação de Reformados, Pensionistas e Idosos de S. Julião do Tojal",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "a22102503@alunos.ulht.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2108_GEu06bK.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2108_W2fq16u.png",
+    "video_url": null,
+    "resumo": "Aplicação web para efetuar o registo de assiduidade e submissão de documentos (justificação de falta, permuta de turno, atestados) + terminal físico para realização de picagem (\"pica-ponto\").",
+    "palavras_chave": [
+      "Python."
+    ],
+    "areas": [
+      "empresarial",
+      "gestão."
+    ],
+    "tecnologias": [
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação de técnicas de análise de dados para deteção de fugas e roturas em sistemas de distribuição de água",
+    "alunos": [
+      "Wilson Silva"
+    ],
+    "orientadores": [
+      "Maria Silva"
+    ],
+    "parceria": "Laboratório de Engenharia Civil",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "abc@abc.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2065.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Black-Color.jpg",
+    "video_url": null,
+    "resumo": "A criação de zonas de medição e controlo em sistemas de distribuição de água é fundamental para uma gestão adequada e controlo de perdas de água. A monitorização de caudal é um passo essencial para deteção e controlo célere de perdas reais (fugas, roturas em condutas…). Este trabalho pretende explorar métodos estatísticos e de análise de dados para deteção e quantificação de fugas e roturas utilizando séries temporais de caudal medido reais. Trabalho coorientado pela Eng. Dália Loureiro (LNEC).",
+    "palavras_chave": [
+      "Data Analysis",
+      "Python",
+      "python."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "ambiente."
+    ],
+    "tecnologias": [
+      "Matplotlib",
+      "NumPy",
+      "Pandas",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação móvel para rastreio da hepatite C",
+    "alunos": [
+      "Miguel Santos",
+      "Ana Salvador"
+    ],
+    "orientadores": [
+      "Pedro Alves"
+    ],
+    "parceria": "Ares do Pinhal",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "migueledwards8b@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC__v1_yxdlD5j.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/icon_scaled.png",
+    "video_url": null,
+    "resumo": "Conceção e desenvolvimento de uma aplicação móvel em colaboração com a Associação Ares do Pinhal, uma instituição com vasta experiência no apoio a pessoas com dependências. A aplicação tem como objetivo melhorar a monitorização e a adesão ao tratamento da hepatite C, especialmente para utentes com historial de toxicodependência. Focada na recolha e gestão eficiente de dados, a solução proposta visa apoiar os profissionais de saúde na prestação de cuidados mais precisos e personalizados, ao mesmo tempo que se prepara para ser adaptável a outras patologias.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Flutter",
+      "Web Services."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Flutter",
+      "HTTP Webservices",
+      "Spring Boot (Java)."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação móvel para recomendação de carruagens de comboios e metros com base em informação de ocupação",
+    "alunos": [
+      "Susana Wang"
+    ],
+    "orientadores": [
+      "Bruno Cipriano",
+      "Rodrigo Correia"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "susana2004wang@outlook.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_1%C2%AAentregaIntercalar_SusanaW.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/image.jpg",
+    "video_url": null,
+    "resumo": "Este projeto consiste no desenvolvimento de uma aplicação relacionada com o sistema de comboios que recomenda ao utilizador uma carruagem do comboio com a menor percentagem de lotação de pessoas, promovendo uma distribuição mais equilibrada dos passageiros ao longo do comboio e com o objetivo de melhorar a experiência de mobilidade dos passageiros. Além disso, a aplicação sugere opções de comboios disponíveis com base na origem e no destino indicados pelo utilizador, permitindo um planeamento de viagem mais eficiente e personalizado.",
+    "palavras_chave": [
+      "Aplicação",
+      "Aumentar Produtividade",
+      "Eficiência",
+      "Flutter",
+      "Navegação",
+      "Trabalho Final de Curso (TFC)."
+    ],
+    "areas": [
+      "Computação Móvel."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Firebase",
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação móvel para registo e acompanhamento de queixas de mobilidade urbana",
+    "alunos": [
+      "Rui Ferreira"
+    ],
+    "orientadores": [
+      "Pedro Alves"
+    ],
+    "parceria": "ZERO – Associação Sistema Terrestre Sustentável",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rui.edh.ferreira@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/QueixaAquiRelat%C3%B3rioIntercalar.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-03-31_103307.png",
+    "video_url": null,
+    "resumo": "O QueixaAqui é uma aplicação móvel focada no registo e encaminhamento de queixas relacionadas com mobilidade e proteção do ambiente. A plataforma permite que os utilizadores denunciem problemas, anexem fotos e forneçam informações detalhadas sobre as ocorrências. A aplicação conta com uma funcionalidade de geolocalização, capturando automaticamente a morada da queixa, permitindo edição manual se necessário. Além disso, há uma dashboard web para a equipa da associação ZERO, onde as queixas são analisadas, categorizadas e acompanhadas através de estatísticas interativas e gráficos detalhados. Os principais tópicos da aplicação incluem: – Mobilidade (Transportes Públicos, Infraestruturas Rodoviárias e Ferroviárias, Mobilidade Ativa) – Proteção do Ambiente (como eixo complementar) A implementação técnica inclui um backend em Kotlin/Spring Boot e um frontend desenvolvido em Flutter para garantir compatibilidade com Android e iOS. O projeto também integra um sistema de envio e armazenamento de fotos, organizando-as em diretórios específicos no servidor. A proposta visa facilitar o contacto entre cidadãos e entidades responsáveis, promovendo transparência, participação cívica e melhorias urbanas.",
+    "palavras_chave": [
+      "Android",
+      "Back-End",
+      "BackOffice",
+      "Desenvolvimento backend",
+      "Flutter",
+      "IOS",
+      "Palavras-chave: Drop Project, Plugin, Kotlin, Java, IntelliJ, Submissão de Projetos, Visualização de relatórios, Testes Unitários, Automatic Assessment Tools.."
+    ],
+    "areas": [
+      "Sustentabilidade",
+      "Tecnologia e Desenvolvimento de Software",
+      "ambiente",
+      "gestão",
+      "sociedade."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Flutter",
+      "Kotlin",
+      "Spring Boot (Java)."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicação para identificação de competências de diretores e alunos da Univ. Lusófona",
+    "alunos": [
+      "Miguel Melo",
+      "Rodrigo Dias"
+    ],
+    "orientadores": [
+      "Bruno Saraiva",
+      "Pedro Alves"
+    ],
+    "parceria": "Departamento de Recursos Humanos Universidade Lusófona",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "miguellopesmelo@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_a21905215_Miguel_Melo_a22205897_Rodrigo_Dias.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Hello_World.jpg",
+    "video_url": null,
+    "resumo": "O docente Carlos Rouco juntamente com as mestrandas Paula Cipriano e Elisabete Cipriano propuseram ao Departamento de Recursos Humanos da Universidade o desenvolvimento de uma aplicaçãoweb no âmbito das teses demestrado que fizeram sobre as competências dos alunos e as competências de liderança nas áreas de chefia intermédia. Esta aplicação tem como principal objetivo auxiliar na recolha de respostas e a automatização da análise dessas competências. A aplicação será desenvolvida utilizando Kotlin e Spring, com uma base de dados em MySQL. O sistema utilizará a autenticação da Universidade Lusófona, diminuindo a dificuldade de implementação e garantindo a utilização reservada a utilizadores registados na Universidade. A solução baseia-se em três modos principais de utilização: • Modo de Aluno: permite o preenchimento de formulários com questões de escolha múltipla e a visualização do progresso nas avaliações feitas. • Modo de Colaborador (Chefias Intermédias): permite o preenchimento de formulários com respostas abertas onde as competências serão analisadas através de técnicas de Processamento de Linguagem Natural (NLP). • Modo de Recursos Humanos (RH): oferece funcionalidades para visualizar resultados médios, tanto de alunos como de colaboradores, e exportar os dados para investigações futuras. Com este projeto, pretende-se proporcionar uma ferramenta prática e eficiente para recolher e analisar os dados. A aplicação proporciona uma maneira prática de visualização do progresso dos alunos e colaboradores. Também abre as portas ao Departamento de Recursos Humanos para possíveis melhorias dentro da instituição e dos seus serviços.",
+    "palavras_chave": [
+      "BootStrap",
+      "Competências",
+      "Kotlin",
+      "LLM",
+      "SoftSkills",
+      "SpringBoot."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "Recursos Humanos",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "Bootstrap",
+      "Git",
+      "H2",
+      "Jira",
+      "Kotlin",
+      "LLM",
+      "MySQL",
+      "Ollama",
+      "Python",
+      "Selenium",
+      "Spring Boot (Java)",
+      "ThymeLeaf."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Aplicações móveis para reabilitação",
+    "alunos": [
+      "Mariana Livramento"
+    ],
+    "orientadores": [
+      "Pedro Alves",
+      "Sofia Naique"
+    ],
+    "parceria": "Centro de Medicina de Reabilitação de Alcoitão",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "marianalopeslivramento@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_-_Aplica%C3%A7%C3%B5es_m%C3%B3veis_para_reabilita%C3%A7%C3%A3o_-_Mariana_Livramento.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/IMG_9307.jpeg",
+    "video_url": null,
+    "resumo": "O Centro de Medicina de Reabilitação de Alcoitão é o mais importante centro de reabilitação da península ibérica. Este Trabalho de Fim de Curso (TFC) tem como objetivo dar continuidade ao desenvolvimento de 2 aplicações móveis: o Rehabilita (para treino de reabilitação motora) e o Rexiga (para treino de bexiga neurogénica). Ambas as aplicações estão desenvolvidas em Flutter, uma tecnologia que permite a criação de soluções multiplataforma para Android e iOS). Estas comunicam via Web Services com o servidor (Spring Boot/Kotlin). As aplicações apresentam dois perfis distintos, sendo que, dependendo das credenciais inseridas, os utilizadores são direcionados para o perfil que se adequa às suas necessidades e funções.",
+    "palavras_chave": [
+      "Centro de Medicina de Reabilitação de Alcoitão (CMRA)",
+      "Flutter",
+      "Mobile",
+      "Tele-reabilitação."
+    ],
+    "areas": [
+      "saúde."
+    ],
+    "tecnologias": [
+      "Flutter",
+      "Kotlin."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Auto Mecom Website ( Oficina de Reparação de Automóveis )",
+    "alunos": [
+      "Beatriz Neves"
+    ],
+    "orientadores": [
+      "Rui Santos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "beatrizmneves@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Empresa2001_Relatorio_Intrecalar_1semestre.docx",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/automecon.png",
+    "video_url": null,
+    "resumo": "Este trabalho final de curso tem como propósito a melhoria do website da oficina Auto Mecom, iniciado no ano anterior, de forma que seja possível otimizar a experiência do utilizador e expandir algumas funcionalidades necessárias para o bom funcionamento do website. Apesar do trabalho anterior ter iniciado a digitalização da oficina em questão, ainda existem algumas funcionalidades por implementar, funcionalidades essas que irão permitir que finalmente o website seja lançado de forma a poder ser utilizado.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Desenvolvimento Web",
+      "Empresas",
+      "Engenharia Informática",
+      "Projeto Final",
+      "Trabalho Final de Curso (TFC)."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software",
+      "empresarial."
+    ],
+    "tecnologias": [
+      "CSS",
+      "Django",
+      "HTML",
+      "JavaScript."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Cibersegurança associada aos RPA",
+    "alunos": [
+      "Rafael Silva",
+      "Henrique Franco"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "rafael.lourenco.silva@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_Intercalar_Entrega_1_Final.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/img.jpg",
+    "video_url": null,
+    "resumo": "A proposta do trabalho é utilizar a automação de processos (RPA) para detectar as ultimas vulnerabilidades dos sistemas organizacionais reportadas, obter os patch de segurança, submeter para atualização dos sistemas e adicionalmente efetuar a automação da detecção de Acessos Não Autorizados e consequente resposta a ameaças.",
+    "palavras_chave": [
+      "Automação",
+      "Cybersecurity",
+      "Inteligência Artificial",
+      "machine Learning."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "Segurança e Controlo."
+    ],
+    "tecnologias": [
+      "Python",
+      "RPA."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Classificação de Pacientes e Previsão de Tempos de Espera para Centro Hospitalar através de modelos Machine Learning",
+    "alunos": [
+      "Ana Toscano"
+    ],
+    "orientadores": [
+      "Iolanda Velho",
+      "Sofia Naique"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "anatoscano9999@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2058.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/cmra.png",
+    "video_url": null,
+    "resumo": "Este trabalho é desenvolvido no âmbito da unidade curricular Trabalho Final de Curso (TFC) da Licenciatura de Ciência de Dados. A Engenheira Mariana Matos, Diretora da Unidade de Gestão de Doentes do Centro de Medicina de Reabilitação de Alcoitão (CMRA), Santa Casa da Misericórdia de Lisboa, entrou em contato com a Professora Iolanda Velho, propondo a cooperação científica na base deste TFC. O CMRA dedica-se à reabilitação de pessoas portadoras de deficiência de predomínio físico ou multideficiência congénita, de todas as idades. No ano de 2020 recebeu 665 utentes tratados em internamento, além de ter realizado 72 859 atos terapêuticos em ambulatório. Dada a amplitude do atendimento realizado pelo CMRA e a sua procura pela excelência em reabilitação, a instituição aposta no desenvolvimento tecnológico dos seus processos. Através da utilização de técnicas de Machine Learning para apoiar a gestão hospitalar, este projeto tem como objetivos: • realizar a análise de dados, cedidos pelo CMRA • desenvolver um modelo preditivo, que permita antecipar o tempo de espera de doentes que chegam ao CMRA, para internamento, ou ambulatório • no âmbito deste modelo preditivo, caracterizar o referido tempo de espera, em função da sua patologia, e área clínica do CMRA a que se refere.",
+    "palavras_chave": [
+      "Análise de Clusters",
+      "Análise de dados médicos",
+      "Centro de Medicina de Reabilitação de Alcoitão (CMRA)",
+      "Ciência dos Dados",
+      "Inteligência artificial em medicina",
+      "Projeto Final."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Fundamentos de Ciência de Dados",
+      "Inteligência Artificial",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Matplotlib",
+      "NumPy",
+      "Pandas",
+      "PowerBI",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Classificação do estado de funcionamento de uma eólica offshore recorrendo a AI",
+    "alunos": [
+      "Tiago Castro Mota"
+    ],
+    "orientadores": [
+      "Daniel Fernandes",
+      "João Pedro Carvalho"
+    ],
+    "parceria": "WavEC",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "28tiago10c@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC___Tiago_3.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/windfloat_1.png",
+    "video_url": null,
+    "resumo": "Nos últimos anos, a Europa aumentou significativamente os seus investimentos em en- ergias renováveis, impulsionada pela necessidade de reduzir a dependência de com- bustíveis fósseis, cumprir as metas climáticas e reforçar a resiliência energética. Com os mercados globais de energia a enfrentar volatilidade, fontes de energia renovável como a eólica e a solar desempenham um papel crucial na garantia de um futuro en- ergético sustentável e independente para o continente. Os parques eólicos offshore, em particular, tornaram-se um pilar da estratégia europeia para as energias renováveis, ofer- ecendo um enorme potencial devido aos vastos recursos de vento disponíveis ao longo das suas costas. Projetos como o WindFloat Atlantic, localizado ao largo da costa de Viana do Castelo, em Portugal, são exemplos desta transição, demonstrando a cres- cente importância da energia eólica offshore no mix energético europeu. Um aspeto crucial para maximizar a eficiência e a sustentabilidade destes projetos renováveis é garantir a operação fiável das turbinas eólicas offshore. Práticas eficientes de operação e manutenção (O&M) são essenciais para prevenir paragens das turbinas, reduzir custos operacionais e otimizar a produção de energia. Contudo, devido ao ambi- ente remoto e adverso onde estas instalações estão localizadas, monitorizar e prever o estado de funcionamento das turbinas apresenta desafios únicos. Este trabalho procura responder a esta necessidade, propondo uma abordagem ino- vadora para prever o estado operacional das três turbinas do cluster WindFloat Atlantic, utilizando dados de código aberto e imagens de satélite avançadas. Tirando partido dos dados de alta resolução fornecidos pelo SENTINEL-2, parte do programa europeu de observação terrestre Copernicus, juntamente com informações da European Network of Transmission System Operators for Electricity (ENTSO-E), o algoritmo desenvolvido per- mitirá previsões mais precisas do desempenho das turbinas. Este modelo tem como objetivo fornecer informações valiosas que possam melhorar as estratégias de O&M, assegurando a fiabilidade e eficiência a longo prazo destes ativos críticos de energia renovável. Ao utilizar estas fontes de dados de código aberto, esta investigação contribui para melhorar a sustentabilidade e a resiliência operacional da energia eólica offshore, apoiando os objetivos mais amplos da Europa de independência energética e responsabilidade am- biental.",
+    "palavras_chave": [
+      "machine Learning."
+    ],
+    "areas": [
+      "Ciência de Dados e Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Comparação de Estratégias de Marketing Digital Baseadas em Redes Sociais para Pequenas e Médias Empresas (PMEs)",
+    "alunos": [
+      "Perla Lima"
+    ],
+    "orientadores": [
+      "Fernando Angelino"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "perlalima2001@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Aluno2129.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/SMM.jpg",
+    "video_url": null,
+    "resumo": "Este trabalho analisa comparativamente as estratégias de marketing digital em redes sociais para Pequenas e Médias Empresas (PMEs), com foco nas ferramentas publicitárias Facebook Ads, Instagram Ads e TikTok Ads. Utilizando métricas como envolvimento, cliques, conversões e custo por lead, avalia-se a eficácia de cada plataforma em termos de custo-benefício e retorno sobre o investimento (ROI). A pesquisa combina a revisão de literatura com a análise de campanhas simuladas e reais, empregando ferramentas disponibilizadas pelas respetivas plataformas das redes socias e softwares de análise de dados para identificar como variáveis como orçamento e público-alvo influenciam os resultados. Os principais resultados destacam a importância de estratégias personalizadas e apontam recomendações práticas para que PMEs otimizem os seus recursos, maximizem resultados e escolham plataformas adequadas ao seu tipo de produto, público-alvo e orçamento. O estudo contribui para a compreensão académica e prática do impacto das redes sociais no desempenho de campanhas digitais.",
+    "palavras_chave": [
+      "Análise de Dados",
+      "Empresas",
+      "Marketing",
+      "Redes Sociais."
+    ],
+    "areas": [
+      "empresarial."
+    ],
+    "tecnologias": [
+      "Google Charts."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Configurador Software Aviónico e gerador de código fonte",
+    "alunos": [
+      "Ricardo Costa Lopes"
+    ],
+    "orientadores": [
+      "Daniel Silveira"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "ricostalopes@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2029_Configurador_Software_Avi%C3%B3nico_e_gerador_de_c%C3%B3digo.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/gmv.jpg",
+    "video_url": null,
+    "resumo": "Este projeto tem como referência um projeto do ano anterior, que se pretende dar continuidade. Assim como no ano passado o projeto mantém o objetivo de aprimorar a configuração de sistemas aviónicos espaciais, especificamente no contexto do Integrated Modular Avionic (IMA) e da arquitetura do software AIR desenvolvido pela empresa GMV. A solução atualmente proposta pretende dar continuidade, efetuado o desenvolvimento de uma Interface Gráfica Avançada (IGA) que redefine os padrões de eficiência, segurança e conformidade na configuração de sistemas espaciais. Pretende-se que o IGA seja intuitivo e centrado na usabilidade, proporcionando uma experiência eficaz mesmo para utilizadores com conhecimentos técnicos limitados. A principal funcionalidade da IGA é a geração automática de código-fonte com base nas configurações modeladas na interface. Isso não apenas otimiza o processo de configuração, mas também garante a precisão e a conformidade com as melhores práticas de programação.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Arquitectura Interactiva",
+      "Base de Dados",
+      "MVC",
+      "Web MVC."
+    ],
+    "areas": [
+      "Sistemas Operativos",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "AJAX",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "PHP",
+      "XAMPP."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Dashboard para Monitorização em Tempo Real da Produção e Consumo de Energia no Campus",
+    "alunos": [
+      "Francisco Lucas"
+    ],
+    "orientadores": [
+      "Lúcio Studer",
+      "Martijn Kuipers"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "franciscomlvinagre@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2118.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagemPythonAnywhere.png",
+    "video_url": null,
+    "resumo": "Desenvolver um dashboard que mostre a produção de energia pelos painéis fotovoltaicos e o consumo de energia no campus, fornecendo uma visão clara e prática do estado energético da instituição e indicadores de desempenho. O dashboard devia apresentar indicadores acumulados de contadores de energia, uma análise de desempenho (mal, bom, preciso de melhorar), histórico e tendências e poupanças financeiras estimados. O dashboard é para sensibilizar as pessoas no campus para a energia eficiente.",
+    "palavras_chave": [
+      "API",
+      "Base de Dados",
+      "Dashboard",
+      "Front-End",
+      "Python."
+    ],
+    "areas": [
+      "Sustentabilidade",
+      "ambiente."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "CSS",
+      "JavaScript",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Desenvolvimento em plataforma LowCode",
+    "alunos": [
+      "Rodrigo Rodrigues",
+      "João Ferreira"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "Timestamp",
+    "cursos": [
+      "Licenciatura em Engenharia Informática",
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "rodrigombrodrigues03@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2008.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/low-code.jpg",
+    "video_url": null,
+    "resumo": "Compreender BD e Plataformas lowcode Desenhar e criar BD relacional Desenhar e desenvolver aplicação em lowcode Conceitos como autenticação, autorização, acessibilidade, responsivo",
+    "palavras_chave": [
+      "Aplicação",
+      "Back-End",
+      "Base de Dados",
+      "Configuração",
+      "Desenvolvimento Web",
+      "Eficiência",
+      "Front-End."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "Bases de Dados."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Design and Implementation of a 6G Testbed for Pilot Planning",
+    "alunos": [
+      "Luisa Ferreira"
+    ],
+    "orientadores": [
+      "Luís Campos"
+    ],
+    "parceria": "PDMFC",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "luisaferreira614@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/itrust6GentregaIntercalar.docx",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/logo.png",
+    "video_url": null,
+    "resumo": "Establish a robust testing environment to evaluate and validate various 6G network technologies and use cases, ensuring that key features such as dynamic trust, continuous security monitoring, and intelligent edge computing are effectively integrated and assessed.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Arquitectura Interactiva",
+      "Base de Dados",
+      "Criptografia",
+      "Cybersecurity",
+      "Python",
+      "SQL",
+      "Sistema Operativo."
+    ],
+    "areas": [
+      "Segurança Informática",
+      "Segurança e Controlo."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "Docker",
+      "HTML",
+      "MariaDB",
+      "Postman",
+      "Python",
+      "WordPress."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Deteção de Microplásticos",
+    "alunos": [
+      "Damien Nazário"
+    ],
+    "orientadores": [
+      "Daniel Fernandes",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "damien.silva6@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_rik0Brg.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/PICA0374.jpg",
+    "video_url": null,
+    "resumo": "Neste trabalho final de curso, propõe-se o desenvolvimento de um modelo computacional para a deteção de microplásticos em amostras de água. A metodologia adotada assenta na implementação de algoritmos de processamento de imagem, concebidos para identificar e classificar automaticamente partículas de microplásticos.",
+    "palavras_chave": [
+      "Inteligência Artificial",
+      "Machine Learning em tempo real."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Inteligência Artificial",
+      "Sustentabilidade."
+    ],
+    "tecnologias": [
+      "PyTorch",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "DigiDoc – app inteligente de gerenciamento de documentos",
+    "alunos": [
+      "Bruno Ramos"
+    ],
+    "orientadores": [
+      "Daniel Silveira",
+      "Martijn Kuipers"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "ramosbrunopina@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2059_digidoc.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/icon.png",
+    "video_url": "https://www.youtube.com/embed/Ah9caBJuu1M?feature=oembed",
+    "resumo": "DigiDoc é uma aplicação móvel desenvolvida pelo aluno licenciado em engenharia informática, Bruno Ramos, focada na gestão digital de documentos pessoais. O utilizador pode escolher um tipo de documento (como Cartão de Cidadão, Passaporte, etc.), digitalizá-lo através da câmara, e a app deteta automaticamente o documento na imagem, permitindo ajustar o recorte. Depois, realiza extração de texto (OCR) para facilitar a pesquisa por palavras-chave. A app ainda mapeia a data de validade dos documentos para enviar notificações. Também permite organizar documentos em dossiers associados a pessoas ou entidades, com proteção por código de acesso. Usa SQFLite como base de dados local.",
+    "palavras_chave": [
+      "Agrupamento de documentos",
+      "Android",
+      "Application",
+      "Consultas",
+      "Digitalização de Documentos",
+      "Flutter",
+      "IOS",
+      "Organização",
+      "Sistemas de Gestão Documental."
+    ],
+    "areas": [
+      "Computação Móvel."
+    ],
+    "tecnologias": [
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Disentanglement in multiparty conversation",
+    "alunos": [
+      "Daniel Nascimento",
+      "Pedro Prata"
+    ],
+    "orientadores": [
+      "Bruno Saraiva",
+      "Zuil Pirola"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "daniel.fealves02@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI_Disentanglement.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/disentang.png",
+    "video_url": null,
+    "resumo": "When confronted with multiple people interacting with each other there exists a need to separate and identify multiple conversations to participate in them. As online interactions increase, the ability to do the same within complex digital environments becomes critical for ensuring clarity and effective communication and analysis of dialogue. We address this challenge by analyzing the current best practices used, attempting potential improvements and studying the use of machine learning techniques to enhance the accuracy and efficiency of conversation disentanglement.",
+    "palavras_chave": [
+      "Python",
+      "machine Learning."
+    ],
+    "areas": [
+      "Ciência de Dados."
+    ],
+    "tecnologias": [
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Ferramenta de Anotação",
+    "alunos": [
+      "Fábio Lopes"
+    ],
+    "orientadores": [
+      "Bruno Saraiva",
+      "Zuil Pirola"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "fabiofalopes@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/download.jpeg",
+    "video_url": null,
+    "resumo": "Ferramenta de anotação personalizada de dados. Em diversas áreas de machine learning, há a necessidade de anotar dados para que depois possam ser utilizados em modelos. A ferramenta deverá anotar dados de conversas online com o objetivo de resolver um problema em NLP denominada \"disentanglement\". Anotações como estas exigem vários anotadores, pelo que a ferramenta deve ser capaz de calcular o nível de concordância (agreement) entre eles.",
+    "palavras_chave": [
+      "Desenvolvimento de Software",
+      "Sistema de Recolha e Filtragem de Dados."
+    ],
+    "areas": [
+      "Ciência de Dados."
+    ],
+    "tecnologias": [
+      "Python",
+      "React."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "IMOinvestor: Inovação no Investimento Imobiliário (Back-end)",
+    "alunos": [
+      "Akashpreet Singh",
+      "Gabriel Almeida"
+    ],
+    "orientadores": [
+      "Pedro Perdigão"
+    ],
+    "parceria": "IMOinvestor",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "akashpreetsingh739@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2044.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2044_LOGO.png",
+    "video_url": null,
+    "resumo": "Este Trabalho Final de Curso (TFC) centra-se no desenvolvimento de uma aplicação back end especializada para o setor imobiliário, direcionada às necessidades dos investidores. A proposta, desenvolvida em colaboração com a empresa IMOINVESTOR, procura colmatar uma lacuna significativa no mercado português, onde não existem soluções digitais adaptadas à análise e gestão de investimentos imobiliários. O sistema integra funcionalidades como o cálculo de retorno sobre o investimento (ROI), gestão de portfólios e propriedades, e acesso a dados fiscais e projeções de valorização. O desenvolvimento utiliza tecnologias robustas, como o Django REST Framework, garantindo escalabilidade, segurança e eficiência. A solução proposta visa centralizar informações cruciais e promover a democratização do acesso a ferramentas avançadas, contribuindo para decisões mais informadas no setor. A parceria com a IMOINVESTOR tem sido essencial para assegurar que a aplicação responde às necessidades reais do mercado, sendo validada com utilizadores reais. O projeto inclui ainda um plano rigoroso de testes para garantir a sua relevância e aplicabilidade. Este TFC tem como objetivo alcançar padrões de excelência, contribuindo para a transformação digital no mercado imobiliário em Portugal.",
+    "palavras_chave": [
+      "API",
+      "Back-End",
+      "Base de Dados",
+      "Imobiliário",
+      "Python."
+    ],
+    "areas": [
+      "Imobiliário."
+    ],
+    "tecnologias": [
+      "Django",
+      "PostGreSQL",
+      "Postman",
+      "Python",
+      "REST",
+      "WebAPI."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "IMOinvestor: Inovação no Investimento Imobiliário – (Front-end – App & Web)",
+    "alunos": [
+      "José Vale",
+      "Daniel Rodrigues"
+    ],
+    "orientadores": [
+      "Pedro Perdigão"
+    ],
+    "parceria": "IMOinvestor",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "zemariavale@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2043.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/download.jfif",
+    "video_url": null,
+    "resumo": "O ImoInvestor é uma plataforma digital inovadora desenvolvida para estabelecer um novo padrão para plataformas imobiliárias orientadas a investidores, no mercado português. Diferentemente das soluções tradicionais, que se concentram nos consumidores finais, o ImoInvestor foca-se em fornecer ferramentas avançadas e personalizadas para apoiar decisões estratégicas no setor imobiliário. Funcionalidades como filtros avançados para imóveis com elevado retorno sobre investimento (ROI), gráficos interativos de projeção financeira e relatórios personalizados distinguem esta aplicação, promovendo uma abordagem eficiente e orientada para dados. Este trabalho foca-se no desenvolvimento do front-end, responsável por criar uma interface intuitiva e funcional que simplifica a apresentação de informações complexas e otimiza a experiência do utilizador.",
+    "palavras_chave": [
+      "Aplicação",
+      "Aplicação Web",
+      "Desenvolvimento Web",
+      "Engenharia Informática",
+      "Front-End",
+      "Imobiliário",
+      "JavaScript",
+      "Negócio",
+      "Plataforma Web",
+      "Plataforma inovadora",
+      "Portugal."
+    ],
+    "areas": [
+      "Imobiliário."
+    ],
+    "tecnologias": [
+      "CSS",
+      "HTML",
+      "JSON",
+      "React."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Identificação de arritmias via app",
+    "alunos": [
+      "Sebastião Coelho"
+    ],
+    "orientadores": [
+      "Iolanda Velho",
+      "Lúcio Studer"
+    ],
+    "parceria": "Hospital Santa Maria",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "sebastiao.f.m.coelho@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI22202310_ARRITMIAS_APP.docx",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/ppg.png",
+    "video_url": null,
+    "resumo": "O objetivo do trabalho é contribuir para a identificação precoce de arritmias através de um modelo de machine learning e integrar o mesmo numa aplicação móvel previamente desenvolvida capaz de fazer a leitura da frequência cardíaca através de uma técnica chamada Fotopletismografia, com o objetivo de prever eventos negativos.",
+    "palavras_chave": [
+      "Arritmia",
+      "Dispositivos Móveis",
+      "Fotopletismografia",
+      "Monitorização Cardíaca",
+      "Saúde Digital",
+      "machine Learning."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "saúde."
+    ],
+    "tecnologias": [
+      "NumPy",
+      "Pandas",
+      "Python",
+      "Seaborn",
+      "Sklearn."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Interface Azure para ERP",
+    "alunos": [
+      "Tiago Amaro"
+    ],
+    "orientadores": [
+      "Luís Gomes"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "tiago.a8701@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2037.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Microsoft_Azure.svg.png",
+    "video_url": null,
+    "resumo": "Pretende-se criar uma solução baseada em micro-serviços que permita a integração de ERP empresarial, em particular na componente de Gestão de Recursos Humanos (GRH), com plataforma Microsoft Azure de modo a gerir utilizadores desta de forma transparente a partir da relação laboral. O desenvolvimento será focado em Entra ID e MS365, mas poderá evoluir para funcionalidades mais avançadas",
+    "palavras_chave": [
+      "API",
+      "Azure",
+      "Base de Dados",
+      "ERP",
+      "Python",
+      "Windows Azure."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software",
+      "gestão."
+    ],
+    "tecnologias": [
+      "Azure",
+      "Bases de Dados",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "IoT Lab2.0 – CGI – Indústria",
+    "alunos": [
+      "Ricardo Borges",
+      "Samir Natvarlal"
+    ],
+    "orientadores": [
+      "José Cascais Brás",
+      "Rui Ribeiro"
+    ],
+    "parceria": "CGI TI Portugal",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "samir.natvarlal@hotmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2018.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/deisi14-iot_industria_gsg7jJ5.png",
+    "video_url": null,
+    "resumo": "(Continuidade de TFC de 2023/24) \"IoT-Internet of Things Lab\" baseado em duas maquetes funcionais com o objetivo de materializar a Internet das Coisas em algo \"físico e real\". Demonstrando que o valor do conceito se materializa através de sinergias obtidas num ecossistema de tecnologias integradas e é maior que as partes separadamente. Desafio – Frontend (Operacional & Dashboarding) – Analítica e Machine Learning – Mobile com integração de realidade aumentada",
+    "palavras_chave": [
+      "Base de Dados",
+      "Dashboard",
+      "Inteligência Artificial",
+      "IoT",
+      "Sustentabilidade."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "Sustentabilidade",
+      "Wireless communication",
+      "empresarial."
+    ],
+    "tecnologias": [
+      "Arduino",
+      "Flutter",
+      "MySQL."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "My Lessons : Gestão Inteligente de Escolas",
+    "alunos": [
+      "Francisco Sousa"
+    ],
+    "orientadores": [
+      "Lúcio Studer",
+      "Martim Mourão"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "franciscobarrososousa@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/app_icon.png",
+    "video_url": null,
+    "resumo": "Acredito profundamente que o tempo é o nosso recurso mais valioso e limitado, e que o ensino é a forma mais eficaz de transformar positivamente o mundo. Para concretizar plenamente este potencial, desenvolvi a plataforma My Lessons, uma solução digital inovadora e integrada que utiliza Inteligência Artificial para automatizar tarefas administrativas rotineiras, libertando tempo para educadores, líderes escolares e famílias se focarem no que realmente importa. Com uma abordagem centrada na simplicidade, personalização e integração estratégica, o My Lessons oferece desde gestão financeira simplificada, organização eficiente de aulas e eventos, relatórios automáticos de progresso, até comunicação automatizada e integração com ferramentas essenciais, como calendários digitais, Stripe, Twilio, YouTube e Google, garantindo uma gestão superior e uma experiência educativa enriquecedora para todos os utilizadores.",
+    "palavras_chave": [
+      "API",
+      "Aplicação Móvel",
+      "Aplicação Web",
+      "Arquitetura de Sistemas",
+      "Empresas",
+      "Firebase",
+      "Flutter",
+      "Gestão Escolar",
+      "Gestão de Alunos",
+      "Gestão de eventos",
+      "Google",
+      "Inteligência Artificial",
+      "JSON",
+      "Python."
+    ],
+    "areas": [
+      "Artificial Intelligence",
+      "Computação Móvel",
+      "Desporto",
+      "Tecnologia e Desenvolvimento de Software",
+      "educação",
+      "empresarial",
+      "gestão."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Django",
+      "Firebase",
+      "Flutter",
+      "Git",
+      "JSON",
+      "LLM",
+      "MySQL",
+      "Python",
+      "Stripe."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "NicePandora",
+    "alunos": [
+      "Francisco Chambel"
+    ],
+    "orientadores": [
+      "Daniel Silveira",
+      "Pedro Serra"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "chico.chambel@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2112_NicePandora.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-03-27_114213.png",
+    "video_url": null,
+    "resumo": "O Pandora é uma plataforma educacional inovadora que utiliza inteligência artificial para melhorar a avaliação e compreensão de código em ambientes de aprendizagem. Este sistema foi projetado para resolver problemas enfrentados por professores e alunos durante processos de avaliação em disciplinas de programação, proporcionando feedback detalhado, contextualizado e adaptado ao nível de competência do utilizador. A solução implementa funcionalidades avançadas, como a análise de código comparativa entre submissões de alunos e códigos de referência, exibição de mensagens de erros detalhadas, e relatórios de progresso para professores. Além disso, o Pandora oferece personalização no feedback, incluindo dicas ajustadas, validação estrutural de código e uma interface intuitiva que facilita a navegação e a usabilidade por parte de novos utilizadores. No desenvolvimento, priorizou-se uma abordagem modular e escalável, permitindo integração com ferramentas educacionais existentes e suporte a múltiplas linguagens de programação. Foram realizados testes em ambiente controlado para validar a eficácia das funcionalidades propostas, demonstrando resultados promissores na melhoria da aprendizagem e eficiência na correção de códigos. Com potencial para ser implementado em larga escala, o Pandora atende aos critérios de um produto viável mínimo, validando os conceitos propostos e destacando-se como uma solução prática e eficiente para desafios reais no ensino de programação. A plataforma está pronta para evoluir para ambientes de produção, demonstrando grande impacto.",
+    "palavras_chave": [
+      "API",
+      "Aplicação",
+      "Aplicação Web",
+      "Back-End",
+      "Base de Dados",
+      "Front-End",
+      "Google",
+      "Informática",
+      "Inteligência Artificial",
+      "JSON",
+      "Login",
+      "Palavras-chave: Drop Project, Plugin, Kotlin, Java, IntelliJ, Submissão de Projetos, Visualização de relatórios, Testes Unitários, Automatic Assessment Tools.",
+      "Python",
+      "Trabalho Final de Curso (TFC)",
+      "Web",
+      "artificial intelligence",
+      "bases de dados",
+      "chat gpt",
+      "generative ai."
+    ],
+    "areas": [
+      "Inteligência Artificial",
+      "educação."
+    ],
+    "tecnologias": [
+      "C",
+      "Django",
+      "Docker",
+      "HTML",
+      "JSON",
+      "MVC",
+      "OpenAI",
+      "Python",
+      "Ubuntu Server",
+      "Web."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "OP – Opening Doors",
+    "alunos": [
+      "Guilherme Ribeiro"
+    ],
+    "orientadores": [
+      "Daniel Fernandes",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "guilhermedlr6@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2079.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/istockphoto-1276559838-612x612.jpg",
+    "video_url": null,
+    "resumo": "O projeto consiste na criação de um sistema para controlo remoto de portas utilizando um servidor Flask e um Arduino Uno WiFi. O servidor Flask é responsável por gerir os utilizadores e as portas através de uma API REST, permitindo: – Registar utilizadores e armazenar credenciais encriptadas. – Criar e gerir portas associadas a cada utilizador. – Enviar comandos ao Arduino para abrir ou fechar portas. A comunicação entre o Flask e o Arduino é feita através da porta serial (USB). Quando um utilizador solicita a abertura de uma porta, o servidor envia um comando ao Arduino, que recebe a instrução e aciona um LED (ou uma fechadura, numa versão avançada). A base de dados SQLite armazena os utilizadores e as portas associadas. Cada porta tem um estado (\"aberta\" ou \"fechada\") e um canal de comunicação definido. O Arduino Uno WiFi está programado para: 1. Ler comandos recebidos pela porta serial. 2. Acionar o LED interno como indicador de estado. 3. Responder ao servidor Flask com mensagens de confirmação. Este projeto pode ser expandido para integrar fechaduras eletrónicas reais, autenticação de utilizadores e comunicação via WiFi em vez de USB.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Arduino",
+      "python."
+    ],
+    "areas": [
+      "Tecnologia e Desenvolvimento de Software",
+      "Wireless communication."
+    ],
+    "tecnologias": [
+      "Arduino",
+      "Flask",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma MentHA Digital, Mental Health and Aging",
+    "alunos": [
+      "Tomás Nave",
+      "André Jesus"
+    ],
+    "orientadores": [
+      "Lúcio Studer"
+    ],
+    "parceria": "Cruz Vermelha Portuguesa, Associação de Saude Mental do Algarve (ASMAL), Grupo de Intervenção e Reabilitação Activa (GIRA), Lar residencial e Centro de Atividades Ocupacionais (CRINABEL)",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "tomasdasilvanave@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2106.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/MentHA_LNEDj6R.png",
+    "video_url": null,
+    "resumo": "O Projeto MentHA (Mental Health and Aging) tem como objetivo desenvolver e otimizar uma aplicação Web destinada a melhorar o bem-estar e a qualidade de vida de adultos mais velhos com défice cognitivo, demência leve ou transtornos dissociativos de identidade, bem como apoiar os seus cuidadores formais e informais, promovendo a saúde mental na comunidade.",
+    "palavras_chave": [
+      "Aplicação Web",
+      "Base de Dados",
+      "Desenvolvimento Web",
+      "Python",
+      "Transformação Digital",
+      "Treino Cognitivo para Idosos com Demência."
+    ],
+    "areas": [
+      "educação",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Bootstrap",
+      "CSS",
+      "Django",
+      "Docker",
+      "HTML",
+      "JavaScript",
+      "PostGreSQL",
+      "Python",
+      "SQLite."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma de Cibersegurança Inteligente",
+    "alunos": [
+      "Miguel Loureço",
+      "Vasco Pereira"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "CyberS3c",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "miguellourencoo2004@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2027.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2027.webp",
+    "video_url": null,
+    "resumo": "Plataforma que recolhe toda a informação dos vários ativos de uma empresa (servidores, PCs, switches, routers, etc) para permitir ter toda a visão de cadastro, bem como analisar dados de rede interna e externa sobre uma empresa. Esta plataforma permite desta forma analisar vulnerabilidades e realizar análises inteligentes de prevenção a ataques.",
+    "palavras_chave": [
+      "API",
+      "python."
+    ],
+    "areas": [
+      "Segurança e Controlo."
+    ],
+    "tecnologias": [
+      "ExploitdB",
+      "Flask",
+      "JSON",
+      "Misp",
+      "OpenCTI",
+      "Python",
+      "Shodan."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma de E-commerce Shopify",
+    "alunos": [
+      "Bruno Rodrigues",
+      "Tânia Magalhães"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "Auren",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "a22209652@alunos.ulht",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2007_Plataforma_e-commerce_Shopify.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/shopify.png",
+    "video_url": null,
+    "resumo": "O presente Trabalho Final de Curso (TFC) tem como objetivo demonstrar a construção de uma loja online, Infinity, através da utilização da plataforma Shopify. Pretende-se criar uma solução capaz de acompanhar o crescimento do mercado de e-commerce, bem como oferecer uma proposta inovadora que combina a personalização da loja, através da integração de novas tecnologias como a Inteligência Artificial, e a incorporação de redes sociais, para fortificar a relação com o cliente. O relatório demonstra uma análise detalhada do mercado de e-commerce comparando soluções existentes, como: Shopify, Woocommerce, VTEX, Salesforce Commerce Cloud e Adobe Commerce. Recorrendo aos dados obtidos nesta análise, identificam-se lacunas e oportunidades que justificam a relevância e pertinência do projeto. Para uma melhor abordagem do problema acima referido foram combinados diversos conceitos adquiridos ao longo da licenciatura, relacionados com o planeamento de projeto, desde a recolha e análise de requisitos até à realização de testes de validação.",
+    "palavras_chave": [
+      "Inteligência Artificial",
+      "Redes Sociais",
+      "e-commerce."
+    ],
+    "areas": [
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "HTML."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma de Low-Code",
+    "alunos": [
+      "Rodrigo Rodrigues",
+      "João Ferreira"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "Timestamp",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "rodrigombrodrigues03@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/low-code_eq2poc9.jpg",
+    "video_url": null,
+    "resumo": "OBJETIVO: desenvolvimento de aplicações baseadas em plataforma lowcode. modelação de dados, desenho de fluxos aplicacionais, SQL e de rotinas plsql, javascript, workspaces. PLANO RESUMO: Compreender BD e Plataformas lowcode Desenhar e criar BD relacional Desenhar e desenvolver aplicação em lowcode Conceitos como autenticação, autorização, acessibilidade, responsivo",
+    "palavras_chave": [
+      "Aplicação",
+      "Assiduidade",
+      "Automação de testes",
+      "Back-End",
+      "Base de Dados",
+      "Competências",
+      "Comunicação",
+      "Desenvolvimento backend",
+      "Eficiência",
+      "Eficiência e Produtividade",
+      "Eficiência no processo."
+    ],
+    "areas": [
+      "Management",
+      "empresarial."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "HTML",
+      "JavaScript."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma de Monitorização de Albufeiras",
+    "alunos": [
+      "Ricardo Gonçalves",
+      "Ricardo Piedade"
+    ],
+    "orientadores": [
+      "Lúcio Studer",
+      "Martim Mourão"
+    ],
+    "parceria": "Faculdade de Engenharia e Federação Nacional de Regantes (FENAREG)",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "ricgon20035@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2105_WATER-Wise_entrega1.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/web-app-manifest-512x512_hmnb8Wh.png",
+    "video_url": null,
+    "resumo": "A proposta de projeto WATER-WISE (Plataforma Geoespacial para Gestão Inteligente da Água), que neste momento se encontra em avaliação, tem como objetivo dar resposta às necessidades de gestores de recursos hídricos, agricultores e investigadores, através de soluções e ferramentas capazes de gerir os recursos hídricos e as práticas agrícolas. O foco principal deste projeto é desenvolver uma aplicação web, com a função de integrar e processar dados provenientes de diversas fontes e posteriormente apresentá-los de uma forma visual e dinâmica, para apoiar estas mesmas necessidades. Esta aplicação irá recolher e processar dados provenientes de outros grupos do projeto, como: medições no terreno, dados de telemetria, análises de modelos preditivos, projeções climáticas e previsões meteorológicas. Esses modelos permitem simular cenários como balanços hídricos, dinâmicas de bacias hidrográficas e condições dos reservatórios, oferecendo informações que ajudam a prever necessidades futuras e a identificar potenciais riscos. A integração destes criará uma aplicação capaz de proporcionar aos utilizadores uma visão clara e detalhada da situação atual e da disponibilidade dos recursos hídricos. Sobre as funcionalidades principais que vão estar disponíveis na aplicação, a mesma contará com: visualização de dados através de dashboards, gráficos, mapas e séries temporais interativos, possibilitando que os utilizadores façam a sua análise da forma que pretenderem. Terá também sistemas de alerta através de ML, com o objetivo de notificar os utilizadores sobre condições específicas, como situações de seca agrícola ou níveis baixos de água. Estas funcionalidades facilitam a gestão dos recursos disponíveis. Com uma interface intuitiva e fácil de usar, a aplicação estará disponível em português, inglês e espanhol, garantindo que os parceiros do projeto Europeu possam utilizar a mesma sem qualquer problema. Garantir essa acessibilidade e disponibilidade é bastante importante, pois reflete o compromisso deste projeto com a disponibilização fácil da informação e das soluções. O projeto Water-Wise será realizado com o intuito de promover e adaptar a utilização deste tipo de ferramentas, sendo assim, uma solução flexível e inovadora que ajudará tanto os agricultores como todos os utilizadores que necessitarem da informação tratada e disponibilizada pelo mesmo, promovendo uma melhor tomada de decisão face às mudanças climáticas previstas.",
+    "palavras_chave": [
+      "API",
+      "Agricultores",
+      "Aplicação Web",
+      "Base de Dados",
+      "Desenvolvimento Web",
+      "Engenharia Informática",
+      "Front-End",
+      "Gestão de recursos hídricos",
+      "Monitorização da água",
+      "Plataforma Geoespacial",
+      "Plataforma Web",
+      "Práticas agrícolas",
+      "Trabalho Final de Curso (TFC)."
+    ],
+    "areas": [
+      "Agricultura",
+      "Gestão de Recursos Hídricos",
+      "Tecnologias Geoespaciais."
+    ],
+    "tecnologias": [
+      "Excel",
+      "HTML",
+      "InfluxDB",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Typescript ."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Plataforma e-commerce Shopify",
+    "alunos": [
+      "Bruno Gonçalo Branco Rodrigues",
+      "Tania Andreia Magalhaes"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "Auren",
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "a22209652@ulht.alunos.pt",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/1295.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_5bCFc9Y.png",
+    "video_url": null,
+    "resumo": "Pretende-se desenvolver um conjunto alargado de plataformas de e-commerce B2C e B2B com integrações com redes sociais, Google ads, plataformas de pagamentos entre outros.",
+    "palavras_chave": [
+      "Aplicação web. Cliente. Fatura. Fornecedor. Produtos.",
+      "Plataforma Web",
+      "WEB."
+    ],
+    "areas": [
+      "Computação Gráfica."
+    ],
+    "tecnologias": [
+      "HTML",
+      "HTTP Webservices",
+      "JSON",
+      "React."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Power Platform Digital Transformation",
+    "alunos": [
+      "Ricardo Alexandre Gonçalves"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "ricardogoncalves126@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-04-13_184533.png",
+    "video_url": null,
+    "resumo": "O projeto centra-se na modernização dos sistemas de radiocomunicações de uma entidade, através da implementação de um novo portal baseado em tecnologias da Microsoft e Power Platform. Esta solução visa substituir soluções já existentes, e promover a digitalização de processos, explorando tendências tecnológicas emergentes por intermédio de ferramentas Low-Code. A nova plataforma está a ser concebida com um design moderno e compatível com os sistemas existentes, enquanto a mesma trabalha na organização unificada das funcionalidades que guiarão a estrutura do portal. A plataforma representa uma abordagem inovadora ao desenvolvimento de soluções digitais, democratizando o acesso à criação de aplicações através de ferramentas Low-Code. Estas funcionalidades permitem acelerar o desenvolvimento, oferecer personalização e aumentar a eficiência dos processos. A plataforma foi testada e validada em ambiente de produção, demonstrando vantagens significativas, especialmente para pequenas e médias empresas, ao reduzir custos e superar barreiras no acesso a tecnologias avançadas. Os resultados obtidos evidenciam o potencial transformador das plataformas Low-Code no contexto organizacional, destacando o seu contributo para a digitalização, a eficiência e a inovação tecnológica. O projeto não só procura a criação de soluções escaláveis e adaptáveis, como também reforçou o papel estratégico destas tecnologias na modernização empresarial e institucional. Esta abordagem revela-se de elevado valor para o mercado, ao abrir novas possibilidades para o desenvolvimento tecnológico de organizações com diferentes dimensões e necessidades.",
+    "palavras_chave": [
+      "Aplicação Web."
+    ],
+    "areas": [
+      "Telecommunications."
+    ],
+    "tecnologias": [
+      "Microsoft Visual Studio."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Rede Social para a Comunidade Universitaria",
+    "alunos": [
+      "Francisco Gomes",
+      "Mário Valentino"
+    ],
+    "orientadores": [
+      "Rui Santos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "francisco.mlt.gomes2003@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_G2131_ON-CREATION.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/imagem_2025-03-28_214156582.png",
+    "video_url": null,
+    "resumo": "Este TFC consiste em desenvolver uma WebApp e uma aplicação móvel que permitam aos estudantes universitários expor e partilhar os seus trabalhos/atividades da vida académica, criar e personalizar os seus portfólios/perfis, com a possibilidade de integrar um marketplace para venda dos trabalhos ou merchandising.",
+    "palavras_chave": [
+      "Alunos",
+      "Aplicação",
+      "Aplicação Móvel",
+      "Aplicação Web",
+      "Networking",
+      "Portfolio Aplicacional",
+      "interação."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "Tecnologia e Desenvolvimento de Software",
+      "educação",
+      "sociedade."
+    ],
+    "tecnologias": [
+      "Dart",
+      "Firebase",
+      "Flutter."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Segmentação de incêndios florestais",
+    "alunos": [
+      "Francisco Perpétuo Alves"
+    ],
+    "orientadores": [
+      "Houda Harkat",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "francisco.perpetuoalves@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2057.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/mask.png",
+    "video_url": null,
+    "resumo": "Os incêndios florestais constituem um dos desastres naturais mais devastadores, causando impactos ambientais, sociais e económicos significativos. Estes eventos ameaçam ecossistemas inteiros, comprometem a biodiversidade, colocam vidas humanas e animais em risco e contribuem para o agravamento das alterações climáticas devido à emissão de gases com efeito de estufa. Assim, a deteção precoce e eficiente de incêndios é essencial para mitigar os seus danos e permitir intervenções rápidas e eficazes. O desenvolvimento de incêndios florestais ocorre em duas fases principais: a emissão de fumo, que é o primeiro indicador visível do início de uma combustão, e, posteriormente, o aparecimento de chamas, que marcam um estado mais avançado e perigoso do fogo. A deteção de fumo é particularmente desafiante devido à sua natureza translúcida e à dispersão em condições ambientais adversas, como ventos ou luminosidade variável. Por outro lado, o fogo é mais fácil de identificar, mas quando visível, normalmente já representa uma situação crítica. Assim, um sistema de deteção eficaz deve ser capaz de identificar tanto o fumo quanto o fogo para facilitar uma intervenção atempada. Esta trabalho propõe o desenvolvimento de um sistema avançado baseado em deep learning para a segmentação simultânea de fumo e fogo em imagens. Serão exploradas duas arquiteturas reconhecidas pela sua eficiência em tarefas de segmentação, a U-Net e a ResUNet, ambas capazes de realizar classificações pixel-a-pixel em cenários complexos. Os modelos serão treinados e avaliados utilizando dois conjuntos de dados: o Corsican, um dataset público, e o Gestosa, um dataset privado, ambos contendo imagens captadas por drones e sensores térmicos. O estudo também investigará a melhoria dessas arquiteturas por meio da otimização das funções de perda para aumentar a sua precisão e robustez, especialmente em condições ambientais desafiadoras. A otimização das arquiteturas visa melhorar a deteção de padrões complexos, como os contornos irregulares de fumo e fogo, e garantir uma maior eficácia em diferentes cenários. Espera-se que os resultados desta trabalho demonstrem a viabilidade e a eficácia de sistemas baseados em deep learning para a deteção precoce de incêndios florestais. Esta abordagem representa um avanço significativo ao combinar a identificação de fumo e fogo numa única solução, com potencial para transformar as estratégias de monitorização, resposta a emergências e preservação ambiental.",
+    "palavras_chave": [
+      "machine learning."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Inteligência Artificial."
+    ],
+    "tecnologias": [
+      "PyTorch",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Sistema Integrado de Gestão de Stocks",
+    "alunos": [
+      "Fábio Tomé"
+    ],
+    "orientadores": [
+      "Rui Ribeiro"
+    ],
+    "parceria": "Rainha do Caldo Verde",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "fjt175sr@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2425_Sistema_Integrado_de_Sistemas_de_Stocks.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Imagem.jpeg",
+    "video_url": null,
+    "resumo": "Este trabalho analisa o fluxo operacional e os desafios de gestão de stock de uma empresa localizada no MARL, dedicada à distribuição de frutas, hortícolas e legumes. Foram identificados problemas relacionados com a gestão manual de tabelas de stock em Excel, resultando em potenciais erros na contagem e na faturação. Como método, foi realizado um levantamento detalhado do funcionamento das operações da empresa, incluindo armazenamento, processamento em fábrica e vendas, bem como das entradas e saídas registadas nos sistemas de controlo. As principais conclusões incluem a necessidade de automatizar processos para reduzir erros, melhorar a rastreabilidade e otimizar os tempos de resposta, garantindo maior eficiência na operação e na satisfação dos clientes.",
+    "palavras_chave": [
+      "Agilidade Organizacional",
+      "Aplicação web. Cliente. Fatura. Fornecedor. Produtos.",
+      "Assessoria Empresarial",
+      "Eficiência."
+    ],
+    "areas": [
+      "empresarial",
+      "gestão."
+    ],
+    "tecnologias": [
+      "Odoo."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Utilização de Inteligência Artificial no combate aos comportamentos aditivos e dependências",
+    "alunos": [
+      "Afonso Amaral",
+      "João Carmona"
+    ],
+    "orientadores": [
+      "Iolanda Velho"
+    ],
+    "parceria": "Associação Ares do Pinhal",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "joaotiagocarmona@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2113.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Ares_do_Pinal_Logo.png",
+    "video_url": null,
+    "resumo": "Em estreita colaboração com a Associação Ares do Pinhal (AdP), uma IPSS que tem como missão promover a inclusão social de pessoas com comportamentos aditivos e dependências centrada numa abordagem de redução de riscos e danos, neste trabalho pretende-se aplicar a inteligência artificial para analisar a grande quantidade de dados que a AdP é detentora, de modo a encontrar tendências e produzir insights relevantes no combate à toxicodependência e consequentes danos associados ao consumo.",
+    "palavras_chave": [
+      "Analise de Clusters",
+      "Análise de Dados",
+      "Base de Dados",
+      "Ciência dos Dados",
+      "Data Mining",
+      "Inteligência Artificial para o Bem Social",
+      "Modelo de Segmentação",
+      "Python",
+      "Recolha de dados",
+      "machine Learning."
+    ],
+    "areas": [
+      "Ciência de Dados",
+      "Inteligência Artificial",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Docker",
+      "NumPy",
+      "Pandas",
+      "PostgreSQL",
+      "Python."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Visibility and Governance Platform for AMS Projects",
+    "alunos": [
+      "Andreia Nunes"
+    ],
+    "orientadores": [
+      "José Cascais Brás"
+    ],
+    "parceria": "CGI",
+    "cursos": [
+      "Licenciatura em Informática de Gestão"
+    ],
+    "ano": 2026,
+    "email": "andreia.luisa.nunes@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI22109520_Visibility_and_Governance_Platform_for_AMS__projects_.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/Screenshot_2026-04-10_130027.png",
+    "video_url": null,
+    "resumo": "Este Trabalho Final de Curso tem como objetivo conceber e desenvolver uma plataforma de gestão para projetos AMS, construída em Microsoft Power Platform com abordagem Low-Code. A solução responde à dispersa informação entre e-mail, folhas de cálculo e ferramentas de ticketing, proporcionando uma visão completa dos projetos, automatização de alertas e dashboards com KPIs relevantes.",
+    "palavras_chave": [
+      ": Modernização, Radiocomunicações, Microsoft, Power Platform, Digitalização, Low-Code, Desenvolvimento, Eficiência, Escalabilidade, Personalização, Inovação, Transformação, Empresas, Tecnologias",
+      "Aplicação Web",
+      "Base de Dados",
+      "Dashboard",
+      "Gestão de Projetos."
+    ],
+    "areas": [
+      "Análise de dados",
+      "plataforma lowcode."
+    ],
+    "tecnologias": [
+      "PowerBI."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "i-Inflation",
+    "alunos": [
+      "Gonçalo Barata",
+      "Maria Inês Silva"
+    ],
+    "orientadores": [
+      "Luís Miguel Campos"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Ciência de Dados"
+    ],
+    "ano": 2026,
+    "email": "inesbranco03@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/TFC__Final.pdf",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/inflacao-800.jpg",
+    "video_url": null,
+    "resumo": "A inflação é um indicador económico crítico que afeta indivíduos, empresas e governos igualmente. Apesar da sua importância, muitas pessoas não têm uma compreensão clara de como a inflação é calculada e os fatores que contribuem para a mesma. O ob- jetivo deste projeto, i-Inflation, é desenvolver uma aplicação móvel e uma aplicação web que permita aos usuários colaborar e calcular com eficiência a inflação. A plataforma fornecerá ferramentas para diversas partes interessadas, detentores, incluindo economis- tas, decisores políticos e o público em geral, para se envolverem com dados de tempo real, de modo a melhorar a precisão dos cálculos de inflação e obter uma compreensão mais profunda das tendências económicas. O projeto consistirá em desenvolvimento frontend e backend, com ênfase em interfaces fáceis de usar, visualização de dados e colaboração em tempo real. Em última análise, o i-Inflation procura democratizar a análise económica, tornando os dados de inflação mais acessíveis e compreensíveis para um público mais amplo.",
+    "palavras_chave": [
+      "Aplicação Móvel",
+      "Aplicação Web",
+      "Desenvolvimento backend",
+      "Desenvolvimento de Software",
+      "Desenvolvimento frontend",
+      "Inflação."
+    ],
+    "areas": [
+      "Ciência de Dados e Inteligência Artificial",
+      "Economia e Finanças",
+      "Tecnologia e Desenvolvimento de Software."
+    ],
+    "tecnologias": [
+      "Ionic Framework",
+      "PostGreSQL",
+      "React.js",
+      "Spring Boot (Java)."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "iEquus",
+    "alunos": [
+      "Duarte Chen"
+    ],
+    "orientadores": [
+      "Daniel Fernandes",
+      "João Pedro Carvalho"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2026,
+    "email": "duartechen@gmail.com",
+    "relatorio_url": null,
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/iEquus.png",
+    "video_url": null,
+    "resumo": "Este TFC, surge em parceria com a Faculdade de Medicina Veterinária da Universidade Lusófona e pretende desenvolver uma aplicação móvel para saber o estado de saúde do cavalo. A aplicação está desenvolvida para Android e iOS e é ser capaz de capturar e guardar imagens, fazer o seu processamento e devolver ao utilizador o Body Score associado ao equí­deo, bem como uma estimativa do peso.",
+    "palavras_chave": [
+      "Android",
+      "Aplicação móvel",
+      "Back-End",
+      "Dart",
+      "Docker",
+      "Flask",
+      "Flutter",
+      "Front-End",
+      "MySQL",
+      "Python."
+    ],
+    "areas": [
+      "Computação Móvel",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Android",
+      "Dart",
+      "Docker",
+      "Flask",
+      "Flutter",
+      "MySQL",
+      "Python",
+      "iOS."
+    ]
+  },
+  {
+    "tipo": "TFC",
+    "estado": "concluido",
+    "titulo": "Gestão de distribuição alimentar v2",
+    "alunos": [
+      "Tiago Henrique Duarte Da Silva Jorge"
+    ],
+    "orientadores": [
+      "Luís Gomes"
+    ],
+    "parceria": null,
+    "cursos": [
+      "Licenciatura em Engenharia Informática"
+    ],
+    "ano": 2025,
+    "email": "tiagohjorge03@gmail.com",
+    "relatorio_url": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_Intercalar_DEISI2042.docx",
+    "imagem_url": "https://teses.deisi.ulusofona.pt/media/teses/IMG_4272.jpeg",
+    "video_url": null,
+    "resumo": "Ferramenta de gestão alimentar",
+    "palavras_chave": [
+      "Aplicação de transporte de mercadorias",
+      "Aplicação web. Cliente. Fatura. Fornecedor. Produtos.",
+      "BackOffice."
+    ],
+    "areas": [
+      "empresarial",
+      "gestão",
+      "saúde."
+    ],
+    "tecnologias": [
+      "Bases de Dados",
+      "Docker",
+      "MySQL",
+      "PHP."
+    ]
+  }
+]
