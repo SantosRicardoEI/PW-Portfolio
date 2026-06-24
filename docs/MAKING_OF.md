@@ -130,7 +130,7 @@ cada uma.
 - A configuração inicial gera uma chave secreta dentro de `settings.py`. Foi
   substituída por leitura de variável de ambiente, com valor local não secreto.
 - Uma data final de formação poderia ser anterior à data inicial. Foi adicionada
-  validação no modelo e um teste automático para impedir esse estado.
+  validação no modelo para impedir esse estado.
 - Uma ligação genérica do Making Of poderia guardar apenas o tipo, apenas o ID
   ou um ID inexistente. A validação exige o par completo e confirma a existência
   do objeto.
@@ -138,7 +138,7 @@ cada uma.
 ## Utilização de inteligência artificial
 
 Foi utilizado o Codex como apoio para interpretar o enunciado, propor a primeira
-modelação, implementar os modelos e o Admin e preparar testes e documentação.
+modelação, implementar os modelos e o Admin e preparar a documentação.
 As decisões continuam a ter de ser revistas e explicadas pelo aluno durante a
 defesa. A IA não consultou nem inventou dados pessoais, TFCs ou conteúdos das
 APIs, e não produziu fotografias falsas de trabalho em papel.
@@ -154,4 +154,3 @@ Antes da submissão, desenhar e fotografar:
 
 Guardar os ficheiros reais em `media/makingof/` seguindo o guia dessa pasta e
 substituir esta secção por referências às fotografias adicionadas.
-

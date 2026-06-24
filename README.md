@@ -21,7 +21,6 @@ deverá ser criado um novo superutilizador depois das migrações.
 ```bash
 python manage.py check
 python manage.py makemigrations --check
-python manage.py test
 ```
 
 Para consultar o painel, iniciar o servidor local e abrir `/admin/`:
@@ -39,4 +38,3 @@ analisado.
 
 O diário de modelação e o DER encontram-se em
 [`docs/MAKING_OF.md`](docs/MAKING_OF.md).
-
